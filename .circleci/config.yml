@@ -1,0 +1,88 @@
+version: 2
+
+defaults: &defaults
+  working_directory: ~/storybook-dark-mode
+  docker:
+    - image: circleci/node:latest-browsers
+
+jobs:
+  install:
+    <<: *defaults
+    steps:
+      - checkout
+      - restore_cache:
+          keys:
+            # Find a cache corresponding to this specific package.json checksum
+            # when this file is changed, this key will fail
+            - storybook-dark-mode-{{ .Branch }}-{{ checksum "yarn.lock" }}-{{ checksum ".circleci/config.yml" }}
+            - storybook-dark-mode-{{ .Branch }}-{{ checksum "yarn.lock" }}
+            - storybook-dark-mode-{{ .Branch }}
+            # Find the most recent cache used from any branch
+            - storybook-dark-mode-master
+            - storybook-dark-mode-
+      - run:
+          name: Install Dependencies
+          command: yarn install --frozen-lockfile
+      - save_cache:
+          key: storybook-dark-mode-{{ .Branch }}-{{ checksum "yarn.lock" }}-{{ checksum ".circleci/config.yml" }}
+          paths:
+            - node_modules
+            - ~/.cache/yarn
+      - persist_to_workspace:
+          root: .
+          paths:
+            - .
+
+  lint:
+    <<: *defaults
+    steps:
+      - attach_workspace:
+          at: ~/storybook-dark-mode
+      - run:
+          name: Lint
+          command: yarn lint
+
+  build:
+    <<: *defaults
+    steps:
+      - attach_workspace:
+          at: ~/storybook-dark-mode
+      - run:
+          name: Build
+          command: yarn build
+      - persist_to_workspace:
+          root: .
+          paths:
+            - .
+
+  release:
+    <<: *defaults
+    steps:
+      - attach_workspace:
+          at: ~/storybook-dark-mode
+      - run:
+          name: Release
+          command: yarn release
+
+workflows:
+  version: 2
+  build_and_test:
+    jobs:
+      - install
+
+      - lint:
+          requires:
+            - install
+
+      - build:
+          requires:
+            - install
+
+      - release:
+          requires:
+            - lint
+            - build
+          filters:
+            branches:
+              only:
+                - master
