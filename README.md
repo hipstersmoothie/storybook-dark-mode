@@ -2,6 +2,8 @@
 
 A storybook addons that lets your users toggle between dark and light mode.
 
+![Example](./example.gif)
+
 ## Installation
 
 Install the following npm module:
