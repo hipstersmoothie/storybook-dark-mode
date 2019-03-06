@@ -1,0 +1,61 @@
+{
+  "name": "storybook-dark-mode",
+  "version": "0.0.0",
+  "description": "Toggle between light and dark mode in Storybook v5",
+  "main": "index.js",
+  "source": "index.ts",
+  "files": [
+    "dist",
+    "register.js"
+  ],
+  "author": {
+    "name": "Andrew Lisowski",
+    "email": "lisowski54@gmail.com"
+  },
+  "scripts": {
+    "lint": "eslint --ext .ts --ext .tsx src/**",
+    "build": "tsc"
+  },
+  "peerDependencies": {
+    "react": "*"
+  },
+  "devDependencies": {
+    "@types/react": "^16.8.6",
+    "husky": "^1.3.1",
+    "jest": "^24.1.0",
+    "lint-staged": "^8.1.5",
+    "prettier": "^1.16.4",
+    "react": "^16.8.3",
+    "react-dom": "^16.8.3",
+    "typescript": "^3.3.3333",
+    "@typescript-eslint/eslint-plugin": "^1.4.2",
+    "@typescript-eslint/parser": "^1.4.2",
+    "eslint": "^5.14.1",
+    "eslint-config-prettier": "^4.0.0",
+    "eslint-config-xo": "^0.26.0",
+    "eslint-config-xo-react": "^0.18.0",
+    "eslint-plugin-react": "^7.12.4"
+  },
+  "prettier": {
+    "singleQuote": true
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.{js,json,css,md}": [
+      "prettier --write",
+      "git add"
+    ]
+  },
+  "dependencies": {
+    "@storybook/addons": "^5.0.0",
+    "@storybook/components": "^5.0.0",
+    "@storybook/core-events": "^5.0.0",
+    "@storybook/theming": "^5.0.0",
+    "fast-deep-equal": "^2.0.1",
+    "memoizerific": "^1.11.3"
+  }
+}
