@@ -12,6 +12,10 @@
     "name": "Andrew Lisowski",
     "email": "lisowski54@gmail.com"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hipstersmoothie/storybook-dark-mode"
+  },
   "scripts": {
     "lint": "eslint --ext .ts --ext .tsx src/**",
     "build": "tsc"
@@ -21,20 +25,21 @@
   },
   "devDependencies": {
     "@types/react": "^16.8.6",
+    "@typescript-eslint/eslint-plugin": "^1.4.2",
+    "@typescript-eslint/parser": "^1.4.2",
+    "auto": "^4.8.9",
+    "eslint": "^5.14.1",
+    "eslint-config-prettier": "^4.0.0",
+    "eslint-config-xo": "^0.26.0",
+    "eslint-config-xo-react": "^0.18.0",
+    "eslint-plugin-react": "^7.12.4",
     "husky": "^1.3.1",
     "jest": "^24.1.0",
     "lint-staged": "^8.1.5",
     "prettier": "^1.16.4",
     "react": "^16.8.3",
     "react-dom": "^16.8.3",
-    "typescript": "^3.3.3333",
-    "@typescript-eslint/eslint-plugin": "^1.4.2",
-    "@typescript-eslint/parser": "^1.4.2",
-    "eslint": "^5.14.1",
-    "eslint-config-prettier": "^4.0.0",
-    "eslint-config-xo": "^0.26.0",
-    "eslint-config-xo-react": "^0.18.0",
-    "eslint-plugin-react": "^7.12.4"
+    "typescript": "^3.3.3333"
   },
   "prettier": {
     "singleQuote": true
