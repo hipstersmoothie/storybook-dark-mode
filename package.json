@@ -62,5 +62,6 @@
     "@storybook/theming": "^5.0.0",
     "fast-deep-equal": "^2.0.1",
     "memoizerific": "^1.11.3"
-  }
+  },
+  "license": "MIT"
 }
