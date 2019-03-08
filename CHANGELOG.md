@@ -1,3 +1,15 @@
+# v0.1.0 (Fri Mar 08 2019)
+
+#### 🚀  Enhancement
+
+- Add ability to configure the dark and light themes [#5](https://github.com/hipstersmoothie/storybook-dark-mode/pull/5) ([@hipstersmoothie](https://github.com/hipstersmoothie))
+
+#### Authors: 1
+
+- Andrew Lisowski ([@hipstersmoothie](https://github.com/hipstersmoothie))
+
+---
+
 # v0.0.4 (Wed Mar 06 2019)
 
 #### ⚠️  Pushed to master
