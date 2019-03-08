@@ -27,9 +27,19 @@ export default class DarkMode extends React.Component<
   };
 
   setDarkMode = (isDark: boolean) => {
+    const { parameters } = this.props.api.getCurrentStoryData();
+
+    let darkTheme = themes.dark;
+    let lightTheme = themes.light;
+
+    if (parameters && parameters.darkMode) {
+      darkTheme = parameters.darkMode.dark || darkTheme;
+      lightTheme = parameters.darkMode.light || lightTheme;
+    }
+
     this.props.api.setOptions({
       isDark,
-      theme: isDark ? themes.dark : themes.light
+      theme: isDark ? darkTheme : lightTheme
     });
 
     this.setState({
