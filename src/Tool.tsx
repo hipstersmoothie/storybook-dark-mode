@@ -6,6 +6,9 @@ import Sun from './icons/Sun';
 import Moon from './icons/Moon';
 
 interface DarkModeProps {
+  channel: {
+    emit(event: string, value: any): void;
+  };
   api: {
     setOptions(options: any): void;
     on(event: string, callback: (data: any) => void): void;
@@ -21,7 +24,7 @@ interface DarkModeState {
 export default class DarkMode extends React.Component<
   DarkModeProps,
   DarkModeState
-> {
+  > {
   state = {
     isDark: false
   };
@@ -34,6 +37,8 @@ export default class DarkMode extends React.Component<
 
     this.setState({
       isDark
+    }, () => {
+      this.props.channel.emit('DARK_MODE', isDark);
     });
   };
 
