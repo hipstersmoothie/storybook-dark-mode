@@ -23,3 +23,20 @@ Then, add following content to .storybook/addons.js
 ```js
 import 'storybook-dark-mode/register';
 ```
+
+## Configuration
+
+Configure the dark and light mode by adding the following to you `config.js` file:
+
+```js
+import { addParameters } from '@storybook/react'; // or any other type of storybook
+
+addParameters({
+  darkMode: {
+    // Override the default dark theme
+    dark: { ...themes.dark, appBg: 'black' },
+    // Override the default light theme
+    light: { ...themes.normal, appBg: 'red' }
+  }
+});
+```
