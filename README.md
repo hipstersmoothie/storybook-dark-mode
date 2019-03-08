@@ -26,7 +26,7 @@ import 'storybook-dark-mode/register';
 
 ## Story integration
 
-If your components have custom Theme provider, you can integrate it by adding decorator that listen to `DARK_MODE` event via addons channel.
+If your components use a custom Theme provider, you can integrate it by adding decorator that listens for the `DARK_MODE` event via the addons channel.
 
 ```js
 import addons from '@storybook/addons';
@@ -38,7 +38,7 @@ import ThemeContext from './theme';
 // get channel to listen to event emitter
 const channel = addons.getChannel();
 
-// create a component that listen to DARK_MODE event
+// create a component that listens for the DARK_MODE event
 function ThemeWrapper(props) {
   // this example uses hook but you can also use class component as well
   const [isDark, setDark] = useState(false);
