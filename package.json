@@ -21,9 +21,6 @@
     "build": "tsc",
     "release": "auto shipit"
   },
-  "peerDependencies": {
-    "react": "*"
-  },
   "devDependencies": {
     "@types/react": "^16.8.6",
     "@typescript-eslint/eslint-plugin": "^1.4.2",

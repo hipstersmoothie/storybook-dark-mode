@@ -14,20 +14,11 @@ interface DarkModeProps {
   };
 }
 
-interface DarkModeState {
-  isDark: boolean;
-}
+export const DarkModeHooks: React.FunctionComponent<DarkModeProps> = props => {
+  const [isDark, setDark] = React.useState(false);
 
-export default class DarkMode extends React.Component<
-  DarkModeProps,
-  DarkModeState
-> {
-  state = {
-    isDark: false
-  };
-
-  setDarkMode = (isDark: boolean) => {
-    const { parameters } = this.props.api.getCurrentStoryData();
+  function setDarkMode() {
+    const { parameters } = props.api.getCurrentStoryData();
 
     let darkTheme = themes.dark;
     let lightTheme = themes.light;
@@ -37,30 +28,26 @@ export default class DarkMode extends React.Component<
       lightTheme = parameters.darkMode.light || lightTheme;
     }
 
-    this.props.api.setOptions({
+    props.api.setOptions({
       isDark,
       theme: isDark ? darkTheme : lightTheme
     });
 
-    this.setState({
-      isDark
-    });
-  };
-
-  render() {
-    const { isDark } = this.state;
-
-    return (
-      <IconButton
-        key="dark-mode"
-        active={isDark}
-        title={
-          isDark ? 'Change theme to light mode' : 'Change theme to dark mode'
-        }
-        onClick={() => this.setDarkMode(!this.state.isDark)}
-      >
-        {isDark ? <Sun /> : <Moon />}
-      </IconButton>
-    );
+    setDark(!isDark);
   }
-}
+
+  return (
+    <IconButton
+      key="dark-mode"
+      active={isDark}
+      title={
+        isDark ? 'Change theme to light mode' : 'Change theme to dark mode'
+      }
+      onClick={setDarkMode}
+    >
+      {isDark ? <Sun /> : <Moon />}
+    </IconButton>
+  );
+};
+
+export default DarkModeHooks;
