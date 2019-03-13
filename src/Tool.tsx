@@ -32,11 +32,11 @@ let defaultStore: DarkModeStore = {
   light: themes.light
 };
 
-const update = (newStore: any) => {
+const update = (newStore: DarkModeStore) => {
   window.localStorage.setItem('sb-addon-themes-3', JSON.stringify(newStore));
 };
 
-const store = (themes: { dark?: any; light?: any } = {}): DarkModeStore => {
+const store = (themes: Partial<DarkModeStore> = {}): DarkModeStore => {
   if (window.localStorage.getItem('sb-addon-themes-3')) {
     return JSON.parse(window.localStorage.getItem(
       'sb-addon-themes-3'
