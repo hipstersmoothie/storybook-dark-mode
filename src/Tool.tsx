@@ -46,10 +46,12 @@ const store = (themes: Partial<DarkModeStore> = {}): DarkModeStore => {
     if (themes) {
       if (themes.dark && !equal(stored.dark, themes.dark)) {
         stored.dark = themes.dark;
+        update(stored);
       }
 
       if (themes.light && !equal(stored.light, themes.light)) {
         stored.light = themes.light;
+        update(stored);
       }
     }
 
