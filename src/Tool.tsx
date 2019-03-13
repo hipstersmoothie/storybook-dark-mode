@@ -15,6 +15,9 @@ interface StorybookAPI {
 
 interface DarkModeProps {
   api: StorybookAPI;
+  channel: {
+    emit(event: string, value: any): void;
+  };
 }
 
 interface DarkModeStore {
@@ -75,6 +78,7 @@ export const DarkModeHooks: React.FunctionComponent<DarkModeProps> = props => {
   function setDarkMode() {
     setTheme({ api: props.api, toggle: true });
     setDark(!isDark);
+    props.channel.emit('DARK_MODE', !isDark);
   }
 
   React.useEffect(() => {
@@ -100,6 +104,7 @@ export const DarkModeHooks: React.FunctionComponent<DarkModeProps> = props => {
       });
 
       setDark(current === 'dark');
+      props.channel.emit('DARK_MODE', current === 'dark');
     });
   }, []);
 
