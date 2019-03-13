@@ -1,6 +1,7 @@
 import * as React from 'react';
 import { themes, ThemeVars } from '@storybook/theming';
 import { IconButton } from '@storybook/components';
+import equal from 'fast-deep-equal';
 
 import Sun from './icons/Sun';
 import Moon from './icons/Moon';
@@ -38,9 +39,21 @@ const update = (newStore: DarkModeStore) => {
 
 const store = (themes: Partial<DarkModeStore> = {}): DarkModeStore => {
   if (window.localStorage.getItem('sb-addon-themes-3')) {
-    return JSON.parse(window.localStorage.getItem(
+    const stored = JSON.parse(window.localStorage.getItem(
       'sb-addon-themes-3'
-    ) as string);
+    ) as string) as DarkModeStore;
+
+    if (themes) {
+      if (themes.dark && !equal(stored.dark, themes.dark)) {
+        stored.dark = themes.dark;
+      }
+
+      if (themes.light && !equal(stored.light, themes.light)) {
+        stored.light = themes.light;
+      }
+    }
+
+    return stored;
   }
 
   defaultStore = { ...defaultStore, ...themes };
