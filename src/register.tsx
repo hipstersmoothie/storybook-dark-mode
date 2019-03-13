@@ -8,6 +8,6 @@ addons.register('storybook/dark-mode', api => {
     title: 'dark mode',
     type: types.TOOL,
     match: ({ viewMode }) => viewMode === 'story',
-    render: () => <Tool api={api} />
+    render: () => <Tool api={api} channel={addons.getChannel()} />
   });
 });
