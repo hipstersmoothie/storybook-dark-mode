@@ -1,3 +1,15 @@
+# v0.1.2 (Wed Mar 13 2019)
+
+#### 🐛  Bug Fix
+
+- persisted state [#6](https://github.com/hipstersmoothie/storybook-dark-mode/pull/6) ([@hipstersmoothie](https://github.com/hipstersmoothie))
+
+#### Authors: 1
+
+- Andrew Lisowski ([@hipstersmoothie](https://github.com/hipstersmoothie))
+
+---
+
 # v0.1.1 (Wed Mar 13 2019)
 
 #### 🐛  Bug Fix
