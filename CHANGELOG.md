@@ -1,3 +1,16 @@
+# v0.1.1 (Wed Mar 13 2019)
+
+#### 🐛  Bug Fix
+
+- emit DARK_MODE event via addons channel [#2](https://github.com/hipstersmoothie/storybook-dark-mode/pull/2) ([@pveyes](https://github.com/pveyes) [@hipstersmoothie](https://github.com/hipstersmoothie))
+
+#### Authors: 2
+
+- Fatih Kalifa ([@pveyes](https://github.com/pveyes))
+- Andrew Lisowski ([@hipstersmoothie](https://github.com/hipstersmoothie))
+
+---
+
 # v0.1.0 (Fri Mar 08 2019)
 
 #### 🚀  Enhancement
