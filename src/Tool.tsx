@@ -47,36 +47,19 @@ const store = (themes: Partial<DarkModeStore> = {}): DarkModeStore => {
   return defaultStore;
 };
 
-function setTheme({
-  api,
-  toggle,
-  themes
-}: {
-  api: StorybookAPI;
-  toggle?: boolean;
-  themes?: { dark?: ThemeVars; light?: ThemeVars };
-}) {
-  const currentStore = store(themes);
-  let { current } = currentStore;
+export const DarkMode: React.FunctionComponent<DarkModeProps> = props => {
+  const [isDark, setDark] = React.useState(false);
 
-  if (toggle) {
-    current = currentStore.current === 'dark' ? 'light' : 'dark';
+  function setDarkMode() {
+    const currentStore = store();
+    const current = currentStore.current === 'dark' ? 'light' : 'dark';
+
     update({
       ...currentStore,
       current
     });
-  }
 
-  api.setOptions({ theme: currentStore[current] });
-
-  return current;
-}
-
-export const DarkModeHooks: React.FunctionComponent<DarkModeProps> = props => {
-  const [isDark, setDark] = React.useState(false);
-
-  function setDarkMode() {
-    setTheme({ api: props.api, toggle: true });
+    props.api.setOptions({ theme: currentStore[current] });
     setDark(!isDark);
     props.channel.emit('DARK_MODE', !isDark);
   }
@@ -95,14 +78,13 @@ export const DarkModeHooks: React.FunctionComponent<DarkModeProps> = props => {
         lightTheme = parameters.darkMode.light || lightTheme;
       }
 
-      const current = setTheme({
-        api: props.api,
-        themes: {
-          light: lightTheme,
-          dark: darkTheme
-        }
+      const currentStore = store({
+        light: lightTheme,
+        dark: darkTheme
       });
+      const { current } = currentStore;
 
+      props.api.setOptions({ theme: currentStore[current] });
       setDark(current === 'dark');
       props.channel.emit('DARK_MODE', current === 'dark');
     });
@@ -122,4 +104,4 @@ export const DarkModeHooks: React.FunctionComponent<DarkModeProps> = props => {
   );
 };
 
-export default DarkModeHooks;
+export default DarkMode;
