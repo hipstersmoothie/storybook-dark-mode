@@ -73,36 +73,37 @@ export const DarkMode: React.FunctionComponent<DarkModeProps> = props => {
       ...currentStore,
       current
     });
-
     props.api.setOptions({ theme: currentStore[current] });
     setDark(!isDark);
     props.channel.emit('DARK_MODE', !isDark);
   }
 
+  function renderTheme() {
+    const { parameters } = props.api.getCurrentStoryData();
+
+    let darkTheme = themes.dark;
+    let lightTheme = themes.light;
+
+    if (parameters && parameters.darkMode) {
+      darkTheme = parameters.darkMode.dark || darkTheme;
+      lightTheme = parameters.darkMode.light || lightTheme;
+    }
+
+    const currentStore = store({
+      light: lightTheme,
+      dark: darkTheme
+    });
+    const { current } = currentStore;
+
+    props.api.setOptions({ theme: currentStore[current] });
+    setDark(current === 'dark');
+    props.channel.emit('DARK_MODE', current === 'dark');
+  }
+
   React.useEffect(() => {
     const channel = props.api.getChannel();
-
-    channel.on('storiesConfigured', () => {
-      const { parameters } = props.api.getCurrentStoryData();
-
-      let darkTheme = themes.dark;
-      let lightTheme = themes.light;
-
-      if (parameters && parameters.darkMode) {
-        darkTheme = parameters.darkMode.dark || darkTheme;
-        lightTheme = parameters.darkMode.light || lightTheme;
-      }
-
-      const currentStore = store({
-        light: lightTheme,
-        dark: darkTheme
-      });
-      const { current } = currentStore;
-
-      props.api.setOptions({ theme: currentStore[current] });
-      setDark(current === 'dark');
-      props.channel.emit('DARK_MODE', current === 'dark');
-    });
+    channel.on('storyChanged', () => renderTheme());
+    channel.on('storiesConfigured', () => renderTheme());
   }, []);
 
   return (
