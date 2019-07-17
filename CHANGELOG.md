@@ -1,3 +1,15 @@
+# v0.1.4 (Wed Jul 17 2019)
+
+#### 🐛  Bug Fix
+
+- Subscribed to another event in order to trigger theme change on story change [#10](https://github.com/hipstersmoothie/storybook-dark-mode/pull/10) ([@carlesnunez](https://github.com/carlesnunez))
+
+#### Authors: 1
+
+- Carles Núñez ([@carlesnunez](https://github.com/carlesnunez))
+
+---
+
 # v0.1.3 (Wed Mar 13 2019)
 
 #### 🐛  Bug Fix
