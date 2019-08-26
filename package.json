@@ -21,7 +21,21 @@
     "build": "tsc",
     "release": "auto shipit"
   },
+  "peerDependencies": {
+    "@storybook/addons":  ">= 5.x",
+    "@storybook/components": ">= 5.",
+    "@storybook/core-events": ">= 5.",
+    "@storybook/theming": ">= 5."
+  },
+  "dependencies": {
+    "fast-deep-equal": "^2.0.1",
+    "memoizerific": "^1.11.3"
+  },
   "devDependencies": {
+    "@storybook/addons": "^5.0.0",
+    "@storybook/components": "^5.0.0",
+    "@storybook/core-events": "^5.0.0",
+    "@storybook/theming": "^5.0.0",
     "@types/react": "^16.8.6",
     "@typescript-eslint/eslint-plugin": "^1.4.2",
     "@typescript-eslint/parser": "^1.4.2",
@@ -52,14 +66,6 @@
       "prettier --write",
       "git add"
     ]
-  },
-  "dependencies": {
-    "@storybook/addons": "^5.0.0",
-    "@storybook/components": "^5.0.0",
-    "@storybook/core-events": "^5.0.0",
-    "@storybook/theming": "^5.0.0",
-    "fast-deep-equal": "^2.0.1",
-    "memoizerific": "^1.11.3"
   },
   "license": "MIT"
 }
