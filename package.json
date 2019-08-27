@@ -23,9 +23,9 @@
   },
   "peerDependencies": {
     "@storybook/addons":  ">= 5.x",
-    "@storybook/components": ">= 5.",
-    "@storybook/core-events": ">= 5.",
-    "@storybook/theming": ">= 5."
+    "@storybook/components": ">= 5.x",
+    "@storybook/core-events": ">= 5.x",
+    "@storybook/theming": ">= 5.x"
   },
   "dependencies": {
     "fast-deep-equal": "^2.0.1",
