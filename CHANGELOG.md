@@ -1,3 +1,15 @@
+# v0.1.5 (Tue Aug 27 2019)
+
+#### 🐛  Bug Fix
+
+- Fix dependency issues [#12](https://github.com/hipstersmoothie/storybook-dark-mode/pull/12) ([@bkniffler](https://github.com/bkniffler))
+
+#### Authors: 1
+
+- Benjamin Kniffler ([@bkniffler](https://github.com/bkniffler))
+
+---
+
 # v0.1.4 (Wed Jul 17 2019)
 
 #### 🐛  Bug Fix
