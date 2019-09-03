@@ -1,3 +1,15 @@
+# v0.1.6 (Tue Sep 03 2019)
+
+#### 🐛  Bug Fix
+
+- Configure Renovate [#13](https://github.com/hipstersmoothie/storybook-dark-mode/pull/13) ([@renovate-bot](https://github.com/renovate-bot))
+
+#### Authors: 1
+
+- Renovate Bot ([@renovate-bot](https://github.com/renovate-bot))
+
+---
+
 # v0.1.5 (Tue Aug 27 2019)
 
 #### 🐛  Bug Fix
