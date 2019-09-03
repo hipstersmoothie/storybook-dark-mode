@@ -7,10 +7,10 @@
   resolved "https://registry.yarnpkg.com/@atomist/slack-messages/-/slack-messages-1.1.0.tgz#82f6b0dc91498726d0df2541ba01dab4a6c5775f"
   integrity sha512-sai3gxAyFXVBa7A7AADdVcO8Nw0gV+bXHY9T4Ki447gqbMpAyyVj3V2qxY6wmdI9j5EcwPl0fOaBpFN3xEJTkw==
 
-"@auto-it/core@^7.4.3":
-  version "7.4.3"
-  resolved "https://registry.yarnpkg.com/@auto-it/core/-/core-7.4.3.tgz#ef985cb51f553420d1e630407fb1d38b3296b221"
-  integrity sha512-JOmjuVEI+G9BaNj5RkI0ZwYkXqi1rVSCVqvAIziUpYaSu0z/ZxuCFCOPYfQU7l1t26LJwHpNxIgpAtJMfjlWYg==
+"@auto-it/core@^7.4.4":
+  version "7.4.4"
+  resolved "https://registry.yarnpkg.com/@auto-it/core/-/core-7.4.4.tgz#75bac75b34b6b00ac0bc9082b377f91bcd048b46"
+  integrity sha512-g8KV5yxZfXrzC59iNHLBPHr5dbeOmyJHPEIAtX931DRkJYJTiZgw3cmczEQjETRf269UXnjRiEZLM7ni6RCvzw==
   dependencies:
     "@atomist/slack-messages" "~1.1.0"
     "@octokit/graphql" "^4.0.0"
@@ -28,7 +28,7 @@
     gitlog "^3.1.2"
     import-cwd "^3.0.0"
     lodash.chunk "^4.2.0"
-    node-fetch "2.5.0"
+    node-fetch "2.6.0"
     semver "^6.0.0"
     signale "^1.4.0"
     tapable "^2.0.0-beta.2"
@@ -36,12 +36,12 @@
     typescript-memoize "^1.0.0-alpha.3"
     url-join "^4.0.0"
 
-"@auto-it/npm@^7.4.3":
-  version "7.4.3"
-  resolved "https://registry.yarnpkg.com/@auto-it/npm/-/npm-7.4.3.tgz#12e680d996409495cfa5b1eae21a0dff9fcadbaf"
-  integrity sha512-71WmTFR6vDjWRm/n3+td6tS50bM6x8FURbX6BgH670mH3F48f4DgBlTygUdXvvCqQzvgHa7muQZ1eMV0aQ3rdQ==
+"@auto-it/npm@^7.4.4":
+  version "7.4.4"
+  resolved "https://registry.yarnpkg.com/@auto-it/npm/-/npm-7.4.4.tgz#c59c5e58106782dde82069a73e153b9c2a1e764d"
+  integrity sha512-8DsGcDypF7mdFQJFySl/Un9RSuFXjdW5AwTtPnLkzo+DqfcAbZPb6q2aaV+gNybt/Rm7c4gbVTxDrzUKBopLNg==
   dependencies:
-    "@auto-it/core" "^7.4.3"
+    "@auto-it/core" "^7.4.4"
     env-ci "^4.1.1"
     get-monorepo-packages "^1.1.0"
     parse-author "^2.0.0"
@@ -52,12 +52,12 @@
     url-join "^4.0.0"
     user-home "^2.0.0"
 
-"@auto-it/released@^7.4.3":
-  version "7.4.3"
-  resolved "https://registry.yarnpkg.com/@auto-it/released/-/released-7.4.3.tgz#ce846ea8e3bd629bd93b8eb93b5e4527a83268fe"
-  integrity sha512-7VoA17OZicSYzpUm6GSVDz50dwuYbrCHubAJ7ammUtReEKmKzZ8tfEDaicPwvMW83CjJF2WCJ2OyxN0uJNoZ/Q==
+"@auto-it/released@^7.4.4":
+  version "7.4.4"
+  resolved "https://registry.yarnpkg.com/@auto-it/released/-/released-7.4.4.tgz#998677d37f8a4912500e67d7d9c1f6f361a6bddc"
+  integrity sha512-rQCh1sRwWj4vrcJLZE3mJD1CXUI/s5JqKU7kfQwUKxWhJRlMOBRII3hDjU1eYzS7NPcp+B+hEB7gtIoQ4tA8RA==
   dependencies:
-    "@auto-it/core" "^7.4.3"
+    "@auto-it/core" "^7.4.4"
     deepmerge "^4.0.0"
 
 "@babel/code-frame@^7.0.0":
@@ -1005,14 +1005,14 @@ auto-config-hipstersmoothie@1.0.4:
   resolved "https://registry.yarnpkg.com/auto-config-hipstersmoothie/-/auto-config-hipstersmoothie-1.0.4.tgz#7af5c2c606cb51f8812626025fbb885db4fc795f"
   integrity sha512-qJEfzMAgueHxFzrOa3WcqKxQpCidDo9FID7TwL795dy2sdBTxCvyhEhX/MttX4jlvBN1fXqgZA03MyhJcNU4Pg==
 
-auto@7.4.3:
-  version "7.4.3"
-  resolved "https://registry.yarnpkg.com/auto/-/auto-7.4.3.tgz#d180c3b208e77f319a6f47e709a45193fd6ef114"
-  integrity sha512-vPX0UiAq7ttXb8XOvLFgalLl9l5E+FOc8nZ8NYEUDQcaDeLMes+0NDPhjDRBOmtr+d8M0doMDjvXyPVeHF5Skw==
+auto@7.4.4:
+  version "7.4.4"
+  resolved "https://registry.yarnpkg.com/auto/-/auto-7.4.4.tgz#f32af0c85907708f4309b3419e277bb41f6778f0"
+  integrity sha512-67zRnitZVPaUZXHCjmDSSvdn0km4UTRGYNoxVy6wJD2AQKSBDFeS/ZUXtY/V0rnCB/f8sb5+YWLN0zmNXOIaMw==
   dependencies:
-    "@auto-it/core" "^7.4.3"
-    "@auto-it/npm" "^7.4.3"
-    "@auto-it/released" "^7.4.3"
+    "@auto-it/core" "^7.4.4"
+    "@auto-it/npm" "^7.4.4"
+    "@auto-it/released" "^7.4.4"
     chalk "^2.4.2"
     command-line-args "^5.1.1"
     command-line-usage "^6.0.2"
@@ -4016,10 +4016,10 @@ nice-try@^1.0.4:
   resolved "https://registry.yarnpkg.com/nice-try/-/nice-try-1.0.5.tgz#a3378a7696ce7d223e88fc9b764bd7ef1089e366"
   integrity sha512-1nh45deeb5olNY7eX82BkPO7SSxR5SSYJiPTrTdFUVYwAl8CKMA5N9PjTYkHiRjisVcxcQ1HXdLhx2qxxJzLNQ==
 
-node-fetch@2.5.0:
-  version "2.5.0"
-  resolved "https://registry.yarnpkg.com/node-fetch/-/node-fetch-2.5.0.tgz#8028c49fc1191bba56a07adc6e2a954644a48501"
-  integrity sha512-YuZKluhWGJwCcUu4RlZstdAxr8bFfOVHakc1mplwHkk8J+tqM1Y5yraYvIUpeX8aY7+crCwiELJq7Vl0o0LWXw==
+node-fetch@2.6.0:
+  version "2.6.0"
+  resolved "https://registry.yarnpkg.com/node-fetch/-/node-fetch-2.6.0.tgz#e633456386d4aa55863f676a7ab0daa8fdecb0fd"
+  integrity sha512-8dG4H5ujfvFiqDmVu9fQ5bOHUC15JMjMY/Zumv26oOvvVJjM67KF8koCWIabKQ1GJIa9r2mMZscBq/TbdOcmNA==
 
 node-fetch@^1.0.1:
   version "1.7.3"
