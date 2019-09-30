@@ -7,17 +7,17 @@
   resolved "https://registry.yarnpkg.com/@atomist/slack-messages/-/slack-messages-1.1.0.tgz#82f6b0dc91498726d0df2541ba01dab4a6c5775f"
   integrity sha512-sai3gxAyFXVBa7A7AADdVcO8Nw0gV+bXHY9T4Ki447gqbMpAyyVj3V2qxY6wmdI9j5EcwPl0fOaBpFN3xEJTkw==
 
-"@auto-it/core@^7.6.0", "@auto-it/core@^7.6.1":
-  version "7.6.1"
-  resolved "https://registry.yarnpkg.com/@auto-it/core/-/core-7.6.1.tgz#b949397c65f334b186fd2094bd14f7abc9fabdf6"
-  integrity sha512-zjKLNhZfGlyxPvkDc0lD4FT7p+wr+QTkY7i9aNwKeS8OlQfnp7vyRnKrc9vcGqGHl/GyQkP++jQU++BEk0qOhw==
+"@auto-it/core@^7.6.2":
+  version "7.6.2"
+  resolved "https://registry.yarnpkg.com/@auto-it/core/-/core-7.6.2.tgz#eda08b61373197eca7db3f324a690e85265384c9"
+  integrity sha512-rzs07GiNqKrGj00926lAXlsxJQOcB2IGiQrm2XG8+UwFb6UnVW7AkbQH/jp6gyT7zafhQx7tzJLZjIdWISv9Pw==
   dependencies:
     "@atomist/slack-messages" "~1.1.0"
     "@octokit/graphql" "^4.0.0"
     "@octokit/plugin-enterprise-compatibility" "^1.1.1"
     "@octokit/plugin-retry" "^2.2.0"
     "@octokit/plugin-throttling" "^2.6.0"
-    "@octokit/rest" "16.28.7"
+    "@octokit/rest" "16.30.0"
     await-to-js "^2.1.1"
     cosmiconfig "5.2.1"
     dedent "^0.7.0"
@@ -36,12 +36,12 @@
     typescript-memoize "^1.0.0-alpha.3"
     url-join "^4.0.0"
 
-"@auto-it/npm@^7.6.0":
-  version "7.6.1"
-  resolved "https://registry.yarnpkg.com/@auto-it/npm/-/npm-7.6.1.tgz#1de047756f07f0588d5f316c1f2c53e8be45c9a1"
-  integrity sha512-Ou5thKFEOmiP6bC0PcoooAqe8FoD7rRl12zDuocfU9idQaHbi9SudFhGEiHQWIdu3LIIUk2f6rm6IN1zzbyiwg==
+"@auto-it/npm@^7.6.2":
+  version "7.6.2"
+  resolved "https://registry.yarnpkg.com/@auto-it/npm/-/npm-7.6.2.tgz#63c659e5947b0dcb17a138ff253ab3e7a810c36c"
+  integrity sha512-dVSHlfqdRohaqrHGhJPusaVPOLSAXiHr3QMCeHpr2UdO+ViFAPSa2XAj2FMiCVvw7VLYLxom78Hx5CtsBq8GBQ==
   dependencies:
-    "@auto-it/core" "^7.6.1"
+    "@auto-it/core" "^7.6.2"
     env-ci "^4.1.1"
     get-monorepo-packages "^1.1.0"
     parse-author "^2.0.0"
@@ -52,12 +52,12 @@
     url-join "^4.0.0"
     user-home "^2.0.0"
 
-"@auto-it/released@^7.6.0":
-  version "7.6.1"
-  resolved "https://registry.yarnpkg.com/@auto-it/released/-/released-7.6.1.tgz#e45f28de09dc3ccd4d8872d9934e87d379e2a6f7"
-  integrity sha512-Wn8Z2acyC+dG/evSa8PpwuU6Oitxa2AYvSQcEWPPZ/KKqVyHu6xkucRM60ml2iiMfI+P4T04KDEw7y0qNxDswg==
+"@auto-it/released@^7.6.2":
+  version "7.6.2"
+  resolved "https://registry.yarnpkg.com/@auto-it/released/-/released-7.6.2.tgz#e2721a7a8d42f3b6a5724515b43cf28c290e84f4"
+  integrity sha512-fnjjoJPqhA3TB1wmHJpvD8aJNM2E0sENBeO/LFcZl5x+wIfn4P2azrPTeyqIGt278f4lrLdMQaLf2k0YWI8Nkg==
   dependencies:
-    "@auto-it/core" "^7.6.1"
+    "@auto-it/core" "^7.6.2"
     deepmerge "^4.0.0"
 
 "@babel/code-frame@^7.0.0":
@@ -576,10 +576,10 @@
     once "^1.4.0"
     universal-user-agent "^3.0.0"
 
-"@octokit/rest@16.28.7":
-  version "16.28.7"
-  resolved "https://registry.yarnpkg.com/@octokit/rest/-/rest-16.28.7.tgz#a2c2db5b318da84144beba82d19c1a9dbdb1a1fa"
-  integrity sha512-cznFSLEhh22XD3XeqJw51OLSfyL2fcFKUO+v2Ep9MTAFfFLS1cK1Zwd1yEgQJmJoDnj4/vv3+fGGZweG+xsbIA==
+"@octokit/rest@16.30.0":
+  version "16.30.0"
+  resolved "https://registry.yarnpkg.com/@octokit/rest/-/rest-16.30.0.tgz#c14f177b7378f330ec6ec6ae49b68af359d09053"
+  integrity sha512-TN5MbqVuqxT/s87D6tGe3zsMvyHUQSkGFMBHuwBToPQGV3eG2a67rJW2rag2vJr7JusWyERDhQ4g/4HvFo9B1g==
   dependencies:
     "@octokit/request" "^5.0.0"
     "@octokit/request-error" "^1.0.2"
@@ -592,8 +592,7 @@
     lodash.uniq "^4.5.0"
     octokit-pagination-methods "^1.1.0"
     once "^1.4.0"
-    universal-user-agent "^3.0.0"
-    url-template "^2.0.8"
+    universal-user-agent "^4.0.0"
 
 "@reach/router@^1.2.1":
   version "1.2.1"
@@ -1170,14 +1169,14 @@ auto-config-hipstersmoothie@1.0.4:
   resolved "https://registry.yarnpkg.com/auto-config-hipstersmoothie/-/auto-config-hipstersmoothie-1.0.4.tgz#7af5c2c606cb51f8812626025fbb885db4fc795f"
   integrity sha512-qJEfzMAgueHxFzrOa3WcqKxQpCidDo9FID7TwL795dy2sdBTxCvyhEhX/MttX4jlvBN1fXqgZA03MyhJcNU4Pg==
 
-auto@7.6.0:
-  version "7.6.0"
-  resolved "https://registry.yarnpkg.com/auto/-/auto-7.6.0.tgz#bb9178e38057e53047cfd0bc0ae2611afe2a09a1"
-  integrity sha512-nFSl3sPUKob5o/5M3gs/jP+PiYfedwlQPnP77opeQInVKeRNhDSdogXq2hLtl3lbkEwxAcQ2vgikfyJJnQ1IBQ==
+auto@7.6.2:
+  version "7.6.2"
+  resolved "https://registry.yarnpkg.com/auto/-/auto-7.6.2.tgz#61348a28810ff60642a6c5585e2f5e2aba4e2c07"
+  integrity sha512-xh/5FKqT5P0gLqJpEH5Gnr/yyD163r0FUFs/CBtugdm/NA0Kn9rlrK7tphZ1veY9CSz7G19NaE1BY1SQCRV7Tw==
   dependencies:
-    "@auto-it/core" "^7.6.0"
-    "@auto-it/npm" "^7.6.0"
-    "@auto-it/released" "^7.6.0"
+    "@auto-it/core" "^7.6.2"
+    "@auto-it/npm" "^7.6.2"
+    "@auto-it/released" "^7.6.2"
     chalk "^2.4.2"
     command-line-args "^5.1.1"
     command-line-usage "^6.0.2"
@@ -4065,6 +4064,11 @@ macos-release@^2.0.0:
   resolved "https://registry.yarnpkg.com/macos-release/-/macos-release-2.0.0.tgz#7dddf4caf79001a851eb4fba7fb6034f251276ab"
   integrity sha512-iCM3ZGeqIzlrH7KxYK+fphlJpCCczyHXc+HhRVbEu9uNTCrzYJjvvtefzeKTCVHd5AP/aD/fzC80JZ4ZP+dQ/A==
 
+macos-release@^2.2.0:
+  version "2.3.0"
+  resolved "https://registry.yarnpkg.com/macos-release/-/macos-release-2.3.0.tgz#eb1930b036c0800adebccd5f17bc4c12de8bb71f"
+  integrity sha512-OHhSbtcviqMPt7yfw5ef5aghS2jzFVKEFyCJndQt2YpSQ9qRVSEv2axSJI1paVThEu+FFGs584h/1YhxjVqajA==
+
 make-dir@^1.3.0:
   version "1.3.0"
   resolved "https://registry.yarnpkg.com/make-dir/-/make-dir-1.3.0.tgz#79c1033b80515bd6d24ec9933e860ca75ee27f0c"
@@ -4580,6 +4584,14 @@ os-name@^3.0.0:
   integrity sha512-7c74tib2FsdFbQ3W+qj8Tyd1R3Z6tuVRNNxXjJcZ4NgjIEQU9N/prVMqcW29XZPXGACqaXN3jq58/6hoaoXH6g==
   dependencies:
     macos-release "^2.0.0"
+    windows-release "^3.1.0"
+
+os-name@^3.1.0:
+  version "3.1.0"
+  resolved "https://registry.yarnpkg.com/os-name/-/os-name-3.1.0.tgz#dec19d966296e1cd62d701a5a66ee1ddeae70801"
+  integrity sha512-h8L+8aNjNcMpo/mAIBPn5PXCM16iyPGjHNWo6U1YO8sJTMHtEtyczI6QJnLoplswm6goopQkqc7OAnjhWcugVg==
+  dependencies:
+    macos-release "^2.2.0"
     windows-release "^3.1.0"
 
 os-tmpdir@^1.0.0, os-tmpdir@~1.0.2:
@@ -6157,6 +6169,13 @@ universal-user-agent@^3.0.0:
   dependencies:
     os-name "^3.0.0"
 
+universal-user-agent@^4.0.0:
+  version "4.0.0"
+  resolved "https://registry.yarnpkg.com/universal-user-agent/-/universal-user-agent-4.0.0.tgz#27da2ec87e32769619f68a14996465ea1cb9df16"
+  integrity sha512-eM8knLpev67iBDizr/YtqkJsF3GK8gzDc6st/WKzrTuPtcsOKW/0IdL4cnMBsU69pOx0otavLWBDGTwg+dB0aA==
+  dependencies:
+    os-name "^3.1.0"
+
 unquote@^1.1.0:
   version "1.1.1"
   resolved "https://registry.yarnpkg.com/unquote/-/unquote-1.1.1.tgz#8fded7324ec6e88a0ff8b905e7c098cdc086d544"
@@ -6186,11 +6205,6 @@ url-join@^4.0.0:
   version "4.0.0"
   resolved "https://registry.yarnpkg.com/url-join/-/url-join-4.0.0.tgz#4d3340e807d3773bda9991f8305acdcc2a665d2a"
   integrity sha1-TTNA6AfTdzvamZH4MFrNzCpmXSo=
-
-url-template@^2.0.8:
-  version "2.0.8"
-  resolved "https://registry.yarnpkg.com/url-template/-/url-template-2.0.8.tgz#fc565a3cccbff7730c775f5641f9555791439f21"
-  integrity sha1-/FZaPMy/93MMd19WQflVV5FDnyE=
 
 use@^3.1.0:
   version "3.1.1"
