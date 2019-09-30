@@ -52,7 +52,7 @@
     "prettier": "1.18.2",
     "react": "16.9.0",
     "react-dom": "16.9.0",
-    "typescript": "3.6.2"
+    "typescript": "3.6.3"
   },
   "auto": {
     "extends": "hipstersmoothie"
