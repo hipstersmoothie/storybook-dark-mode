@@ -9,7 +9,7 @@
 
 "@auto-it/core@^7.6.2":
   version "7.6.2"
-  resolved "https://registry.yarnpkg.com/@auto-it/core/-/core-7.6.2.tgz#eda08b61373197eca7db3f324a690e85265384c9"
+  resolved "https://registry.yarnpkg.ces-abstractom/@auto-it/core/-/core-7.6.2.tgz#eda08b61373197eca7db3f324a690e85265384c9"
   integrity sha512-rzs07GiNqKrGj00926lAXlsxJQOcB2IGiQrm2XG8+UwFb6UnVW7AkbQH/jp6gyT7zafhQx7tzJLZjIdWISv9Pw==
   dependencies:
     "@atomist/slack-messages" "~1.1.0"
@@ -2039,9 +2039,9 @@ es-abstract@^1.11.0, es-abstract@^1.5.1, es-abstract@^1.7.0:
     object-keys "^1.0.12"
 
 es-abstract@^1.12.0:
-  version "1.14.0"
-  resolved "https://registry.yarnpkg.com/es-abstract/-/es-abstract-1.14.0.tgz#f59d9d44278ea8f90c8ff3de1552537c2fd739b4"
-  integrity sha512-lri42nNq1tIohUuwFBYEM3wKwcrcJa78jukGDdWsuaNxTtxBFGFkKUQ15nc9J+ipje4mhbQR6JwABb4VvawR3A==
+  version "1.14.2"
+  resolved "https://registry.yarnpkg.com/es-abstract/-/es-abstract-1.14.2.tgz#7ce108fad83068c8783c3cdf62e504e084d8c497"
+  integrity sha512-DgoQmbpFNOofkjJtKwr87Ma5EW4Dc8fWhD0R+ndq7Oc456ivUfGOOP6oAZTTKl5/CcNMP+EN+e3/iUzgE0veZg==
   dependencies:
     es-to-primitive "^1.2.0"
     function-bind "^1.1.1"
@@ -2096,6 +2096,11 @@ eslint-config-xo@0.27.1:
   version "0.27.1"
   resolved "https://registry.yarnpkg.com/eslint-config-xo/-/eslint-config-xo-0.27.1.tgz#e302231d4c054e855865c0f7c700ade23f506552"
   integrity sha512-os4vvQCSZb7WdUMar52z97c2q6j29oIDj/Kb9HeOZ/jW7gqx3JjUQdLm+nq9hHpwgbS0vUx+Hm4HD7lVUltBPw==
+
+eslint-plugin-react-hooks@^2.1.1:
+  version "2.1.1"
+  resolved "https://registry.yarnpkg.com/eslint-plugin-react-hooks/-/eslint-plugin-react-hooks-2.1.1.tgz#b416390b642113f444ee175b667c3222a045a98e"
+  integrity sha512-AYitPYzwHyKpZKpzMH5sCkld68vP8wn29Lq716h4jk1ll9Gp4BBFoPq/iCjBBT35eXFJvOPjgMlvhIXFB0OhXg==
 
 eslint-plugin-react@7.14.3:
   version "7.14.3"
