@@ -1,3 +1,52 @@
+# v0.1.8 (Mon Oct 28 2019)
+
+#### 🐛  Bug Fix
+
+- Listen for `docsRendered` event so it also picks up the correct theme. [#61](https://github.com/hipstersmoothie/storybook-dark-mode/pull/61) ([@adamyonk](https://github.com/adamyonk))
+
+#### 🏠  Internal
+
+- Update renovate.json [#16](https://github.com/hipstersmoothie/storybook-dark-mode/pull/16) ([@hipstersmoothie](https://github.com/hipstersmoothie))
+
+#### 🔩 Dependency Updates
+
+- Update dependency auto to v7.12.3 [#55](https://github.com/hipstersmoothie/storybook-dark-mode/pull/55) ([@renovate-bot](https://github.com/renovate-bot))
+- Eslint update [#46](https://github.com/hipstersmoothie/storybook-dark-mode/pull/46) ([@renovate-bot](https://github.com/renovate-bot) [@hipstersmoothie](https://github.com/hipstersmoothie))
+- Update dependency auto to v7.6.2 [#44](https://github.com/hipstersmoothie/storybook-dark-mode/pull/44) ([@renovate-bot](https://github.com/renovate-bot))
+- Update dependency @types/react to v16.9.4 [#41](https://github.com/hipstersmoothie/storybook-dark-mode/pull/41) ([@renovate-bot](https://github.com/renovate-bot))
+- Update react monorepo to v16.10.1 [#43](https://github.com/hipstersmoothie/storybook-dark-mode/pull/43) ([@renovate-bot](https://github.com/renovate-bot))
+- Update dependency lint-staged to v9.4.0 [#40](https://github.com/hipstersmoothie/storybook-dark-mode/pull/40) ([@renovate-bot](https://github.com/renovate-bot))
+- Update storybook monorepo to v5.2.1 [#39](https://github.com/hipstersmoothie/storybook-dark-mode/pull/39) ([@renovate-bot](https://github.com/renovate-bot))
+- Update dependency auto to v7.6.0 [#38](https://github.com/hipstersmoothie/storybook-dark-mode/pull/38) ([@renovate-bot](https://github.com/renovate-bot))
+- Update dependency typescript to v3.6.3 [#37](https://github.com/hipstersmoothie/storybook-dark-mode/pull/37) ([@renovate-bot](https://github.com/renovate-bot))
+- Update typescript-eslint monorepo to v2 (major) [#34](https://github.com/hipstersmoothie/storybook-dark-mode/pull/34) ([@renovate-bot](https://github.com/renovate-bot))
+- Update dependency husky to v3 [#32](https://github.com/hipstersmoothie/storybook-dark-mode/pull/32) ([@renovate-bot](https://github.com/renovate-bot))
+- Update dependency lint-staged to v9 [#33](https://github.com/hipstersmoothie/storybook-dark-mode/pull/33) ([@renovate-bot](https://github.com/renovate-bot))
+- Update dependency auto to v7.4.5 [#35](https://github.com/hipstersmoothie/storybook-dark-mode/pull/35) ([@renovate-bot](https://github.com/renovate-bot))
+- Update dependency eslint-config-prettier to v6.3.0 [#36](https://github.com/hipstersmoothie/storybook-dark-mode/pull/36) ([@renovate-bot](https://github.com/renovate-bot))
+- Update typescript-eslint monorepo to v1.13.0 [#29](https://github.com/hipstersmoothie/storybook-dark-mode/pull/29) ([@renovate-bot](https://github.com/renovate-bot))
+- Update react monorepo to v16.9.0 [#27](https://github.com/hipstersmoothie/storybook-dark-mode/pull/27) ([@renovate-bot](https://github.com/renovate-bot))
+- Update dependency eslint-config-prettier to v6 [#31](https://github.com/hipstersmoothie/storybook-dark-mode/pull/31) ([@renovate-bot](https://github.com/renovate-bot))
+- Update storybook monorepo to v5.1.11 [#28](https://github.com/hipstersmoothie/storybook-dark-mode/pull/28) ([@renovate-bot](https://github.com/renovate-bot))
+- Update dependency typescript to v3.6.2 [#26](https://github.com/hipstersmoothie/storybook-dark-mode/pull/26) ([@renovate-bot](https://github.com/renovate-bot))
+- Update dependency auto to v7.4.4 [#25](https://github.com/hipstersmoothie/storybook-dark-mode/pull/25) ([@renovate-bot](https://github.com/renovate-bot))
+- Update dependency lint-staged to v8.2.1 [#23](https://github.com/hipstersmoothie/storybook-dark-mode/pull/23) ([@renovate-bot](https://github.com/renovate-bot))
+- Update dependency eslint-plugin-react to v7.14.3 [#21](https://github.com/hipstersmoothie/storybook-dark-mode/pull/21) ([@renovate-bot](https://github.com/renovate-bot))
+- Update dependency prettier to v1.18.2 [#24](https://github.com/hipstersmoothie/storybook-dark-mode/pull/24) ([@renovate-bot](https://github.com/renovate-bot))
+- Update dependency jest to v24.9.0 [#22](https://github.com/hipstersmoothie/storybook-dark-mode/pull/22) ([@renovate-bot](https://github.com/renovate-bot))
+- Update dependency eslint-config-prettier to v4.3.0 [#19](https://github.com/hipstersmoothie/storybook-dark-mode/pull/19) ([@renovate-bot](https://github.com/renovate-bot))
+- Update dependency eslint to v5.16.0 [#18](https://github.com/hipstersmoothie/storybook-dark-mode/pull/18) ([@renovate-bot](https://github.com/renovate-bot))
+- Pin dependencies [#17](https://github.com/hipstersmoothie/storybook-dark-mode/pull/17) ([@renovate-bot](https://github.com/renovate-bot))
+- Update dependency @types/react to v16.9.2 [#15](https://github.com/hipstersmoothie/storybook-dark-mode/pull/15) ([@renovate-bot](https://github.com/renovate-bot))
+
+#### Authors: 3
+
+- Adam Jahnke ([@adamyonk](https://github.com/adamyonk))
+- Andrew Lisowski ([@hipstersmoothie](https://github.com/hipstersmoothie))
+- Renovate Bot ([@renovate-bot](https://github.com/renovate-bot))
+
+---
+
 # v0.1.6 (Tue Sep 03 2019)
 
 #### 🐛  Bug Fix
