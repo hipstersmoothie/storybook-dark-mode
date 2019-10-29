@@ -32,10 +32,10 @@
     "memoizerific": "^1.11.3"
   },
   "devDependencies": {
-    "@storybook/addons": "5.2.1",
-    "@storybook/components": "5.2.1",
-    "@storybook/core-events": "5.2.1",
-    "@storybook/theming": "5.2.1",
+    "@storybook/addons": "5.2.5",
+    "@storybook/components": "5.2.5",
+    "@storybook/core-events": "5.2.5",
+    "@storybook/theming": "5.2.5",
     "@types/react": "16.9.4",
     "@typescript-eslint/eslint-plugin": "2.3.2",
     "@typescript-eslint/parser": "2.3.2",

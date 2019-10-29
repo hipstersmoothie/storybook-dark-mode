@@ -1,27 +1,14 @@
 import * as React from 'react';
 import { themes, ThemeVars } from '@storybook/theming';
 import { IconButton } from '@storybook/components';
+import { API } from '@storybook/api';
 import equal from 'fast-deep-equal';
 
 import Sun from './icons/Sun';
 import Moon from './icons/Moon';
 
-interface StorybookAPI {
-  getChannel(): {
-    on(event: string, cb: () => void): void;
-    off(event: string, cb: () => void): void;
-  };
-  setOptions(options: any): void;
-  on(event: string, callback: (data: any) => void): void;
-  off(event: string, callback: (data: any) => void): void;
-  getCurrentStoryData(): any;
-}
-
 interface DarkModeProps {
-  api: StorybookAPI;
-  channel: {
-    emit(event: string, value: any): void;
-  };
+  api: API;
 }
 
 interface DarkModeStore {
@@ -78,7 +65,7 @@ export const DarkMode: React.FunctionComponent<DarkModeProps> = props => {
     });
     props.api.setOptions({ theme: currentStore[current] });
     setDark(!isDark);
-    props.channel.emit('DARK_MODE', !isDark);
+    props.api.getChannel().emit('DARK_MODE', !isDark);
   }
 
   function renderTheme() {
@@ -100,7 +87,7 @@ export const DarkMode: React.FunctionComponent<DarkModeProps> = props => {
 
     props.api.setOptions({ theme: currentStore[current] });
     setDark(current === 'dark');
-    props.channel.emit('DARK_MODE', current === 'dark');
+    props.api.getChannel().emit('DARK_MODE', current === 'dark');
   }
 
   React.useEffect(() => {
@@ -109,9 +96,9 @@ export const DarkMode: React.FunctionComponent<DarkModeProps> = props => {
     channel.on('storiesConfigured', renderTheme);
     channel.on('docsRendered', renderTheme);
     return () => {
-      channel.off('storyChanged', renderTheme);
-      channel.off('storiesConfigured', renderTheme);
-      channel.off('docsRendered', renderTheme);
+      channel.removeListener('storyChanged', renderTheme);
+      channel.removeListener('storiesConfigured', renderTheme);
+      channel.removeListener('docsRendered', renderTheme);
     }
   });
 
