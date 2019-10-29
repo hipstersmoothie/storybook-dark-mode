@@ -105,6 +105,11 @@ export const DarkMode: React.FunctionComponent<DarkModeProps> = props => {
     channel.on('storyChanged', renderTheme);
     channel.on('storiesConfigured', renderTheme);
     channel.on('docsRendered', renderTheme);
+    return () => {
+      channel.off('storyChanged', renderTheme);
+      channel.off('storiesConfigured', renderTheme);
+      channel.off('docsRendered', renderTheme);
+    }
   }, []);
 
   return (
