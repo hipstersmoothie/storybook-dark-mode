@@ -7,7 +7,10 @@ import Sun from './icons/Sun';
 import Moon from './icons/Moon';
 
 interface StorybookAPI {
-  getChannel(): { on(event: string, cb: () => void): void };
+  getChannel(): {
+    on(event: string, cb: () => void): void;
+    off(event: string, cb: () => void): void;
+  };
   setOptions(options: any): void;
   on(event: string, callback: (data: any) => void): void;
   off(event: string, callback: (data: any) => void): void;
@@ -110,7 +113,7 @@ export const DarkMode: React.FunctionComponent<DarkModeProps> = props => {
       channel.off('storiesConfigured', renderTheme);
       channel.off('docsRendered', renderTheme);
     }
-  }, []);
+  });
 
   return (
     <IconButton
