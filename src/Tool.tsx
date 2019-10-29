@@ -69,8 +69,13 @@ export const DarkMode: React.FunctionComponent<DarkModeProps> = props => {
   }
 
   function renderTheme() {
-    const { parameters } = props.api.getCurrentStoryData();
+    const data = props.api.getCurrentStoryData();
 
+    if (!('parameters' in data)) {
+      return;
+    }
+
+    const { parameters } = data;
     let darkTheme = themes.dark;
     let lightTheme = themes.light;
 
@@ -99,7 +104,7 @@ export const DarkMode: React.FunctionComponent<DarkModeProps> = props => {
       channel.removeListener('storyChanged', renderTheme);
       channel.removeListener('storiesConfigured', renderTheme);
       channel.removeListener('docsRendered', renderTheme);
-    }
+    };
   });
 
   return (
