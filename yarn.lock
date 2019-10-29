@@ -2,16 +2,16 @@
 # yarn lockfile v1
 
 
-"@auto-it/core@^7.12.3":
-  version "7.12.3"
-  resolved "https://registry.yarnpkg.com/@auto-it/core/-/core-7.12.3.tgz#d7211b5edd31620f0e2fa1a16660a599c84c354f"
-  integrity sha512-qvxD6QxEjQmx5L0/S4Pq3suzq5Jgof/jqZ862yYE9XgzidSd5kaAV380lMdEghU98pkImnHNq1KEGl5cmZJ6yw==
+"@auto-it/core@^7.12.4":
+  version "7.12.4"
+  resolved "https://registry.yarnpkg.com/@auto-it/core/-/core-7.12.4.tgz#11d659f2751e3ff17eb3bcd3c3e98b81905172b6"
+  integrity sha512-QsvLObjRWWrmPYlR3PaU09FCX9TVTJIiZ643a2Jo2+HgTfFO9N/Ouo02aF69ma71iYSEuuhBxJRmPxMsXb0OiQ==
   dependencies:
     "@octokit/graphql" "^4.0.0"
     "@octokit/plugin-enterprise-compatibility" "^1.1.1"
     "@octokit/plugin-retry" "^2.2.0"
     "@octokit/plugin-throttling" "^2.6.0"
-    "@octokit/rest" "16.33.1"
+    "@octokit/rest" "16.34.0"
     await-to-js "^2.1.1"
     cosmiconfig "5.2.1"
     dedent "^0.7.0"
@@ -32,12 +32,12 @@
     typescript-memoize "^1.0.0-alpha.3"
     url-join "^4.0.0"
 
-"@auto-it/npm@^7.12.3":
-  version "7.12.3"
-  resolved "https://registry.yarnpkg.com/@auto-it/npm/-/npm-7.12.3.tgz#981c33415b71cf9af0940c86450fbba9bc7c9399"
-  integrity sha512-9197U26Hmy129jKRM9pDOvP0c5UA+97VIDuMQUxU1jv6ejxSOiXBaafsn0E7q7nRgQZoUFsTYkx1xIP4BPVOCQ==
+"@auto-it/npm@^7.12.4":
+  version "7.12.4"
+  resolved "https://registry.yarnpkg.com/@auto-it/npm/-/npm-7.12.4.tgz#aa9a9ec383d3e1443d7a298e92ee50714cc28b73"
+  integrity sha512-iSWeuQtrmcnjJeIVWUBC630fTEQS9ebCl9Oj+vhIESUfx121MBPs0rSYpqTKQHgsCN9XgW8YSCuU/ZAKMQTh9A==
   dependencies:
-    "@auto-it/core" "^7.12.3"
+    "@auto-it/core" "^7.12.4"
     env-ci "^4.1.1"
     get-monorepo-packages "^1.1.0"
     parse-author "^2.0.0"
@@ -49,12 +49,12 @@
     url-join "^4.0.0"
     user-home "^2.0.0"
 
-"@auto-it/released@^7.12.3":
-  version "7.12.3"
-  resolved "https://registry.yarnpkg.com/@auto-it/released/-/released-7.12.3.tgz#e2f7ddd750193d4a534225adb6adeec0263d3b92"
-  integrity sha512-RUMdmoiCgIdNJ73oAwZxAllTO370Upq+x6PKL1kAtArvC6Ow9zgAgPBrwGs4VEByjlCbTSgiVaZHfzHh3TAeKw==
+"@auto-it/released@^7.12.4":
+  version "7.12.4"
+  resolved "https://registry.yarnpkg.com/@auto-it/released/-/released-7.12.4.tgz#24b7edc161b70295d10a50fafc2595cf52c496df"
+  integrity sha512-ZpF2BeOc8Svr0jZyoeNgAjGulu17NuDGj6w1wqFYWYaIsgFWQah6vYd6nqUirKNZDO54XcFvQVmnbQlTQHVJLw==
   dependencies:
-    "@auto-it/core" "^7.12.3"
+    "@auto-it/core" "^7.12.4"
     deepmerge "^4.0.0"
     tslib "1.10.0"
 
@@ -597,10 +597,10 @@
     once "^1.4.0"
     universal-user-agent "^4.0.0"
 
-"@octokit/rest@16.33.1":
-  version "16.33.1"
-  resolved "https://registry.yarnpkg.com/@octokit/rest/-/rest-16.33.1.tgz#19229f5fd28d8e071644d37c249775ee40add433"
-  integrity sha512-lOQ+fJZwkeJ/1PRTdnY1uNja01aKOMioRhQfZtei64gZMXIX3EAfF4koMQMvoLFwsnVBu3ifj1JW1WAAKdXcnA==
+"@octokit/rest@16.34.0":
+  version "16.34.0"
+  resolved "https://registry.yarnpkg.com/@octokit/rest/-/rest-16.34.0.tgz#8703e46d7e9f6aec24a7e591b073f325ca13f6e2"
+  integrity sha512-EBe5qMQQOZRuezahWCXCnSe0J6tAqrW2hrEH9U8esXzKor1+HUDf8jgImaZf5lkTyWCQA296x9kAH5c0pxEgVQ==
   dependencies:
     "@octokit/request" "^5.2.0"
     "@octokit/request-error" "^1.0.2"
@@ -1235,14 +1235,14 @@ auto-config-hipstersmoothie@1.0.4:
   resolved "https://registry.yarnpkg.com/auto-config-hipstersmoothie/-/auto-config-hipstersmoothie-1.0.4.tgz#7af5c2c606cb51f8812626025fbb885db4fc795f"
   integrity sha512-qJEfzMAgueHxFzrOa3WcqKxQpCidDo9FID7TwL795dy2sdBTxCvyhEhX/MttX4jlvBN1fXqgZA03MyhJcNU4Pg==
 
-auto@7.12.3:
-  version "7.12.3"
-  resolved "https://registry.yarnpkg.com/auto/-/auto-7.12.3.tgz#afab0ec9b759a98c37a780c9c11cb6f37254475c"
-  integrity sha512-IdgUoDdQ95rozAEJKEF7D5a/1v1iPk6FMxicVPruUueaQd7Xfymv2CTJJBOPAEfuqL5TkAL00L2WQrgLetnpNw==
+auto@7.12.4:
+  version "7.12.4"
+  resolved "https://registry.yarnpkg.com/auto/-/auto-7.12.4.tgz#21f9c1132e57a43a18f41ddb83f74be7227a4dd9"
+  integrity sha512-zmlXIo36/DKbXo1OcR9/orHBJBKJFr25p0I6mYcj2NJOhLwSNVi/3Cf5rIL0RfaL6iNou20r5ZCIsS7IvNSo7g==
   dependencies:
-    "@auto-it/core" "^7.12.3"
-    "@auto-it/npm" "^7.12.3"
-    "@auto-it/released" "^7.12.3"
+    "@auto-it/core" "^7.12.4"
+    "@auto-it/npm" "^7.12.4"
+    "@auto-it/released" "^7.12.4"
     chalk "^2.4.2"
     command-line-application "^0.9.3"
     dedent "^0.7.0"
