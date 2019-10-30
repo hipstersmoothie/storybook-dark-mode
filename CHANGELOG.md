@@ -1,3 +1,25 @@
+# v0.1.9 (Wed Oct 30 2019)
+
+#### 🐛  Bug Fix
+
+- Fix useEffect warning/memory leak [#63](https://github.com/hipstersmoothie/storybook-dark-mode/pull/63) ([@adamyonk](https://github.com/adamyonk) [@hipstersmoothie](https://github.com/hipstersmoothie))
+
+#### 🔩 Dependency Updates
+
+- Update react monorepo [#53](https://github.com/hipstersmoothie/storybook-dark-mode/pull/53) ([@renovate-bot](https://github.com/renovate-bot))
+- Update dependency @types/react to v16.9.11 [#54](https://github.com/hipstersmoothie/storybook-dark-mode/pull/54) ([@renovate-bot](https://github.com/renovate-bot))
+- Update dependency auto to v7.12.4 [#64](https://github.com/hipstersmoothie/storybook-dark-mode/pull/64) ([@renovate-bot](https://github.com/renovate-bot))
+- Update typescript-eslint monorepo to v2.6.0 [#58](https://github.com/hipstersmoothie/storybook-dark-mode/pull/58) ([@renovate-bot](https://github.com/renovate-bot))
+- Pin dependency eslint-plugin-react-hooks to 2.1.1 [#47](https://github.com/hipstersmoothie/storybook-dark-mode/pull/47) ([@renovate-bot](https://github.com/renovate-bot))
+
+#### Authors: 3
+
+- Adam Jahnke ([@adamyonk](https://github.com/adamyonk))
+- Andrew Lisowski ([@hipstersmoothie](https://github.com/hipstersmoothie))
+- Renovate Bot ([@renovate-bot](https://github.com/renovate-bot))
+
+---
+
 # v0.1.8 (Mon Oct 28 2019)
 
 #### 🐛  Bug Fix
