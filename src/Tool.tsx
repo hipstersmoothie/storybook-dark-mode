@@ -28,10 +28,9 @@ const update = (newStore: DarkModeStore) => {
 };
 
 const store = (themes: Partial<DarkModeStore> = {}): DarkModeStore => {
-  if (window.localStorage.getItem('sb-addon-themes-3')) {
-    const stored = JSON.parse(window.localStorage.getItem(
-      'sb-addon-themes-3'
-    ) as string) as DarkModeStore;
+  const storedItem = window.localStorage.getItem('sb-addon-themes-3');
+  if (typeof storedItem === 'string') {
+    const stored: DarkModeStore = JSON.parse(storedItem);
 
     if (themes) {
       if (themes.dark && !equal(stored.dark, themes.dark)) {
@@ -48,8 +47,7 @@ const store = (themes: Partial<DarkModeStore> = {}): DarkModeStore => {
     return stored;
   }
 
-  defaultStore = { ...defaultStore, ...themes };
-  return defaultStore;
+  return { ...defaultStore, ...themes };
 };
 
 export const DarkMode: React.FunctionComponent<DarkModeProps> = props => {
