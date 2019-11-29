@@ -55,10 +55,6 @@ const store = (themes: Partial<DarkModeStore> = {}): DarkModeStore => {
 export const DarkMode: React.FunctionComponent<DarkModeProps> = props => {
   const [isDark, setDark] = React.useState(prefersDark.matches);
 
-  function prefersDarkUpdate(event: MediaQueryListEvent) {
-    setMode(event.matches ? 'dark' : 'light');
-  }
-
   function setMode(mode?: 'dark' | 'light') {
     const currentStore = store();
     const current =
@@ -71,6 +67,10 @@ export const DarkMode: React.FunctionComponent<DarkModeProps> = props => {
     props.api.setOptions({ theme: currentStore[current] });
     setDark(!isDark);
     props.api.getChannel().emit('DARK_MODE', !isDark);
+  }
+
+  function prefersDarkUpdate(event: MediaQueryListEvent) {
+    setMode(event.matches ? 'dark' : 'light');
   }
 
   function renderTheme() {
