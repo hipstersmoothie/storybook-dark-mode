@@ -41,7 +41,7 @@
     "@types/react": "16.9.11",
     "@typescript-eslint/eslint-plugin": "2.6.0",
     "@typescript-eslint/parser": "2.6.0",
-    "auto": "7.12.4",
+    "auto": "7.17.0",
     "auto-config-hipstersmoothie": "1.0.4",
     "eslint": "6.5.0",
     "eslint-config-prettier": "6.3.0",
