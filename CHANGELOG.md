@@ -1,3 +1,15 @@
+# v0.2.0 (Tue Dec 10 2019)
+
+#### 🚀  Enhancement
+
+- feat: add media query matcher for operating system theme control [#73](https://github.com/hipstersmoothie/storybook-dark-mode/pull/73) ([@Swiftwork](https://github.com/Swiftwork))
+
+#### Authors: 1
+
+- Erik Hughes ([@Swiftwork](https://github.com/Swiftwork))
+
+---
+
 # v0.1.9 (Wed Oct 30 2019)
 
 #### 🐛  Bug Fix
