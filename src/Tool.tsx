@@ -17,8 +17,10 @@ interface DarkModeStore {
   light: ThemeVars;
 }
 
-let defaultStore: DarkModeStore = {
-  current: 'light',
+const prefersDark = window.matchMedia('(prefers-color-scheme: dark)');
+
+const defaultStore: DarkModeStore = {
+  current: prefersDark.matches ? 'dark' : 'light',
   dark: themes.dark,
   light: themes.light
 };
@@ -28,10 +30,9 @@ const update = (newStore: DarkModeStore) => {
 };
 
 const store = (themes: Partial<DarkModeStore> = {}): DarkModeStore => {
-  if (window.localStorage.getItem('sb-addon-themes-3')) {
-    const stored = JSON.parse(window.localStorage.getItem(
-      'sb-addon-themes-3'
-    ) as string) as DarkModeStore;
+  const storedItem = window.localStorage.getItem('sb-addon-themes-3');
+  if (typeof storedItem === 'string') {
+    const stored: DarkModeStore = JSON.parse(storedItem);
 
     if (themes) {
       if (themes.dark && !equal(stored.dark, themes.dark)) {
@@ -48,16 +49,16 @@ const store = (themes: Partial<DarkModeStore> = {}): DarkModeStore => {
     return stored;
   }
 
-  defaultStore = { ...defaultStore, ...themes };
-  return defaultStore;
+  return { ...defaultStore, ...themes };
 };
 
 export const DarkMode: React.FunctionComponent<DarkModeProps> = props => {
-  const [isDark, setDark] = React.useState(false);
+  const [isDark, setDark] = React.useState(prefersDark.matches);
 
-  function setDarkMode() {
+  function setMode(mode?: 'dark' | 'light') {
     const currentStore = store();
-    const current = currentStore.current === 'dark' ? 'light' : 'dark';
+    const current =
+      mode || (currentStore.current === 'dark' ? 'light' : 'dark');
 
     update({
       ...currentStore,
@@ -66,6 +67,10 @@ export const DarkMode: React.FunctionComponent<DarkModeProps> = props => {
     props.api.setOptions({ theme: currentStore[current] });
     setDark(!isDark);
     props.api.getChannel().emit('DARK_MODE', !isDark);
+  }
+
+  function prefersDarkUpdate(event: MediaQueryListEvent) {
+    setMode(event.matches ? 'dark' : 'light');
   }
 
   function renderTheme() {
@@ -100,10 +105,12 @@ export const DarkMode: React.FunctionComponent<DarkModeProps> = props => {
     channel.on('storyChanged', renderTheme);
     channel.on('storiesConfigured', renderTheme);
     channel.on('docsRendered', renderTheme);
+    prefersDark.addListener(prefersDarkUpdate);
     return () => {
       channel.removeListener('storyChanged', renderTheme);
       channel.removeListener('storiesConfigured', renderTheme);
       channel.removeListener('docsRendered', renderTheme);
+      prefersDark.removeListener(prefersDarkUpdate);
     };
   });
 
@@ -114,7 +121,7 @@ export const DarkMode: React.FunctionComponent<DarkModeProps> = props => {
       title={
         isDark ? 'Change theme to light mode' : 'Change theme to dark mode'
       }
-      onClick={setDarkMode}
+      onClick={() => setMode()}
     >
       {isDark ? <Sun /> : <Moon />}
     </IconButton>
