@@ -42,7 +42,7 @@
     "@typescript-eslint/eslint-plugin": "2.17.0",
     "@typescript-eslint/parser": "2.17.0",
     "auto": "9.1.0",
-    "auto-config-hipstersmoothie": "1.0.4",
+    "auto-config-hipstersmoothie": "2.0.0",
     "eslint": "6.5.0",
     "eslint-config-prettier": "6.9.0",
     "eslint-config-xo": "0.27.1",
