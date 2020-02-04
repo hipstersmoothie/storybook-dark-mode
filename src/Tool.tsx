@@ -3,6 +3,7 @@ import { themes, ThemeVars } from '@storybook/theming';
 import { IconButton } from '@storybook/components';
 import { API } from '@storybook/api';
 import equal from 'fast-deep-equal';
+import { DARK_MODE_EVENT_NAME } from './constants';
 
 import Sun from './icons/Sun';
 import Moon from './icons/Moon';
@@ -66,7 +67,7 @@ export const DarkMode: React.FunctionComponent<DarkModeProps> = props => {
     });
     props.api.setOptions({ theme: currentStore[current] });
     setDark(!isDark);
-    props.api.getChannel().emit('DARK_MODE', !isDark);
+    props.api.getChannel().emit(DARK_MODE_EVENT_NAME, !isDark);
   }
 
   function prefersDarkUpdate(event: MediaQueryListEvent) {
@@ -97,7 +98,7 @@ export const DarkMode: React.FunctionComponent<DarkModeProps> = props => {
 
     props.api.setOptions({ theme: currentStore[current] });
     setDark(current === 'dark');
-    props.api.getChannel().emit('DARK_MODE', current === 'dark');
+    props.api.getChannel().emit(DARK_MODE_EVENT_NAME, current === 'dark');
   }
 
   React.useEffect(() => {

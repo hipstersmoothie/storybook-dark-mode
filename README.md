@@ -43,7 +43,29 @@ addParameters({
 
 ## Story integration
 
-If your components use a custom Theme provider, you can integrate it by adding decorator that listens for the `DARK_MODE` event via the addons channel.
+If your components use a custom Theme provider, you can integrate it by using the provided hook.
+
+```js
+import { useDarkMode } from 'storybook-dark-mode';
+import { addDecorator } from '@storybook/react';
+
+// your theme provider
+import ThemeContext from './theme';
+
+// create a component that uses the dark mode hook
+function ThemeWrapper(props) {
+  // render your custom theme provider
+  return (
+    <ThemeContext.Provider value={useDarkMode() ? darkTheme : defaultTheme}>
+      {props.children}
+    </ThemeContext.Provider>
+  );
+}
+
+addDecorator(renderStory => <ThemeWrapper>{renderStory()}</ThemeWrapper>);
+```
+
+You can also listen for the `DARK_MODE` event via the addons channel.
 
 ```js
 import addons from '@storybook/addons';

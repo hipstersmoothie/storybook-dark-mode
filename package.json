@@ -2,7 +2,7 @@
   "name": "storybook-dark-mode",
   "version": "0.2.0",
   "description": "Toggle between light and dark mode in Storybook v5",
-  "main": "index.js",
+  "main": "dist/index.js",
   "source": "index.ts",
   "files": [
     "dist",
