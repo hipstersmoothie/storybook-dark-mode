@@ -1,3 +1,34 @@
+# v0.3.0 (Tue Feb 04 2020)
+
+#### 🚀  Enhancement
+
+- Create a React hook for getting dark-mode state [#89](https://github.com/hipstersmoothie/storybook-dark-mode/pull/89) ([@adierkens](https://github.com/adierkens))
+
+#### 🐛  Bug Fix
+
+- Update dependency auto-config-hipstersmoothie to v3 [#88](https://github.com/hipstersmoothie/storybook-dark-mode/pull/88) ([@renovate-bot](https://github.com/renovate-bot) [@hipstersmoothie](https://github.com/hipstersmoothie) [@renovate[bot]](https://github.com/renovate[bot]))
+
+#### 🔩 Dependency Updates
+
+- Update dependency auto to v9.9.0 [#82](https://github.com/hipstersmoothie/storybook-dark-mode/pull/82) ([@renovate-bot](https://github.com/renovate-bot) [@renovate[bot]](https://github.com/renovate[bot]))
+- Update dependency fast-deep-equal to v3 [#74](https://github.com/hipstersmoothie/storybook-dark-mode/pull/74) ([@renovate-bot](https://github.com/renovate-bot) [@renovate[bot]](https://github.com/renovate[bot]))
+- Update storybook monorepo to v5.3.8 [#68](https://github.com/hipstersmoothie/storybook-dark-mode/pull/68) ([@renovate-bot](https://github.com/renovate-bot) [@renovate[bot]](https://github.com/renovate[bot]))
+- Update typescript-eslint monorepo to v2.17.0 [#66](https://github.com/hipstersmoothie/storybook-dark-mode/pull/66) ([@renovate-bot](https://github.com/renovate-bot) [@renovate[bot]](https://github.com/renovate[bot]))
+- Update dependency typescript to v3.7.5 [#59](https://github.com/hipstersmoothie/storybook-dark-mode/pull/59) ([@renovate-bot](https://github.com/renovate-bot) [@renovate[bot]](https://github.com/renovate[bot]))
+- Update dependency husky to v3.1.0 [#51](https://github.com/hipstersmoothie/storybook-dark-mode/pull/51) ([@renovate-bot](https://github.com/renovate-bot) [@renovate[bot]](https://github.com/renovate[bot]))
+- Update dependency eslint-config-prettier to v6.9.0 [#56](https://github.com/hipstersmoothie/storybook-dark-mode/pull/56) ([@renovate-bot](https://github.com/renovate-bot) [@renovate[bot]](https://github.com/renovate[bot]))
+- Update dependency lint-staged to v9.5.0 [#50](https://github.com/hipstersmoothie/storybook-dark-mode/pull/50) ([@renovate-bot](https://github.com/renovate-bot) [@renovate[bot]](https://github.com/renovate[bot]))
+- Update dependency auto to v9 [#78](https://github.com/hipstersmoothie/storybook-dark-mode/pull/78) ([@renovate-bot](https://github.com/renovate-bot) [@renovate[bot]](https://github.com/renovate[bot]))
+
+#### Authors: 4
+
+- [@renovate[bot]](https://github.com/renovate[bot])
+- Adam Dierkens ([@adierkens](https://github.com/adierkens))
+- Andrew Lisowski ([@hipstersmoothie](https://github.com/hipstersmoothie))
+- WhiteSource Renovate ([@renovate-bot](https://github.com/renovate-bot))
+
+---
+
 # v0.2.0 (Tue Dec 10 2019)
 
 #### 🚀  Enhancement
