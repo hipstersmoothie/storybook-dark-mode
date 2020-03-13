@@ -1,3 +1,15 @@
+# v0.3.1 (Fri Mar 13 2020)
+
+#### 🐛  Bug Fix
+
+- Fix undefined story data [#91](https://github.com/hipstersmoothie/storybook-dark-mode/pull/91) ([@jacobcoughenour](https://github.com/jacobcoughenour))
+
+#### Authors: 1
+
+- Jacob Coughenour ([@jacobcoughenour](https://github.com/jacobcoughenour))
+
+---
+
 # v0.3.0 (Tue Feb 04 2020)
 
 #### 🚀  Enhancement
