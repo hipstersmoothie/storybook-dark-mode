@@ -77,7 +77,7 @@ export const DarkMode: React.FunctionComponent<DarkModeProps> = props => {
   function renderTheme() {
     const data = props.api.getCurrentStoryData();
 
-    if (!('parameters' in data)) {
+    if (!(data && 'parameters' in data)) {
       return;
     }
 
