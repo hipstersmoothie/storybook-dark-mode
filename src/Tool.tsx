@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { themes, ThemeVars } from '@storybook/theming';
 import { IconButton } from '@storybook/components';
-import { API } from '@storybook/api';
+import { API, useParameter } from '@storybook/api';
 import equal from 'fast-deep-equal';
 import { DARK_MODE_EVENT_NAME } from './constants';
 
@@ -55,9 +55,15 @@ const store = (themes: Partial<DarkModeStore> = {}): DarkModeStore => {
 
 export const DarkMode: React.FunctionComponent<DarkModeProps> = props => {
   const [isDark, setDark] = React.useState(prefersDark.matches);
+  const params = useParameter('darkMode', {
+    dark: themes.dark,
+    light: themes.light
+  });
 
+  // Save custom themes on init
+  store(params);
   function setMode(mode?: 'dark' | 'light') {
-    const currentStore = store();
+    const currentStore = store(params);
     const current =
       mode || (currentStore.current === 'dark' ? 'light' : 'dark');
 
@@ -75,25 +81,7 @@ export const DarkMode: React.FunctionComponent<DarkModeProps> = props => {
   }
 
   function renderTheme() {
-    const data = props.api.getCurrentStoryData();
-
-    if (!(data && 'parameters' in data)) {
-      return;
-    }
-
-    const { parameters } = data;
-    let darkTheme = themes.dark;
-    let lightTheme = themes.light;
-
-    if (parameters && parameters.darkMode) {
-      darkTheme = parameters.darkMode.dark || darkTheme;
-      lightTheme = parameters.darkMode.light || lightTheme;
-    }
-
-    const currentStore = store({
-      light: lightTheme,
-      dark: darkTheme
-    });
+    const currentStore = store(params);
     const { current } = currentStore;
 
     props.api.setOptions({ theme: currentStore[current] });
