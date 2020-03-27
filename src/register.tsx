@@ -7,7 +7,7 @@ addons.register('storybook/dark-mode', api => {
   addons.add('storybook/dark-mode', {
     title: 'dark mode',
     type: types.TOOL,
-    match: ({ viewMode }) => viewMode === 'story',
+    match: ({ viewMode }) => viewMode === 'story' || viewMode === 'docs',
     render: () => <Tool api={api} />
   });
 });
