@@ -1,3 +1,15 @@
+# v0.4.0 (Fri Mar 27 2020)
+
+#### 🚀  Enhancement
+
+- Add toggle button to to docs page and save custom themes on initilization [#97](https://github.com/hipstersmoothie/storybook-dark-mode/pull/97) ([@tskarhed](https://github.com/tskarhed))
+
+#### Authors: 1
+
+- Tobias Skarhed ([@tskarhed](https://github.com/tskarhed))
+
+---
+
 # v0.3.1 (Fri Mar 13 2020)
 
 #### 🐛  Bug Fix
