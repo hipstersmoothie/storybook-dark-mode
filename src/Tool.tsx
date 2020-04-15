@@ -1,6 +1,11 @@
 import * as React from 'react';
 import { themes, ThemeVars } from '@storybook/theming';
 import { IconButton } from '@storybook/components';
+import {
+  STORY_CHANGED,
+  STORIES_CONFIGURED,
+  DOCS_RENDERED
+} from '@storybook/core-events';
 import { API, useParameter } from '@storybook/api';
 import equal from 'fast-deep-equal';
 import { DARK_MODE_EVENT_NAME } from './constants';
@@ -8,30 +13,35 @@ import { DARK_MODE_EVENT_NAME } from './constants';
 import Sun from './icons/Sun';
 import Moon from './icons/Moon';
 
-interface DarkModeProps {
-  api: API;
-}
+const modes = ['light', 'dark'] as const;
+type Mode = typeof modes[number];
 
 interface DarkModeStore {
-  current: 'dark' | 'light';
+  /** The current mode the storybook is set to */
+  current: Mode;
+  /** The dark theme for storybook */
   dark: ThemeVars;
+  /** The light theme for storybook */
   light: ThemeVars;
 }
 
+const STORAGE_KEY = 'sb-addon-themes-3';
 const prefersDark = window.matchMedia('(prefers-color-scheme: dark)');
 
-const defaultStore: DarkModeStore = {
-  current: prefersDark.matches ? 'dark' : 'light',
+const defaultParams: Partial<DarkModeStore> = {
   dark: themes.dark,
   light: themes.light
 };
 
+/** Persist the dark mode settings in localStorage */
 const update = (newStore: DarkModeStore) => {
-  window.localStorage.setItem('sb-addon-themes-3', JSON.stringify(newStore));
+  window.localStorage.setItem(STORAGE_KEY, JSON.stringify(newStore));
 };
 
+/** Update changed dark mode settings and persist to localStorage  */
 const store = (themes: Partial<DarkModeStore> = {}): DarkModeStore => {
-  const storedItem = window.localStorage.getItem('sb-addon-themes-3');
+  const storedItem = window.localStorage.getItem(STORAGE_KEY);
+
   if (typeof storedItem === 'string') {
     const stored: DarkModeStore = JSON.parse(storedItem);
 
@@ -50,58 +60,94 @@ const store = (themes: Partial<DarkModeStore> = {}): DarkModeStore => {
     return stored;
   }
 
-  return { ...defaultStore, ...themes };
+  return { ...defaultParams, ...themes } as DarkModeStore;
 };
 
-export const DarkMode: React.FunctionComponent<DarkModeProps> = props => {
+interface DarkModeProps {
+  /** The storybook API */
+  api: API;
+}
+
+/** A toolbar icon to toggle between dark and light themes in storybook */
+export const DarkMode = ({ api }: DarkModeProps) => {
   const [isDark, setDark] = React.useState(prefersDark.matches);
-  const params = useParameter('darkMode', {
+  const { current: defaultMode, ...params } = useParameter<
+    Partial<DarkModeStore>
+  >('darkMode', {
     dark: themes.dark,
     light: themes.light
   });
+  // const lastMode = React.useRef(defaultMode);
 
   // Save custom themes on init
-  store(params);
-  function setMode(mode?: 'dark' | 'light') {
-    const currentStore = store(params);
-    const current =
-      mode || (currentStore.current === 'dark' ? 'light' : 'dark');
+  const initialMode = React.useRef(store(params).current);
 
-    update({
-      ...currentStore,
-      current
-    });
-    props.api.setOptions({ theme: currentStore[current] });
-    setDark(!isDark);
-    props.api.getChannel().emit(DARK_MODE_EVENT_NAME, !isDark);
-  }
+  /** Set the theme in storybook, update the local state, and emit an event */
+  const setMode = React.useCallback(
+    (mode: Mode) => {
+      const currentStore = store();
+      console.log('set', mode);
+      api.setOptions({ theme: currentStore[mode] });
+      setDark(mode === 'dark');
+      api.getChannel().emit(DARK_MODE_EVENT_NAME, mode === 'dark');
+    },
+    [api]
+  );
 
+  /** Update the theme settings in localStorage, react, and storybook */
+  const updateMode = React.useCallback(
+    (mode?: Mode) => {
+      const currentStore = store();
+      const current =
+        mode || (currentStore.current === 'dark' ? 'light' : 'dark');
+
+      update({ ...currentStore, current });
+      setMode(current);
+    },
+    [setMode]
+  );
+
+  /** Update the theme based on the color preference */
   function prefersDarkUpdate(event: MediaQueryListEvent) {
-    setMode(event.matches ? 'dark' : 'light');
+    updateMode(event.matches ? 'dark' : 'light');
   }
 
+  /** Render the current theme */
   function renderTheme() {
-    const currentStore = store(params);
-    const { current } = currentStore;
-
-    props.api.setOptions({ theme: currentStore[current] });
-    setDark(current === 'dark');
-    props.api.getChannel().emit(DARK_MODE_EVENT_NAME, current === 'dark');
+    const { current } = store();
+    setMode(current);
   }
 
   React.useEffect(() => {
-    const channel = props.api.getChannel();
-    channel.on('storyChanged', renderTheme);
-    channel.on('storiesConfigured', renderTheme);
-    channel.on('docsRendered', renderTheme);
+    const channel = api.getChannel();
+
+    channel.on(STORY_CHANGED, renderTheme);
+    channel.on(STORIES_CONFIGURED, renderTheme);
+    channel.on(DOCS_RENDERED, renderTheme);
     prefersDark.addListener(prefersDarkUpdate);
+
     return () => {
-      channel.removeListener('storyChanged', renderTheme);
-      channel.removeListener('storiesConfigured', renderTheme);
-      channel.removeListener('docsRendered', renderTheme);
+      channel.removeListener(STORY_CHANGED, renderTheme);
+      channel.removeListener(STORIES_CONFIGURED, renderTheme);
+      channel.removeListener(DOCS_RENDERED, renderTheme);
       prefersDark.removeListener(prefersDarkUpdate);
     };
   });
+
+  // Storybook's first render doesn't have the global user params loaded so we
+  // need the effect to run whenever defaultMode is updated
+  React.useEffect(() => {
+    // If a users has set the mode this is respected
+    if (initialMode.current) {
+      return;
+    }
+
+    if (defaultMode) {
+      updateMode(defaultMode);
+    } else if (prefersDark.matches) {
+      updateMode('dark');
+    }
+  }, [defaultMode, updateMode]);
 
   return (
     <IconButton
@@ -110,7 +156,7 @@ export const DarkMode: React.FunctionComponent<DarkModeProps> = props => {
       title={
         isDark ? 'Change theme to light mode' : 'Change theme to dark mode'
       }
-      onClick={() => setMode()}
+      onClick={() => updateMode()}
     >
       {isDark ? <Sun /> : <Moon />}
     </IconButton>

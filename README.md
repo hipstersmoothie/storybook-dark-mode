@@ -41,6 +41,28 @@ addParameters({
 });
 ```
 
+### Default Theme
+
+Order of precedence for the initial color scheme:
+
+1. If the user has previously set a color theme it's used
+2. The value you have configured for `current` parameter in your storybook
+3. The OS color scheme preference
+
+Once the initial color scheme has been set, subsequent reloads will use this value.
+To clear the cached color scheme you have to `localStorage.clear()` in the chrome console.
+
+```js
+import { addParameters } from '@storybook/react';
+
+addParameters({
+  darkMode: {
+    // Set the initial theme
+    current: 'light'
+  }
+});
+```
+
 ## Story integration
 
 If your components use a custom Theme provider, you can integrate it by using the provided hook.
