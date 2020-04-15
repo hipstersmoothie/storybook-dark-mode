@@ -1,3 +1,15 @@
+# v0.4.1 (Wed Apr 15 2020)
+
+#### 🐛  Bug Fix
+
+- respect current param if it's set [#98](https://github.com/hipstersmoothie/storybook-dark-mode/pull/98) ([@hipstersmoothie](https://github.com/hipstersmoothie))
+
+#### Authors: 1
+
+- Andrew Lisowski ([@hipstersmoothie](https://github.com/hipstersmoothie))
+
+---
+
 # v0.4.0 (Fri Mar 27 2020)
 
 #### 🚀  Enhancement
