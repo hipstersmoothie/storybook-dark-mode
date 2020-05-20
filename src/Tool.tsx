@@ -34,7 +34,7 @@ interface DarkModeStore {
 const STORAGE_KEY = 'sb-addon-themes-3';
 const prefersDark = window.matchMedia('(prefers-color-scheme: dark)');
 
-const defaultParams: Partial<DarkModeStore> = {
+const defaultParams: Required<Omit<DarkModeStore, 'current'>> = {
   dark: themes.dark,
   darkClass: 'dark',
   light: themes.light,
@@ -48,7 +48,7 @@ const updateStore = (newStore: DarkModeStore) => {
 };
 
 /** Add the light/dark class to an element */
-const toggleDarkClass = (el: HTMLElement, { current, darkClass, lightClass }: DarkModeStore) => {
+const toggleDarkClass = (el: HTMLElement, { current, darkClass = defaultParams.darkClass, lightClass = defaultParams.lightClass }: DarkModeStore) => {
   if (current === 'dark') {
     el.classList.add(darkClass);
     el.classList.remove(lightClass);
@@ -119,7 +119,6 @@ export const DarkMode = ({ api }: DarkModeProps) => {
   const { current: defaultMode, stylePreview, ...params } = useParameter<
     Partial<DarkModeStore>
   >('darkMode', defaultParams);
-  // const lastMode = React.useRef(defaultMode);
 
   // Save custom themes on init
   const initialMode = React.useRef(store(params).current);
