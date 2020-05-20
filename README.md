@@ -166,6 +166,9 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
     <td align="center"><a href="http://skarhed.com"><img src="https://avatars2.githubusercontent.com/u/1438972?v=4" width="100px;" alt=""/><br /><sub><b>Tobias Skarhed</b></sub></a><br /><a href="https://github.com/hipstersmoothie/storybook-dark-mode/commits?author=tskarhed" title="Code">💻</a> <a href="https://github.com/hipstersmoothie/storybook-dark-mode/commits?author=tskarhed" title="Documentation">📖</a></td>
     <td align="center"><a href="https://fatihkalifa.com"><img src="https://avatars3.githubusercontent.com/u/1614415?v=4" width="100px;" alt=""/><br /><sub><b>Fatih Kalifa</b></sub></a><br /><a href="https://github.com/hipstersmoothie/storybook-dark-mode/commits?author=pveyes" title="Code">💻</a></td>
   </tr>
+  <tr>
+    <td align="center"><a href="https://www.jacobcoughenour.com"><img src="https://avatars1.githubusercontent.com/u/5546400?v=4" width="100px;" alt=""/><br /><sub><b>Jacob Coughenour</b></sub></a><br /><a href="https://github.com/hipstersmoothie/storybook-dark-mode/commits?author=jacobcoughenour" title="Code">💻</a></td>
+  </tr>
 </table>
 
 <!-- markdownlint-enable -->
