@@ -124,9 +124,9 @@ addDecorator(renderStory => <ThemeWrapper>{renderStory()}</ThemeWrapper>);
 Or if you want to have you UI's dark mode seperate from you components' dark mode, implement this global decorator:
 
 ```js
-// Add a global decorator that will render a dark background when the 
+// Add a global decorator that will render a dark background when the
 // "Color Scheme" knob is set to dark
-addDecorator(function (storyFn) {
+addDecorator(function(storyFn) {
   // A knob for color scheme added to every story
   const colorScheme = select('Color Scheme', ['light', 'dark'], 'light');
 
@@ -140,11 +140,40 @@ addDecorator(function (storyFn) {
         dangerouslySetInnerHTML: {
           __html: `html { ${
             colorScheme === 'dark' ? 'background-color: rgb(35,35,35);' : ''
-          } }`,
-        },
+          } }`
+        }
       }),
-      storyFn(),
-    ],
+      storyFn()
+    ]
   });
 });
 ```
+
+## Contributors ✨
+
+Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
+
+<!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
+<!-- prettier-ignore-start -->
+<!-- markdownlint-disable -->
+<table>
+  <tr>
+    <td align="center"><a href="http://hipstersmoothie.com"><img src="https://avatars3.githubusercontent.com/u/1192452?v=4" width="100px;" alt=""/><br /><sub><b>Andrew Lisowski</b></sub></a><br /><a href="#question-hipstersmoothie" title="Answering Questions">💬</a> <a href="https://github.com/hipstersmoothie/storybook-dark-mode/commits?author=hipstersmoothie" title="Code">💻</a> <a href="#design-hipstersmoothie" title="Design">🎨</a> <a href="https://github.com/hipstersmoothie/storybook-dark-mode/commits?author=hipstersmoothie" title="Documentation">📖</a> <a href="#ideas-hipstersmoothie" title="Ideas, Planning, & Feedback">🤔</a> <a href="#infra-hipstersmoothie" title="Infrastructure (Hosting, Build-Tools, etc)">🚇</a> <a href="#maintenance-hipstersmoothie" title="Maintenance">🚧</a></td>
+    <td align="center"><a href="https://trutoo.com/people/erik-hughes"><img src="https://avatars3.githubusercontent.com/u/455178?v=4" width="100px;" alt=""/><br /><sub><b>Erik Hughes</b></sub></a><br /><a href="https://github.com/hipstersmoothie/storybook-dark-mode/commits?author=Swiftwork" title="Code">💻</a></td>
+    <td align="center"><a href="https://adamyonk.com"><img src="https://avatars3.githubusercontent.com/u/33258?v=4" width="100px;" alt=""/><br /><sub><b>Adam Jahnke</b></sub></a><br /><a href="https://github.com/hipstersmoothie/storybook-dark-mode/commits?author=adamyonk" title="Code">💻</a></td>
+    <td align="center"><a href="https://github.com/carlesnunez"><img src="https://avatars3.githubusercontent.com/u/5639972?v=4" width="100px;" alt=""/><br /><sub><b>Carles Núñez</b></sub></a><br /><a href="https://github.com/hipstersmoothie/storybook-dark-mode/commits?author=carlesnunez" title="Code">💻</a></td>
+    <td align="center"><a href="https://adamdierkens.com"><img src="https://avatars1.githubusercontent.com/u/13004162?v=4" width="100px;" alt=""/><br /><sub><b>Adam Dierkens</b></sub></a><br /><a href="https://github.com/hipstersmoothie/storybook-dark-mode/commits?author=adierkens" title="Code">💻</a></td>
+    <td align="center"><a href="http://skarhed.com"><img src="https://avatars2.githubusercontent.com/u/1438972?v=4" width="100px;" alt=""/><br /><sub><b>Tobias Skarhed</b></sub></a><br /><a href="https://github.com/hipstersmoothie/storybook-dark-mode/commits?author=tskarhed" title="Code">💻</a> <a href="https://github.com/hipstersmoothie/storybook-dark-mode/commits?author=tskarhed" title="Documentation">📖</a></td>
+    <td align="center"><a href="https://fatihkalifa.com"><img src="https://avatars3.githubusercontent.com/u/1614415?v=4" width="100px;" alt=""/><br /><sub><b>Fatih Kalifa</b></sub></a><br /><a href="https://github.com/hipstersmoothie/storybook-dark-mode/commits?author=pveyes" title="Code">💻</a></td>
+  </tr>
+  <tr>
+    <td align="center"><a href="https://www.jacobcoughenour.com"><img src="https://avatars1.githubusercontent.com/u/5546400?v=4" width="100px;" alt=""/><br /><sub><b>Jacob Coughenour</b></sub></a><br /><a href="https://github.com/hipstersmoothie/storybook-dark-mode/commits?author=jacobcoughenour" title="Code">💻</a></td>
+  </tr>
+</table>
+
+<!-- markdownlint-enable -->
+<!-- prettier-ignore-end -->
+
+<!-- ALL-CONTRIBUTORS-LIST:END -->
+
+This project follows the [all-contributors](https://github.com/all-contributors/all-contributors) specification. Contributions of any kind welcome!

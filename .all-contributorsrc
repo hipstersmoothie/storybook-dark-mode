@@ -1,0 +1,94 @@
+{
+  "projectName": "storybook-dark-mode",
+  "projectOwner": "hipstersmoothie",
+  "repoType": "github",
+  "repoHost": "https://github.com",
+  "files": [
+    "README.md"
+  ],
+  "imageSize": 100,
+  "commit": true,
+  "commitConvention": "none",
+  "contributors": [
+    {
+      "login": "hipstersmoothie",
+      "name": "Andrew Lisowski",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/1192452?v=4",
+      "profile": "http://hipstersmoothie.com",
+      "contributions": [
+        "question",
+        "code",
+        "design",
+        "doc",
+        "ideas",
+        "infra",
+        "maintenance"
+      ]
+    },
+    {
+      "login": "Swiftwork",
+      "name": "Erik Hughes",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/455178?v=4",
+      "profile": "https://trutoo.com/people/erik-hughes",
+      "contributions": [
+        "code"
+      ]
+    },
+    {
+      "login": "adamyonk",
+      "name": "Adam Jahnke",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/33258?v=4",
+      "profile": "https://adamyonk.com",
+      "contributions": [
+        "code"
+      ]
+    },
+    {
+      "login": "carlesnunez",
+      "name": "Carles Núñez",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/5639972?v=4",
+      "profile": "https://github.com/carlesnunez",
+      "contributions": [
+        "code"
+      ]
+    },
+    {
+      "login": "adierkens",
+      "name": "Adam Dierkens",
+      "avatar_url": "https://avatars1.githubusercontent.com/u/13004162?v=4",
+      "profile": "https://adamdierkens.com",
+      "contributions": [
+        "code"
+      ]
+    },
+    {
+      "login": "tskarhed",
+      "name": "Tobias Skarhed",
+      "avatar_url": "https://avatars2.githubusercontent.com/u/1438972?v=4",
+      "profile": "http://skarhed.com",
+      "contributions": [
+        "code",
+        "doc"
+      ]
+    },
+    {
+      "login": "pveyes",
+      "name": "Fatih Kalifa",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/1614415?v=4",
+      "profile": "https://fatihkalifa.com",
+      "contributions": [
+        "code"
+      ]
+    },
+    {
+      "login": "jacobcoughenour",
+      "name": "Jacob Coughenour",
+      "avatar_url": "https://avatars1.githubusercontent.com/u/5546400?v=4",
+      "profile": "https://www.jacobcoughenour.com",
+      "contributions": [
+        "code"
+      ]
+    }
+  ],
+  "contributorsPerLine": 7
+}

@@ -22,8 +22,8 @@
     "release": "auto shipit"
   },
   "peerDependencies": {
-    "@storybook/api": ">= 5.x",
     "@storybook/addons": ">= 5.x",
+    "@storybook/api": ">= 5.x",
     "@storybook/components": ">= 5.x",
     "@storybook/core-events": ">= 5.x",
     "@storybook/theming": ">= 5.x"
@@ -41,8 +41,9 @@
     "@types/react": "16.9.11",
     "@typescript-eslint/eslint-plugin": "2.17.0",
     "@typescript-eslint/parser": "2.17.0",
-    "auto": "9.9.0",
-    "auto-config-hipstersmoothie": "3.0.0",
+    "all-contributors-cli": "^6.14.2",
+    "auto": "^9.34.1",
+    "auto-config-hipstersmoothie": "3.0.24",
     "eslint": "6.5.0",
     "eslint-config-prettier": "6.9.0",
     "eslint-config-xo": "0.27.1",

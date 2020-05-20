@@ -60,7 +60,6 @@ jobs:
     steps:
       - attach_workspace:
           at: ~/storybook-dark-mode
-      - run: mkdir ~/.ssh/ && echo -e "Host github.com\n\tStrictHostKeyChecking no\n" > ~/.ssh/config
       - run:
           name: Release
           command: yarn release
@@ -83,7 +82,3 @@ workflows:
           requires:
             - lint
             - build
-          filters:
-            branches:
-              only:
-                - master
