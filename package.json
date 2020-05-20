@@ -33,11 +33,11 @@
     "memoizerific": "^1.11.3"
   },
   "devDependencies": {
-    "@storybook/addons": "5.3.8",
-    "@storybook/api": "5.3.8",
-    "@storybook/components": "5.3.8",
-    "@storybook/core-events": "5.3.8",
-    "@storybook/theming": "5.3.8",
+    "@storybook/addons": "6.0.0-beta.0",
+    "@storybook/api": "6.0.0-beta.0",
+    "@storybook/components": "6.0.0-beta.0",
+    "@storybook/core-events": "6.0.0-beta.0",
+    "@storybook/theming": "6.0.0-beta.0",
     "@types/react": "16.9.11",
     "@typescript-eslint/eslint-plugin": "2.17.0",
     "@typescript-eslint/parser": "2.17.0",
