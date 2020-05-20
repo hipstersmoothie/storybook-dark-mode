@@ -88,6 +88,16 @@
       "contributions": [
         "code"
       ]
+    },
+    {
+      "login": "jpzwarte",
+      "name": "Jeroen Zwartepoorte",
+      "avatar_url": "https://avatars1.githubusercontent.com/u/3968?v=4",
+      "profile": "http://twitter.com/jpzwarte",
+      "contributions": [
+        "doc",
+        "code"
+      ]
     }
   ],
   "contributorsPerLine": 7

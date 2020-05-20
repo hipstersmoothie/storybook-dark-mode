@@ -168,12 +168,12 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
   </tr>
   <tr>
     <td align="center"><a href="https://www.jacobcoughenour.com"><img src="https://avatars1.githubusercontent.com/u/5546400?v=4" width="100px;" alt=""/><br /><sub><b>Jacob Coughenour</b></sub></a><br /><a href="https://github.com/hipstersmoothie/storybook-dark-mode/commits?author=jacobcoughenour" title="Code">💻</a></td>
+    <td align="center"><a href="http://twitter.com/jpzwarte"><img src="https://avatars1.githubusercontent.com/u/3968?v=4" width="100px;" alt=""/><br /><sub><b>Jeroen Zwartepoorte</b></sub></a><br /><a href="https://github.com/hipstersmoothie/storybook-dark-mode/commits?author=jpzwarte" title="Documentation">📖</a> <a href="https://github.com/hipstersmoothie/storybook-dark-mode/commits?author=jpzwarte" title="Code">💻</a></td>
   </tr>
 </table>
 
 <!-- markdownlint-enable -->
 <!-- prettier-ignore-end -->
-
 <!-- ALL-CONTRIBUTORS-LIST:END -->
 
 This project follows the [all-contributors](https://github.com/all-contributors/all-contributors) specification. Contributions of any kind welcome!
