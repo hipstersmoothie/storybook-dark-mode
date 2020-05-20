@@ -163,6 +163,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
     <td align="center"><a href="https://adamyonk.com"><img src="https://avatars3.githubusercontent.com/u/33258?v=4" width="100px;" alt=""/><br /><sub><b>Adam Jahnke</b></sub></a><br /><a href="https://github.com/hipstersmoothie/storybook-dark-mode/commits?author=adamyonk" title="Code">💻</a></td>
     <td align="center"><a href="https://github.com/carlesnunez"><img src="https://avatars3.githubusercontent.com/u/5639972?v=4" width="100px;" alt=""/><br /><sub><b>Carles Núñez</b></sub></a><br /><a href="https://github.com/hipstersmoothie/storybook-dark-mode/commits?author=carlesnunez" title="Code">💻</a></td>
     <td align="center"><a href="https://adamdierkens.com"><img src="https://avatars1.githubusercontent.com/u/13004162?v=4" width="100px;" alt=""/><br /><sub><b>Adam Dierkens</b></sub></a><br /><a href="https://github.com/hipstersmoothie/storybook-dark-mode/commits?author=adierkens" title="Code">💻</a></td>
+    <td align="center"><a href="http://skarhed.com"><img src="https://avatars2.githubusercontent.com/u/1438972?v=4" width="100px;" alt=""/><br /><sub><b>Tobias Skarhed</b></sub></a><br /><a href="https://github.com/hipstersmoothie/storybook-dark-mode/commits?author=tskarhed" title="Code">💻</a> <a href="https://github.com/hipstersmoothie/storybook-dark-mode/commits?author=tskarhed" title="Documentation">📖</a></td>
   </tr>
 </table>
 

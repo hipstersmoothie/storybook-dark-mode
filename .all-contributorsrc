@@ -60,6 +60,16 @@
       "contributions": [
         "code"
       ]
+    },
+    {
+      "login": "tskarhed",
+      "name": "Tobias Skarhed",
+      "avatar_url": "https://avatars2.githubusercontent.com/u/1438972?v=4",
+      "profile": "http://skarhed.com",
+      "contributions": [
+        "code",
+        "doc"
+      ]
     }
   ],
   "contributorsPerLine": 7
