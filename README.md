@@ -124,9 +124,9 @@ addDecorator(renderStory => <ThemeWrapper>{renderStory()}</ThemeWrapper>);
 Or if you want to have you UI's dark mode seperate from you components' dark mode, implement this global decorator:
 
 ```js
-// Add a global decorator that will render a dark background when the 
+// Add a global decorator that will render a dark background when the
 // "Color Scheme" knob is set to dark
-addDecorator(function (storyFn) {
+addDecorator(function(storyFn) {
   // A knob for color scheme added to every story
   const colorScheme = select('Color Scheme', ['light', 'dark'], 'light');
 
@@ -140,11 +140,31 @@ addDecorator(function (storyFn) {
         dangerouslySetInnerHTML: {
           __html: `html { ${
             colorScheme === 'dark' ? 'background-color: rgb(35,35,35);' : ''
-          } }`,
-        },
+          } }`
+        }
       }),
-      storyFn(),
-    ],
+      storyFn()
+    ]
   });
 });
 ```
+
+## Contributors ✨
+
+Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
+
+<!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
+<!-- prettier-ignore-start -->
+<!-- markdownlint-disable -->
+<table>
+  <tr>
+    <td align="center"><a href="http://hipstersmoothie.com"><img src="https://avatars3.githubusercontent.com/u/1192452?v=4" width="100px;" alt=""/><br /><sub><b>Andrew Lisowski</b></sub></a><br /><a href="#question-hipstersmoothie" title="Answering Questions">💬</a> <a href="https://github.com/hipstersmoothie/storybook-dark-mode/commits?author=hipstersmoothie" title="Code">💻</a> <a href="#design-hipstersmoothie" title="Design">🎨</a> <a href="https://github.com/hipstersmoothie/storybook-dark-mode/commits?author=hipstersmoothie" title="Documentation">📖</a> <a href="#ideas-hipstersmoothie" title="Ideas, Planning, & Feedback">🤔</a> <a href="#infra-hipstersmoothie" title="Infrastructure (Hosting, Build-Tools, etc)">🚇</a> <a href="#maintenance-hipstersmoothie" title="Maintenance">🚧</a></td>
+  </tr>
+</table>
+
+<!-- markdownlint-enable -->
+<!-- prettier-ignore-end -->
+
+<!-- ALL-CONTRIBUTORS-LIST:END -->
+
+This project follows the [all-contributors](https://github.com/all-contributors/all-contributors) specification. Contributions of any kind welcome!
