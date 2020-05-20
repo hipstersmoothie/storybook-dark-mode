@@ -44,7 +44,7 @@ const update = (newStore: DarkModeStore) => {
 
 /** Update the preview iframe class */
 const updatePreview = (newStore: DarkModeStore) => {
-  const iframe = document.getElementById('storybook-preview-iframe') as HTMLIFrameElement;
+  const iframe = document.getElementById<HTMLIFrameElement>('storybook-preview-iframe');
   if (!iframe) {
     return;
   }
