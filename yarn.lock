@@ -2,7 +2,7 @@
 # yarn lockfile v1
 
 
-"@auto-it/all-contributors@^9.34.1":
+"@auto-it/all-contributors@9.34.1":
   version "9.34.1"
   resolved "https://registry.yarnpkg.com/@auto-it/all-contributors/-/all-contributors-9.34.1.tgz#cf6e0afdf3a1976f4e45c813ba919b6582a8f489"
   integrity sha512-nO5514DP3uOzyPCLO3TYNOl9BTU4DixUvcqGrtpSo7wSo+EbU3YF5cwTLWI+b2LAM30q748ofKwAAWoCCNFv/Q==
@@ -61,7 +61,7 @@
     typescript-memoize "^1.0.0-alpha.3"
     url-join "^4.0.0"
 
-"@auto-it/first-time-contributor@^9.34.1":
+"@auto-it/first-time-contributor@9.34.1":
   version "9.34.1"
   resolved "https://registry.yarnpkg.com/@auto-it/first-time-contributor/-/first-time-contributor-9.34.1.tgz#03ca30d62fce4439297290596ab30ee15dd266ec"
   integrity sha512-/roW6gECK1pzV+BDBnk82hdspM3whrHIwDKGonbBGv8WQxCapBi4gBiUq2zEri4fLhTlNI7q92iU+g3Nho7z6A==
@@ -72,7 +72,7 @@
     tslib "1.11.1"
     url-join "^4.0.0"
 
-"@auto-it/npm@^9.34.1":
+"@auto-it/npm@9.34.1", "@auto-it/npm@^9.34.1":
   version "9.34.1"
   resolved "https://registry.yarnpkg.com/@auto-it/npm/-/npm-9.34.1.tgz#1e8865da26818eb7e540f924724da83090f7c439"
   integrity sha512-yh/PyJXM6WCfHZILiYzEhh7iDKSIrXNhcFra/E3S0aZb+GRzf533xCC24B1HLLaPgMv5X6omXJ03m5oNw2Pbpw==
@@ -92,7 +92,7 @@
     url-join "^4.0.0"
     user-home "^2.0.0"
 
-"@auto-it/released@^9.34.1":
+"@auto-it/released@9.34.1", "@auto-it/released@^9.34.1":
   version "9.34.1"
   resolved "https://registry.yarnpkg.com/@auto-it/released/-/released-9.34.1.tgz#5451d965de7d2b1931f63ef0ef8f939847a9b791"
   integrity sha512-mkYc2mgdiHljSvWPjvu6loJWHhFg9A9httkq9i1bCjCYW9vQmKX0MJb7j9EkSxGpvCcsGSX6ZEGxxh0teIjEaA==
@@ -1219,7 +1219,7 @@ ajv@^6.5.5, ajv@^6.9.1:
     json-schema-traverse "^0.4.1"
     uri-js "^4.2.2"
 
-all-contributors-cli@^6.14.2:
+all-contributors-cli@^6.14.0, all-contributors-cli@^6.14.2:
   version "6.14.2"
   resolved "https://registry.yarnpkg.com/all-contributors-cli/-/all-contributors-cli-6.14.2.tgz#4d7652f700a827b9a2f749720f13605ee1c2f8bd"
   integrity sha512-DUeZrL0EsXwdYZ1msEeI0cY7DNQqggRKLMfDzgZu+l/72KLf/ZuT97wnUIGAFvSPUlfSAXIVDhivOlZRFjYH+g==
@@ -1459,10 +1459,16 @@ author-regex@^1.0.0:
   resolved "https://registry.yarnpkg.com/author-regex/-/author-regex-1.0.0.tgz#d08885be6b9bbf9439fe087c76287245f0a81450"
   integrity sha1-0IiFvmubv5Q5/gh8dihyRfCoFFA=
 
-auto-config-hipstersmoothie@3.0.0:
-  version "3.0.0"
-  resolved "https://registry.yarnpkg.com/auto-config-hipstersmoothie/-/auto-config-hipstersmoothie-3.0.0.tgz#c28d3270818cc4dac376cbad43a0adc67f29069c"
-  integrity sha512-+/M5X6JlhLPM666AAC8Guhvp1E4v6Wz+cn1XoYz59L5Z5ERJBJGq0AIDXIlp9BoWjcMiVBx272X4ZJku9TyH0g==
+auto-config-hipstersmoothie@3.0.24:
+  version "3.0.24"
+  resolved "https://registry.yarnpkg.com/auto-config-hipstersmoothie/-/auto-config-hipstersmoothie-3.0.24.tgz#a9b8e6ef01de26154ab3c4d3fa63eef1ecc0c29b"
+  integrity sha512-Z2g98CblNGMGBjA98INOLWLz+LXW4Efou6bF8p997cxOdraymWiP0dGfjIS+AKsHK35yoUXWxkY+9P5wLhYS4g==
+  dependencies:
+    "@auto-it/all-contributors" "9.34.1"
+    "@auto-it/first-time-contributor" "9.34.1"
+    "@auto-it/npm" "9.34.1"
+    "@auto-it/released" "9.34.1"
+    all-contributors-cli "^6.14.0"
 
 auto@^9.34.1:
   version "9.34.1"

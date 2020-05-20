@@ -33,8 +33,6 @@
     "memoizerific": "^1.11.3"
   },
   "devDependencies": {
-    "@auto-it/all-contributors": "^9.34.1",
-    "@auto-it/first-time-contributor": "^9.34.1",
     "@storybook/addons": "5.3.8",
     "@storybook/api": "5.3.8",
     "@storybook/components": "5.3.8",
@@ -45,7 +43,7 @@
     "@typescript-eslint/parser": "2.17.0",
     "all-contributors-cli": "^6.14.2",
     "auto": "^9.34.1",
-    "auto-config-hipstersmoothie": "3.0.0",
+    "auto-config-hipstersmoothie": "3.0.24",
     "eslint": "6.5.0",
     "eslint-config-prettier": "6.9.0",
     "eslint-config-xo": "0.27.1",
