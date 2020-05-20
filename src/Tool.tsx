@@ -21,8 +21,12 @@ interface DarkModeStore {
   current: Mode;
   /** The dark theme for storybook */
   dark: ThemeVars;
+  /** The dark class name for the preview iframe */
+  darkClass: string;
   /** The light theme for storybook */
   light: ThemeVars;
+  /** The light class name for the preview iframe */
+  lightClass: string;
 }
 
 const STORAGE_KEY = 'sb-addon-themes-3';
@@ -36,6 +40,28 @@ const defaultParams: Partial<DarkModeStore> = {
 /** Persist the dark mode settings in localStorage */
 const update = (newStore: DarkModeStore) => {
   window.localStorage.setItem(STORAGE_KEY, JSON.stringify(newStore));
+};
+
+/** Update the preview iframe class */
+const updatePreview = (newStore: DarkModeStore) => {
+  const iframe = document.getElementById('storybook-preview-iframe') as HTMLIFrameElement;
+
+  if (!iframe) {
+    return;
+  }
+
+  const iframeDocument = iframe.contentDocument || iframe.contentWindow?.document;
+  const body = iframeDocument?.body as HTMLBodyElement;
+
+  const { current, darkClass, lightClass } = newStore;
+
+  if (current === 'dark') {
+    body.classList.add(darkClass || 'dark');
+    body.classList.remove(lightClass || 'light');
+  } else {
+    body.classList.add(lightClass || 'light');
+    body.classList.remove(darkClass || 'dark');
+  }
 };
 
 /** Update changed dark mode settings and persist to localStorage  */
@@ -90,6 +116,7 @@ export const DarkMode = ({ api }: DarkModeProps) => {
       api.setOptions({ theme: currentStore[mode] });
       setDark(mode === 'dark');
       api.getChannel().emit(DARK_MODE_EVENT_NAME, mode === 'dark');
+      updatePreview(currentStore);
     },
     [api]
   );
