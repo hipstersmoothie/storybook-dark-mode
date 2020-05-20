@@ -160,6 +160,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
   <tr>
     <td align="center"><a href="http://hipstersmoothie.com"><img src="https://avatars3.githubusercontent.com/u/1192452?v=4" width="100px;" alt=""/><br /><sub><b>Andrew Lisowski</b></sub></a><br /><a href="#question-hipstersmoothie" title="Answering Questions">💬</a> <a href="https://github.com/hipstersmoothie/storybook-dark-mode/commits?author=hipstersmoothie" title="Code">💻</a> <a href="#design-hipstersmoothie" title="Design">🎨</a> <a href="https://github.com/hipstersmoothie/storybook-dark-mode/commits?author=hipstersmoothie" title="Documentation">📖</a> <a href="#ideas-hipstersmoothie" title="Ideas, Planning, & Feedback">🤔</a> <a href="#infra-hipstersmoothie" title="Infrastructure (Hosting, Build-Tools, etc)">🚇</a> <a href="#maintenance-hipstersmoothie" title="Maintenance">🚧</a></td>
     <td align="center"><a href="https://trutoo.com/people/erik-hughes"><img src="https://avatars3.githubusercontent.com/u/455178?v=4" width="100px;" alt=""/><br /><sub><b>Erik Hughes</b></sub></a><br /><a href="https://github.com/hipstersmoothie/storybook-dark-mode/commits?author=Swiftwork" title="Code">💻</a></td>
+    <td align="center"><a href="https://adamyonk.com"><img src="https://avatars3.githubusercontent.com/u/33258?v=4" width="100px;" alt=""/><br /><sub><b>Adam Jahnke</b></sub></a><br /><a href="https://github.com/hipstersmoothie/storybook-dark-mode/commits?author=adamyonk" title="Code">💻</a></td>
   </tr>
 </table>
 
