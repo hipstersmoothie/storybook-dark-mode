@@ -43,7 +43,7 @@
     "@typescript-eslint/parser": "2.17.0",
     "all-contributors-cli": "^6.14.2",
     "auto": "^9.34.1",
-    "auto-config-hipstersmoothie": "3.0.24",
+    "auto-config-hipstersmoothie": "3.0.24-canary.14.780918e.0",
     "eslint": "6.5.0",
     "eslint-config-prettier": "6.9.0",
     "eslint-config-xo": "0.27.1",
