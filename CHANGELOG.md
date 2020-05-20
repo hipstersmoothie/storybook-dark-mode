@@ -1,3 +1,25 @@
+# v0.5.0 (Wed May 20 2020)
+
+:tada: This release contains work from a new contributor! :tada:
+
+Thank you, Jeroen Zwartepoorte ([@jpzwarte](https://github.com/jpzwarte)), for all your work!
+
+#### 🚀 Enhancement
+
+- Add ability to set a dark/light class on the preview iframe [#102](https://github.com/hipstersmoothie/storybook-dark-mode/pull/102) (jeroen.zwartepoorte@iddinkgroup.com [@hipstersmoothie](https://github.com/hipstersmoothie))
+
+#### 📝 Documentation
+
+- Update auto + add all-contributors [#103](https://github.com/hipstersmoothie/storybook-dark-mode/pull/103) ([@hipstersmoothie](https://github.com/hipstersmoothie))
+- Update README.md [#99](https://github.com/hipstersmoothie/storybook-dark-mode/pull/99) ([@hipstersmoothie](https://github.com/hipstersmoothie))
+
+#### Authors: 2
+
+- Andrew Lisowski ([@hipstersmoothie](https://github.com/hipstersmoothie))
+- Jeroen Zwartepoorte ([@jpzwarte](https://github.com/jpzwarte))
+
+---
+
 # v0.4.1 (Wed Apr 15 2020)
 
 #### 🐛  Bug Fix
