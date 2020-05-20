@@ -1,3 +1,15 @@
+# v0.6.0 (Wed May 20 2020)
+
+#### 🚀 Enhancement
+
+- add dark/light class to manager + optionally set classes on the preview [#107](https://github.com/hipstersmoothie/storybook-dark-mode/pull/107) ([@hipstersmoothie](https://github.com/hipstersmoothie))
+
+#### Authors: 1
+
+- Andrew Lisowski ([@hipstersmoothie](https://github.com/hipstersmoothie))
+
+---
+
 # v0.5.0 (Wed May 20 2020)
 
 :tada: This release contains work from a new contributor! :tada:
