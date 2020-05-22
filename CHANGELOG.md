@@ -1,3 +1,19 @@
+# v0.6.1 (Fri May 22 2020)
+
+:tada: This release contains work from a new contributor! :tada:
+
+Thank you, Alex Khomenko ([@Clarity-89](https://github.com/Clarity-89)), for all your work!
+
+#### 🐛 Bug Fix
+
+- useDarkMode: read default isDark value from local storage [#110](https://github.com/hipstersmoothie/storybook-dark-mode/pull/110) ([@Clarity-89](https://github.com/Clarity-89))
+
+#### Authors: 1
+
+- Alex Khomenko ([@Clarity-89](https://github.com/Clarity-89))
+
+---
+
 # v0.6.0 (Wed May 20 2020)
 
 #### 🚀 Enhancement
