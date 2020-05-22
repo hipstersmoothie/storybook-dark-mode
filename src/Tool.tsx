@@ -84,7 +84,7 @@ const updateManager = (store: DarkModeStore) => {
 };
 
 /** Update changed dark mode settings and persist to localStorage  */
-const store = (userTheme: Partial<DarkModeStore> = {}): DarkModeStore => {
+export const store = (userTheme: Partial<DarkModeStore> = {}): DarkModeStore => {
   const storedItem = window.localStorage.getItem(STORAGE_KEY);
 
   if (typeof storedItem === 'string') {
@@ -127,7 +127,6 @@ export const DarkMode = ({ api }: DarkModeProps) => {
   const setMode = React.useCallback(
     (mode: Mode) => {
       const currentStore = store();
-      console.log('set', mode);
       api.setOptions({ theme: currentStore[mode] });
       setDark(mode === 'dark');
       api.getChannel().emit(DARK_MODE_EVENT_NAME, mode === 'dark');
