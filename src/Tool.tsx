@@ -32,7 +32,7 @@ interface DarkModeStore {
 }
 
 const STORAGE_KEY = 'sb-addon-themes-3';
-const prefersDark = window.matchMedia('(prefers-color-scheme: dark)');
+export const prefersDark = window.matchMedia('(prefers-color-scheme: dark)');
 
 const defaultParams: Required<Omit<DarkModeStore, 'current'>> = {
   dark: themes.dark,
@@ -43,7 +43,7 @@ const defaultParams: Required<Omit<DarkModeStore, 'current'>> = {
 };
 
 /** Persist the dark mode settings in localStorage */
-const updateStore = (newStore: DarkModeStore) => {
+export const updateStore = (newStore: DarkModeStore) => {
   window.localStorage.setItem(STORAGE_KEY, JSON.stringify(newStore));
 };
 
