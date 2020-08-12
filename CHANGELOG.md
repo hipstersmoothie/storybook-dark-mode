@@ -1,3 +1,15 @@
+# v1.0.0 (Wed Aug 12 2020)
+
+#### 💥 Breaking Change
+
+- Working on 6.0 [#106](https://github.com/hipstersmoothie/storybook-dark-mode/pull/106) ([@hipstersmoothie](https://github.com/hipstersmoothie))
+
+#### Authors: 1
+
+- Andrew Lisowski ([@hipstersmoothie](https://github.com/hipstersmoothie))
+
+---
+
 # v0.6.1 (Fri May 22 2020)
 
 :tada: This release contains work from a new contributor! :tada:
