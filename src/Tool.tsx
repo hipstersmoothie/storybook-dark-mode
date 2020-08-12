@@ -3,7 +3,7 @@ import { themes, ThemeVars } from '@storybook/theming';
 import { IconButton } from '@storybook/components';
 import {
   STORY_CHANGED,
-  STORIES_CONFIGURED,
+  SET_STORIES,
   DOCS_RENDERED
 } from '@storybook/core-events';
 import { API, useParameter } from '@storybook/api';
@@ -32,7 +32,7 @@ interface DarkModeStore {
 }
 
 const STORAGE_KEY = 'sb-addon-themes-3';
-const prefersDark = window.matchMedia('(prefers-color-scheme: dark)');
+export const prefersDark = window.matchMedia('(prefers-color-scheme: dark)');
 
 const defaultParams: Required<Omit<DarkModeStore, 'current'>> = {
   dark: themes.dark,
@@ -43,7 +43,7 @@ const defaultParams: Required<Omit<DarkModeStore, 'current'>> = {
 };
 
 /** Persist the dark mode settings in localStorage */
-const updateStore = (newStore: DarkModeStore) => {
+export const updateStore = (newStore: DarkModeStore) => {
   window.localStorage.setItem(STORAGE_KEY, JSON.stringify(newStore));
 };
 
@@ -167,13 +167,13 @@ export const DarkMode = ({ api }: DarkModeProps) => {
     const channel = api.getChannel();
 
     channel.on(STORY_CHANGED, renderTheme);
-    channel.on(STORIES_CONFIGURED, renderTheme);
+    channel.on(SET_STORIES, renderTheme);
     channel.on(DOCS_RENDERED, renderTheme);
     prefersDark.addListener(prefersDarkUpdate);
 
     return () => {
       channel.removeListener(STORY_CHANGED, renderTheme);
-      channel.removeListener(STORIES_CONFIGURED, renderTheme);
+      channel.removeListener(SET_STORIES, renderTheme);
       channel.removeListener(DOCS_RENDERED, renderTheme);
       prefersDark.removeListener(prefersDarkUpdate);
     };
