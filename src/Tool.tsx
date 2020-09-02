@@ -176,13 +176,13 @@ export const DarkMode = ({ api }: DarkModeProps) => {
     channel.on(STORY_CHANGED, renderTheme);
     channel.on(SET_STORIES, renderTheme);
     channel.on(DOCS_RENDERED, renderTheme);
-    prefersDark.addEventListener('change', prefersDarkUpdate);
+    prefersDark.addListener(prefersDarkUpdate);
 
     return () => {
       channel.removeListener(STORY_CHANGED, renderTheme);
       channel.removeListener(SET_STORIES, renderTheme);
       channel.removeListener(DOCS_RENDERED, renderTheme);
-      prefersDark.removeEventListener('change', prefersDarkUpdate);
+      prefersDark.removeListener(prefersDarkUpdate);
     };
   });
 
