@@ -1,3 +1,15 @@
+# v1.0.1 (Wed Sep 02 2020)
+
+#### 🐛 Bug Fix
+
+- Fixing brand theming in light mode [#121](https://github.com/hipstersmoothie/storybook-dark-mode/pull/121) ([@hipstersmoothie](https://github.com/hipstersmoothie))
+
+#### Authors: 1
+
+- Andrew Lisowski ([@hipstersmoothie](https://github.com/hipstersmoothie))
+
+---
+
 # v1.0.0 (Wed Aug 12 2020)
 
 #### 💥 Breaking Change
