@@ -116,9 +116,8 @@ interface DarkModeProps {
 /** A toolbar icon to toggle between dark and light themes in storybook */
 export const DarkMode = ({ api }: DarkModeProps) => {
   const [isDark, setDark] = React.useState(prefersDark.matches);
-  const { current: defaultMode, stylePreview, ...params } = useParameter<
-    Partial<DarkModeStore>
-  >('darkMode', defaultParams);
+  const darkModeParams = useParameter<Partial<DarkModeStore>>('darkMode', defaultParams);
+  const { current: defaultMode, stylePreview, ...params } = darkModeParams
 
   // Save custom themes on init
   const initialMode = React.useRef(store(params).current);
@@ -158,10 +157,18 @@ export const DarkMode = ({ api }: DarkModeProps) => {
   }
 
   /** Render the current theme */
-  function renderTheme() {
+  const renderTheme = React.useCallback(()  => {
     const { current = 'light' } = store();
     setMode(current);
-  }
+  }, [setMode])
+
+  /** When storybook params change update the stored themes */
+  React.useEffect(() => {
+    const currentStore = store();
+
+    updateStore({ ...currentStore, ...darkModeParams });
+    renderTheme()
+  }, [darkModeParams, renderTheme])
 
   React.useEffect(() => {
     const channel = api.getChannel();
