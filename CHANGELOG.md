@@ -1,3 +1,15 @@
+# v1.0.2 (Wed Sep 02 2020)
+
+#### 🐛 Bug Fix
+
+- Revert "update deprecated function" [#122](https://github.com/hipstersmoothie/storybook-dark-mode/pull/122) ([@hipstersmoothie](https://github.com/hipstersmoothie))
+
+#### Authors: 1
+
+- Andrew Lisowski ([@hipstersmoothie](https://github.com/hipstersmoothie))
+
+---
+
 # v1.0.1 (Wed Sep 02 2020)
 
 #### 🐛 Bug Fix
