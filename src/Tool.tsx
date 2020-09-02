@@ -159,7 +159,7 @@ export const DarkMode = ({ api }: DarkModeProps) => {
 
   /** Render the current theme */
   function renderTheme() {
-    const { current } = store();
+    const { current = 'light' } = store();
     setMode(current);
   }
 
