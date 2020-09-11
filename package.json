@@ -5,6 +5,7 @@
   "main": "dist/index.js",
   "source": "index.ts",
   "files": [
+    "src",
     "dist",
     "register.js"
   ],
