@@ -1,3 +1,15 @@
+# v1.0.3 (Fri Sep 11 2020)
+
+#### 🐛 Bug Fix
+
+- Ship source files for sourcemaps [#123](https://github.com/hipstersmoothie/storybook-dark-mode/pull/123) ([@adierkens](https://github.com/adierkens))
+
+#### Authors: 1
+
+- Adam Dierkens ([@adierkens](https://github.com/adierkens))
+
+---
+
 # v1.0.2 (Wed Sep 02 2020)
 
 #### 🐛 Bug Fix
