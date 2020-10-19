@@ -18,27 +18,29 @@ or with yarn:
 yarn add -D storybook-dark-mode
 ```
 
-Then, add following content to .storybook/addons.js
+Then, add the addon to your `.storybook/main.js`
 
 ```js
-import 'storybook-dark-mode/register';
+module.exports = {
+  addons: [
+    'storybook-dark-mode/register'
+  ],
+}
 ```
 
 ## Configuration
 
-Configure the dark and light mode by adding the following to you `config.js` file:
+Configure the dark and light mode by adding the following to your `.storybook/preview.js` file:
 
 ```js
-import { addParameters } from '@storybook/react'; // or any other type of storybook
-
-addParameters({
+export parameters = {
   darkMode: {
     // Override the default dark theme
     dark: { ...themes.dark, appBg: 'black' },
     // Override the default light theme
     light: { ...themes.normal, appBg: 'red' }
   }
-});
+};
 ```
 
 ### Default Theme
@@ -53,14 +55,12 @@ Once the initial color scheme has been set, subsequent reloads will use this val
 To clear the cached color scheme you have to `localStorage.clear()` in the chrome console.
 
 ```js
-import { addParameters } from '@storybook/react';
-
-addParameters({
+export parameters = {
   darkMode: {
     // Set the initial theme
     current: 'light'
   }
-});
+};
 ```
 
 ### Dark/Light Class
@@ -71,14 +71,12 @@ This allows you to easily write dark mode aware theme overrides for the storyboo
 You can override the classNames applied when switching between light and dark mode using the `darkClass` and `lightClass` parameters.
 
 ```js
-import { addParameters } from '@storybook/react';
-
-addParameters({
+export parameters = {
   darkMode: {
     darkClass: 'lights-out',
     lightClass: 'lights-on'
   }
-});
+};
 ```
 
 ## Story integration
@@ -88,13 +86,11 @@ addParameters({
 This plugin will apply the `darkClass` and `lightClass` classes to the preview iframe if you turn on the `stylePreview` option.
 
 ```js
-import { addParameters } from '@storybook/react';
-
-addParameters({
+export parameters = {
   darkMode: {
     stylePreview: true
   }
-});
+};
 ```
 
 ### React
@@ -118,7 +114,7 @@ function ThemeWrapper(props) {
   );
 }
 
-addDecorator(renderStory => <ThemeWrapper>{renderStory()}</ThemeWrapper>);
+export const decorators = [renderStory => <ThemeWrapper>{renderStory()}</ThemeWrapper>)];
 ```
 
 #### Theme Knobs
@@ -128,7 +124,7 @@ If you want to have you UI's dark mode separate from you components' dark mode, 
 ```js
 // Add a global decorator that will render a dark background when the
 // "Color Scheme" knob is set to dark
-addDecorator(function(storyFn) {
+const knobDecorator = (storyFn) => {
   // A knob for color scheme added to every story
   const colorScheme = select('Color Scheme', ['light', 'dark'], 'light');
 
@@ -148,7 +144,9 @@ addDecorator(function(storyFn) {
       storyFn()
     ]
   });
-});
+}
+
+export const decorators = [knobDecorator];
 ```
 
 ### Events
@@ -184,7 +182,7 @@ function ThemeWrapper(props) {
   );
 }
 
-addDecorator(renderStory => <ThemeWrapper>{renderStory()}</ThemeWrapper>);
+export const decorators = [renderStory => <ThemeWrapper>{renderStory()}</ThemeWrapper>)];
 ```
 
 ## Contributors ✨
