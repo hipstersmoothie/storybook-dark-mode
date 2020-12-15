@@ -1,3 +1,19 @@
+# v1.0.4 (Tue Dec 15 2020)
+
+#### 🐛 Bug Fix
+
+- add preset.js [#129](https://github.com/hipstersmoothie/storybook-dark-mode/pull/129) ([@hipstersmoothie](https://github.com/hipstersmoothie))
+
+#### 📝 Documentation
+
+- update readme config for storybook 6.0 [#126](https://github.com/hipstersmoothie/storybook-dark-mode/pull/126) ([@hipstersmoothie](https://github.com/hipstersmoothie))
+
+#### Authors: 1
+
+- Andrew Lisowski ([@hipstersmoothie](https://github.com/hipstersmoothie))
+
+---
+
 # v1.0.3 (Fri Sep 11 2020)
 
 #### 🐛 Bug Fix
