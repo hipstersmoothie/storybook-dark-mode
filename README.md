@@ -18,14 +18,12 @@ or with yarn:
 yarn add -D storybook-dark-mode
 ```
 
-Then, add the addon to your `.storybook/main.js`
+Then, add following content to `.storybook/main.js`
 
 ```js
 module.exports = {
-  addons: [
-    'storybook-dark-mode/register'
-  ],
-}
+  presets: ['storybook-dark-mode']
+};
 ```
 
 ## Configuration
@@ -211,6 +209,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 
 <!-- markdownlint-enable -->
 <!-- prettier-ignore-end -->
+
 <!-- ALL-CONTRIBUTORS-LIST:END -->
 
 This project follows the [all-contributors](https://github.com/all-contributors/all-contributors) specification. Contributions of any kind welcome!

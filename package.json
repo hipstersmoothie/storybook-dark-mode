@@ -1,7 +1,7 @@
 {
   "name": "storybook-dark-mode",
   "version": "1.0.3",
-  "description": "Toggle between light and dark mode in Storybook v5",
+  "description": "Toggle between light and dark mode in Storybook",
   "main": "dist/index.js",
   "source": "index.ts",
   "files": [
@@ -13,6 +13,10 @@
     "name": "Andrew Lisowski",
     "email": "lisowski54@gmail.com"
   },
+  "keywords": [
+    "storybook-addons",
+    "appearance"
+  ],
   "repository": {
     "type": "git",
     "url": "https://github.com/hipstersmoothie/storybook-dark-mode"
