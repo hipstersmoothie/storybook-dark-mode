@@ -22,7 +22,7 @@ Then, add following content to `.storybook/main.js`
 
 ```js
 module.exports = {
-  presets: ['storybook-dark-mode']
+  addons: ['storybook-dark-mode']
 };
 ```
 
