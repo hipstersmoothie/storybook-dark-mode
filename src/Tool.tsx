@@ -120,7 +120,7 @@ export const DarkMode = ({ api }: DarkModeProps) => {
   const { current: defaultMode, stylePreview, ...params } = darkModeParams
 
   // Save custom themes on init
-  const initialMode = React.useRef(store(params).current);
+  const initialMode = React.useMemo(() => store(params).current, [params]);
 
   /** Set the theme in storybook, update the local state, and emit an event */
   const setMode = React.useCallback(
@@ -190,7 +190,7 @@ export const DarkMode = ({ api }: DarkModeProps) => {
   // need the effect to run whenever defaultMode is updated
   React.useEffect(() => {
     // If a users has set the mode this is respected
-    if (initialMode.current) {
+    if (initialMode) {
       return;
     }
 
@@ -199,7 +199,7 @@ export const DarkMode = ({ api }: DarkModeProps) => {
     } else if (prefersDark.matches) {
       updateMode('dark');
     }
-  }, [defaultMode, updateMode]);
+  }, [defaultMode, updateMode, initialMode]);
 
   return (
     <IconButton
