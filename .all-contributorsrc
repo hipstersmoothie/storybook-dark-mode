@@ -107,6 +107,15 @@
       "contributions": [
         "code"
       ]
+    },
+    {
+      "login": "PaulFasola",
+      "name": "Paul Fasola",
+      "avatar_url": "https://avatars.githubusercontent.com/u/1634645?v=4",
+      "profile": "https://www.linkedin.com/in/paulfasola/",
+      "contributions": [
+        "doc"
+      ]
     }
   ],
   "contributorsPerLine": 7
