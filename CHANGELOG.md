@@ -1,3 +1,30 @@
+# v1.0.5 (Mon Mar 08 2021)
+
+:tada: This release contains work from new contributors! :tada:
+
+Thanks for all your work!
+
+:heart: Paul Fasola ([@PaulFasola](https://github.com/PaulFasola))
+
+:heart: Pavel Keyzik ([@pavelkeyzik](https://github.com/pavelkeyzik))
+
+#### 🐛 Bug Fix
+
+- Fix "color function invalid arg" issue when upgrading between versions of storybook [#142](https://github.com/hipstersmoothie/storybook-dark-mode/pull/142) ([@hipstersmoothie](https://github.com/hipstersmoothie))
+
+#### 📝 Documentation
+
+- README: added "themes" import origin [#141](https://github.com/hipstersmoothie/storybook-dark-mode/pull/141) ([@PaulFasola](https://github.com/PaulFasola))
+- Change presets field to addons in configuration [#139](https://github.com/hipstersmoothie/storybook-dark-mode/pull/139) ([@pavelkeyzik](https://github.com/pavelkeyzik))
+
+#### Authors: 3
+
+- Andrew Lisowski ([@hipstersmoothie](https://github.com/hipstersmoothie))
+- Paul Fasola ([@PaulFasola](https://github.com/PaulFasola))
+- Pavel Keyzik ([@pavelkeyzik](https://github.com/pavelkeyzik))
+
+---
+
 # v1.0.4 (Tue Dec 15 2020)
 
 #### 🐛 Bug Fix
