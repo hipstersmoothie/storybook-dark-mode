@@ -1,3 +1,16 @@
+# v1.0.6 (Mon Mar 08 2021)
+
+#### ⚠️  Pushed to `master`
+
+- only get initial mode once ([@hipstersmoothie](https://github.com/hipstersmoothie))
+- don't set default params to avoid base theme flash ([@hipstersmoothie](https://github.com/hipstersmoothie))
+
+#### Authors: 1
+
+- Andrew Lisowski ([@hipstersmoothie](https://github.com/hipstersmoothie))
+
+---
+
 # v1.0.5 (Mon Mar 08 2021)
 
 :tada: This release contains work from new contributors! :tada:
