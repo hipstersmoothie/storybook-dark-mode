@@ -209,6 +209,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
     <td align="center"><a href="http://twitter.com/jpzwarte"><img src="https://avatars1.githubusercontent.com/u/3968?v=4" width="100px;" alt=""/><br /><sub><b>Jeroen Zwartepoorte</b></sub></a><br /><a href="https://github.com/hipstersmoothie/storybook-dark-mode/commits?author=jpzwarte" title="Documentation">📖</a> <a href="https://github.com/hipstersmoothie/storybook-dark-mode/commits?author=jpzwarte" title="Code">💻</a></td>
     <td align="center"><a href="https://claritydev.net"><img src="https://avatars0.githubusercontent.com/u/8878045?v=4" width="100px;" alt=""/><br /><sub><b>Alex Khomenko</b></sub></a><br /><a href="https://github.com/hipstersmoothie/storybook-dark-mode/commits?author=Clarity-89" title="Code">💻</a></td>
     <td align="center"><a href="https://www.linkedin.com/in/paulfasola/"><img src="https://avatars.githubusercontent.com/u/1634645?v=4" width="100px;" alt=""/><br /><sub><b>Paul Fasola</b></sub></a><br /><a href="https://github.com/hipstersmoothie/storybook-dark-mode/commits?author=PaulFasola" title="Documentation">📖</a></td>
+    <td align="center"><a href="https://pavelkeyzik.com"><img src="https://avatars.githubusercontent.com/u/17102399?v=4" width="100px;" alt=""/><br /><sub><b>Pavel Keyzik</b></sub></a><br /><a href="https://github.com/hipstersmoothie/storybook-dark-mode/commits?author=pavelkeyzik" title="Documentation">📖</a></td>
   </tr>
 </table>
 

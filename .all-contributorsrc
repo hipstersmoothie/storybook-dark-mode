@@ -116,6 +116,15 @@
       "contributions": [
         "doc"
       ]
+    },
+    {
+      "login": "pavelkeyzik",
+      "name": "Pavel Keyzik",
+      "avatar_url": "https://avatars.githubusercontent.com/u/17102399?v=4",
+      "profile": "https://pavelkeyzik.com",
+      "contributions": [
+        "doc"
+      ]
     }
   ],
   "contributorsPerLine": 7
