@@ -31,6 +31,8 @@ module.exports = {
 Configure the dark and light mode by adding the following to your `.storybook/preview.js` file:
 
 ```js
+import { themes } from '@storybook/theming';
+
 export parameters = {
   darkMode: {
     // Override the default dark theme
@@ -120,6 +122,8 @@ export const decorators = [renderStory => <ThemeWrapper>{renderStory()}</ThemeWr
 If you want to have you UI's dark mode separate from you components' dark mode, implement this global decorator:
 
 ```js
+import { themes } from '@storybook/theming';
+
 // Add a global decorator that will render a dark background when the
 // "Color Scheme" knob is set to dark
 const knobDecorator = (storyFn) => {
