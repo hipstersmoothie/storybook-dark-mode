@@ -17,6 +17,8 @@ const modes = ['light', 'dark'] as const;
 type Mode = typeof modes[number];
 
 interface DarkModeStore {
+  /** The class target in the preview iframe */
+  classTarget: string;
   /** The current mode the storybook is set to */
   current: Mode;
   /** The dark theme for storybook */
@@ -35,6 +37,7 @@ const STORAGE_KEY = 'sb-addon-themes-3';
 export const prefersDark = window.matchMedia('(prefers-color-scheme: dark)');
 
 const defaultParams: Required<Omit<DarkModeStore, 'current'>> = {
+  classTarget: 'body',
   dark: themes.dark,
   darkClass: 'dark',
   light: themes.light,
@@ -67,9 +70,13 @@ const updatePreview = (store: DarkModeStore) => {
   }
 
   const iframeDocument = iframe.contentDocument || iframe.contentWindow?.document;
-  const body = iframeDocument?.body as HTMLBodyElement;
+  const target = iframeDocument?.querySelector(store.classTarget) as HTMLElement;
 
-  toggleDarkClass(body, store);
+  if (!target) {
+    return;
+  }
+
+  toggleDarkClass(target, store);
 };
 
 /** Update the manager iframe class */
