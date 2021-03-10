@@ -125,6 +125,16 @@
       "contributions": [
         "doc"
       ]
+    },
+    {
+      "login": "dricholm",
+      "name": "David Richolm",
+      "avatar_url": "https://avatars.githubusercontent.com/u/32329112?v=4",
+      "profile": "https://dricholm.github.io/",
+      "contributions": [
+        "doc",
+        "code"
+      ]
     }
   ],
   "contributorsPerLine": 7
