@@ -1,3 +1,19 @@
+# v1.0.7 (Wed Mar 10 2021)
+
+:tada: This release contains work from a new contributor! :tada:
+
+Thank you, David Richolm ([@dricholm](https://github.com/dricholm)), for all your work!
+
+#### 🐛 Bug Fix
+
+- Add parameter for classTarget to toggle iframe preview class [#144](https://github.com/hipstersmoothie/storybook-dark-mode/pull/144) ([@dricholm](https://github.com/dricholm))
+
+#### Authors: 1
+
+- David Richolm ([@dricholm](https://github.com/dricholm))
+
+---
+
 # v1.0.6 (Mon Mar 08 2021)
 
 #### ⚠️  Pushed to `master`
