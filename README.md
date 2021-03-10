@@ -79,6 +79,21 @@ export parameters = {
 };
 ```
 
+### Preview class target
+
+This plugin will apply the dark/light class to the `<body>` element of the preview iframe. This can be configured with the `classTarget` parameter.
+The value will be passed to a `querySelector()` inside the iframe.
+
+This is useful if the `<body>` is styled according to a parent's class, in that case it can be set to `html`.
+
+```js
+export parameters = {
+  darkMode: {
+    classTarget: 'html'
+  }
+}
+```
+
 ## Story integration
 
 ### Preview ClassName
