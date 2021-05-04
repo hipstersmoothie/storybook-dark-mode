@@ -27,11 +27,11 @@
     "release": "auto shipit"
   },
   "peerDependencies": {
-    "@storybook/addons": ">= 6.x",
-    "@storybook/api": ">= 6.x",
-    "@storybook/components": ">= 6.x",
-    "@storybook/core-events": ">= 6.x",
-    "@storybook/theming": ">= 6.x"
+    "@storybook/addons": "^6.0.0",
+    "@storybook/api": "^6.0.0",
+    "@storybook/components": "^6.0.0",
+    "@storybook/core-events": "^6.0.0",
+    "@storybook/theming": "^6.0.0"
   },
   "dependencies": {
     "fast-deep-equal": "^3.0.0",
