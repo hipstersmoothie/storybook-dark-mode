@@ -135,6 +135,15 @@
         "doc",
         "code"
       ]
+    },
+    {
+      "login": "nygardk",
+      "name": "Klaus Nygård",
+      "avatar_url": "https://avatars.githubusercontent.com/u/2855908?v=4",
+      "profile": "http://klausnygard.fi",
+      "contributions": [
+        "code"
+      ]
     }
   ],
   "contributorsPerLine": 7
