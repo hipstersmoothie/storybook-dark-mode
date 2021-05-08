@@ -2491,10 +2491,10 @@ eslint-config-prettier@6.9.0:
   dependencies:
     get-stdin "^6.0.0"
 
-eslint-config-xo-react@0.20.0:
-  version "0.20.0"
-  resolved "https://registry.yarnpkg.com/eslint-config-xo-react/-/eslint-config-xo-react-0.20.0.tgz#b20dc454ff3407eb90934d6691618c75f39f2f68"
-  integrity sha512-or9vqE6WCsieEh9Bp6QZQEG7jOWLeGrAq/f/82D/f3mNICgYFW6SfEzKyWl34P3XkjIH/tNJDrf1hhPf5hWvxg==
+eslint-config-xo-react@0.25.0:
+  version "0.25.0"
+  resolved "https://registry.yarnpkg.com/eslint-config-xo-react/-/eslint-config-xo-react-0.25.0.tgz#fd9fc77365b5c85de14e287f86ec579a1599aed5"
+  integrity sha512-YpABFxnoATAYtxsZQChZEbOkWqzCtcQDRdiUqHhLgG7hzbAEzPDmsRUWnTP8oTVLVFWrbgdf913b8kQJaR1cBA==
 
 eslint-config-xo@0.27.1:
   version "0.27.1"
