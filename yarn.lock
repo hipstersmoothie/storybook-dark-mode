@@ -1253,7 +1253,7 @@ ajv@^6.5.5, ajv@^6.9.1:
     json-schema-traverse "^0.4.1"
     uri-js "^4.2.2"
 
-all-contributors-cli@^6.14.0, all-contributors-cli@^6.14.2:
+all-contributors-cli@6.14.2, all-contributors-cli@^6.14.0:
   version "6.14.2"
   resolved "https://registry.yarnpkg.com/all-contributors-cli/-/all-contributors-cli-6.14.2.tgz#4d7652f700a827b9a2f749720f13605ee1c2f8bd"
   integrity sha512-DUeZrL0EsXwdYZ1msEeI0cY7DNQqggRKLMfDzgZu+l/72KLf/ZuT97wnUIGAFvSPUlfSAXIVDhivOlZRFjYH+g==
@@ -1499,7 +1499,7 @@ auto-config-hipstersmoothie@3.0.24:
     "@auto-it/released" "9.34.1"
     all-contributors-cli "^6.14.0"
 
-auto@^9.34.1:
+auto@9.34.1:
   version "9.34.1"
   resolved "https://registry.yarnpkg.com/auto/-/auto-9.34.1.tgz#58480aea751998d259a9cb050eae0f334483506d"
   integrity sha512-Ui6WffOCBa1I9drbZOU+YbTYL74jHBXbzG26h8d8HRTUnuvi44Z1LRxG4whMeWZCUKshMRnMNnq2Mukalht8BA==
