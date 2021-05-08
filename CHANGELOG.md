@@ -1,3 +1,19 @@
+# v1.0.8 (Sat May 08 2021)
+
+:tada: This release contains work from a new contributor! :tada:
+
+Thank you, Klaus Nygård ([@nygardk](https://github.com/nygardk)), for all your work!
+
+#### 🐛 Bug Fix
+
+- Fix storybook peerDependencies semver range [#149](https://github.com/hipstersmoothie/storybook-dark-mode/pull/149) ([@nygardk](https://github.com/nygardk))
+
+#### Authors: 1
+
+- Klaus Nygård ([@nygardk](https://github.com/nygardk))
+
+---
+
 # v1.0.7 (Wed Mar 10 2021)
 
 :tada: This release contains work from a new contributor! :tada:
