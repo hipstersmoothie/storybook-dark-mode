@@ -1,4 +1,4 @@
-import addons, { types } from '@storybook/addons';
+import { addons, types } from '@storybook/addons';
 import { themes } from '@storybook/theming';
 import * as React from 'react';
 
