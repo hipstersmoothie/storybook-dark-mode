@@ -49,7 +49,7 @@
     "all-contributors-cli": "^6.14.2",
     "auto": "^9.34.1",
     "auto-config-hipstersmoothie": "3.0.24",
-    "eslint": "6.5.0",
+    "eslint": "7.30.0",
     "eslint-config-prettier": "6.9.0",
     "eslint-config-xo": "0.27.1",
     "eslint-config-xo-react": "0.20.0",
