@@ -1107,13 +1107,19 @@
     "@types/prop-types" "*"
     csstype "^2.2.0"
 
-"@types/react@16.9.11":
-  version "16.9.11"
-  resolved "https://registry.yarnpkg.com/@types/react/-/react-16.9.11.tgz#70e0b7ad79058a7842f25ccf2999807076ada120"
-  integrity sha512-UBT4GZ3PokTXSWmdgC/GeCGEJXE5ofWyibCcecRLUVN2ZBpXQGVgQGtG2foS7CrTKFKlQVVswLvf7Js6XA/CVQ==
+"@types/react@16.14.11":
+  version "16.14.11"
+  resolved "https://registry.yarnpkg.com/@types/react/-/react-16.14.11.tgz#992a0cd4b66b9f27315042b5d96e976717368f04"
+  integrity sha512-Don0MtsZZ3fjwTJ2BsoqkyOy7e176KplEAKOpr/4XDdzinlyJBn9yfsKn5mcSgn4kh1B22+3tBnzBC1z63ybtQ==
   dependencies:
     "@types/prop-types" "*"
-    csstype "^2.2.0"
+    "@types/scheduler" "*"
+    csstype "^3.0.2"
+
+"@types/scheduler@*":
+  version "0.16.2"
+  resolved "https://registry.yarnpkg.com/@types/scheduler/-/scheduler-0.16.2.tgz#1a62f89525723dde24ba1b01b092bf5df8ad4d39"
+  integrity sha512-hppQEBDmlwhFAXKJX2KnWLYu5yMfi91yazPb2l+lbJiwW+wdo1gNeRA+3RgNSO39WYX2euey41KEwnqesU2Jew==
 
 "@types/stack-utils@^1.0.1":
   version "1.0.1"
@@ -2106,6 +2112,11 @@ csstype@^2.2.0, csstype@^2.5.7:
   version "2.6.3"
   resolved "https://registry.yarnpkg.com/csstype/-/csstype-2.6.3.tgz#b701e5968245bf9b08d54ac83d00b624e622a9fa"
   integrity sha512-rINUZXOkcBmoHWEyu7JdHu5JMzkGRoMX4ov9830WNgxf5UYxcBUO0QTKAqeJ5EZfSdlrcJYkC8WwfVW7JYi4yg==
+
+csstype@^3.0.2:
+  version "3.0.8"
+  resolved "https://registry.yarnpkg.com/csstype/-/csstype-3.0.8.tgz#d2266a792729fb227cd216fb572f43728e1ad340"
+  integrity sha512-jXKhWqXPmlUeoQnF/EhTtTl4C9SnrxSH/jZUih3jmO6lBKr99rP3/+FmrMj4EFpOXzMtXHAZkd3x0E6h6Fgflw==
 
 dashdash@^1.12.0:
   version "1.14.1"
