@@ -33,7 +33,7 @@ Configure the dark and light mode by adding the following to your `.storybook/pr
 ```js
 import { themes } from '@storybook/theming';
 
-export parameters = {
+export const parameters = {
   darkMode: {
     // Override the default dark theme
     dark: { ...themes.dark, appBg: 'black' },
@@ -55,7 +55,7 @@ Once the initial color scheme has been set, subsequent reloads will use this val
 To clear the cached color scheme you have to `localStorage.clear()` in the chrome console.
 
 ```js
-export parameters = {
+export const parameters = {
   darkMode: {
     // Set the initial theme
     current: 'light'
@@ -71,7 +71,7 @@ This allows you to easily write dark mode aware theme overrides for the storyboo
 You can override the classNames applied when switching between light and dark mode using the `darkClass` and `lightClass` parameters.
 
 ```js
-export parameters = {
+export const parameters = {
   darkMode: {
     darkClass: 'lights-out',
     lightClass: 'lights-on'
@@ -87,7 +87,7 @@ The value will be passed to a `querySelector()` inside the iframe.
 This is useful if the `<body>` is styled according to a parent's class, in that case it can be set to `html`.
 
 ```js
-export parameters = {
+export const parameters = {
   darkMode: {
     classTarget: 'html'
   }
@@ -101,7 +101,7 @@ export parameters = {
 This plugin will apply the `darkClass` and `lightClass` classes to the preview iframe if you turn on the `stylePreview` option.
 
 ```js
-export parameters = {
+export const parameters = {
   darkMode: {
     stylePreview: true
   }
