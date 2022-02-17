@@ -7,8 +7,7 @@ const Sun = () => (
     viewBox="0 0 129 129"
     enableBackground="new 0 0 129 129"
     style={{
-      fill: 'currentColor',
-      marginTop: 3
+      fill: 'currentColor'
     }}
   >
     <g>

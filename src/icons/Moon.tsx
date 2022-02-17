@@ -9,7 +9,6 @@ const Moon = () => (
     viewBox="0 0 438.277 438.277"
     style={{
       fill: 'currentColor',
-      marginTop: 3,
       height: 13
     }}
   >
