@@ -144,6 +144,16 @@
       "contributions": [
         "code"
       ]
+    },
+    {
+      "login": "artmsilva",
+      "name": "Arturo Silva",
+      "avatar_url": "https://avatars.githubusercontent.com/u/347490?v=4",
+      "profile": "https://artmsilva.com",
+      "contributions": [
+        "doc",
+        "code"
+      ]
     }
   ],
   "contributorsPerLine": 7

@@ -228,6 +228,9 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
     <td align="center"><a href="https://dricholm.github.io/"><img src="https://avatars.githubusercontent.com/u/32329112?v=4" width="100px;" alt=""/><br /><sub><b>David Richolm</b></sub></a><br /><a href="https://github.com/hipstersmoothie/storybook-dark-mode/commits?author=dricholm" title="Documentation">📖</a> <a href="https://github.com/hipstersmoothie/storybook-dark-mode/commits?author=dricholm" title="Code">💻</a></td>
     <td align="center"><a href="http://klausnygard.fi"><img src="https://avatars.githubusercontent.com/u/2855908?v=4" width="100px;" alt=""/><br /><sub><b>Klaus Nygård</b></sub></a><br /><a href="https://github.com/hipstersmoothie/storybook-dark-mode/commits?author=nygardk" title="Code">💻</a></td>
   </tr>
+  <tr>
+    <td align="center"><a href="https://artmsilva.com"><img src="https://avatars.githubusercontent.com/u/347490?v=4" width="100px;" alt=""/><br /><sub><b>Arturo Silva</b></sub></a><br /><a href="https://github.com/hipstersmoothie/storybook-dark-mode/commits?author=artmsilva" title="Documentation">📖</a> <a href="https://github.com/hipstersmoothie/storybook-dark-mode/commits?author=artmsilva" title="Code">💻</a></td>
+  </tr>
 </table>
 
 <!-- markdownlint-enable -->
