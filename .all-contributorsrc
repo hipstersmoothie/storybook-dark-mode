@@ -154,6 +154,16 @@
         "doc",
         "code"
       ]
+    },
+    {
+      "login": "nikkipantony",
+      "name": "Nikki Pantony",
+      "avatar_url": "https://avatars.githubusercontent.com/u/3025322?v=4",
+      "profile": "http://nikkipantony.com",
+      "contributions": [
+        "doc",
+        "code"
+      ]
     }
   ],
   "contributorsPerLine": 7
