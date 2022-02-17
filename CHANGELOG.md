@@ -1,3 +1,29 @@
+# v1.0.9 (Thu Feb 17 2022)
+
+:tada: This release contains work from new contributors! :tada:
+
+Thanks for all your work!
+
+:heart: Arturo Silva ([@artmsilva](https://github.com/artmsilva))
+
+:heart: Nikki Pantony ([@nikkipantony](https://github.com/nikkipantony))
+
+:heart: Ian VanSchooten ([@IanVS](https://github.com/IanVS))
+
+#### 🐛 Bug Fix
+
+- fix: alignment issue with icons in toolbar with storybook 6.4.9 [#172](https://github.com/hipstersmoothie/storybook-dark-mode/pull/172) ([@artmsilva](https://github.com/artmsilva))
+- Change export parameters to export const parameters in README [#164](https://github.com/hipstersmoothie/storybook-dark-mode/pull/164) ([@nikkipantony](https://github.com/nikkipantony))
+- Import addon as named [#155](https://github.com/hipstersmoothie/storybook-dark-mode/pull/155) ([@IanVS](https://github.com/IanVS))
+
+#### Authors: 3
+
+- Arturo Silva ([@artmsilva](https://github.com/artmsilva))
+- Ian VanSchooten ([@IanVS](https://github.com/IanVS))
+- Nikki Pantony ([@nikkipantony](https://github.com/nikkipantony))
+
+---
+
 # v1.0.8 (Sat May 08 2021)
 
 :tada: This release contains work from a new contributor! :tada:
