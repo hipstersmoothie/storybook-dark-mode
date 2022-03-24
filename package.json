@@ -43,7 +43,7 @@
     "@storybook/components": "6.0.5",
     "@storybook/core-events": "6.0.5",
     "@storybook/theming": "6.0.5",
-    "@types/react": "16.9.11",
+    "@types/react": "17.0.43",
     "@typescript-eslint/eslint-plugin": "2.17.0",
     "@typescript-eslint/parser": "2.17.0",
     "all-contributors-cli": "^6.14.2",
