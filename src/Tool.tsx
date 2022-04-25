@@ -8,7 +8,10 @@ import {
 } from '@storybook/core-events';
 import { API, useParameter } from '@storybook/api';
 import equal from 'fast-deep-equal';
-import { DARK_MODE_EVENT_NAME } from './constants';
+import {
+  DARK_MODE_EVENT_NAME,
+  UPDATE_DARK_MODE_EVENT_NAME
+} from './constants';
 
 import Sun from './icons/Sun';
 import Moon from './icons/Moon';
@@ -126,6 +129,8 @@ export const DarkMode = ({ api }: DarkModeProps) => {
   const darkModeParams = useParameter<Partial<DarkModeStore>>('darkMode', {});
   const { current: defaultMode, stylePreview, ...params } = darkModeParams
 
+  const channel = api.getChannel();
+
   // Save custom themes on init
   const initialMode = React.useMemo(() => store(params).current, [params]);
 
@@ -178,8 +183,6 @@ export const DarkMode = ({ api }: DarkModeProps) => {
   }, [darkModeParams, renderTheme])
 
   React.useEffect(() => {
-    const channel = api.getChannel();
-
     channel.on(STORY_CHANGED, renderTheme);
     channel.on(SET_STORIES, renderTheme);
     channel.on(DOCS_RENDERED, renderTheme);
@@ -190,6 +193,14 @@ export const DarkMode = ({ api }: DarkModeProps) => {
       channel.removeListener(SET_STORIES, renderTheme);
       channel.removeListener(DOCS_RENDERED, renderTheme);
       prefersDark.removeListener(prefersDarkUpdate);
+    };
+  });
+
+  React.useEffect(() => {
+    channel.on(UPDATE_DARK_MODE_EVENT_NAME, updateMode);
+
+    return () => {
+      channel.removeListener(UPDATE_DARK_MODE_EVENT_NAME, updateMode);
     };
   });
 
