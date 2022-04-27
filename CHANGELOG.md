@@ -1,3 +1,19 @@
+# v1.1.0 (Wed Apr 27 2022)
+
+:tada: This release contains work from a new contributor! :tada:
+
+Thank you, Fabien ([@frassinier](https://github.com/frassinier)), for all your work!
+
+#### 🚀 Enhancement
+
+- feat: add update_dark_mode event [#182](https://github.com/hipstersmoothie/storybook-dark-mode/pull/182) ([@frassinier](https://github.com/frassinier))
+
+#### Authors: 1
+
+- Fabien ([@frassinier](https://github.com/frassinier))
+
+---
+
 # v1.0.9 (Thu Feb 17 2022)
 
 :tada: This release contains work from new contributors! :tada:
