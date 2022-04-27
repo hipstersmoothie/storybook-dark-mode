@@ -280,12 +280,12 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
     <td align="center"><a href="https://artmsilva.com"><img src="https://avatars.githubusercontent.com/u/347490?v=4" width="100px;" alt=""/><br /><sub><b>Arturo Silva</b></sub></a><br /><a href="https://github.com/hipstersmoothie/storybook-dark-mode/commits?author=artmsilva" title="Documentation">📖</a> <a href="https://github.com/hipstersmoothie/storybook-dark-mode/commits?author=artmsilva" title="Code">💻</a></td>
     <td align="center"><a href="http://nikkipantony.com"><img src="https://avatars.githubusercontent.com/u/3025322?v=4" width="100px;" alt=""/><br /><sub><b>Nikki Pantony</b></sub></a><br /><a href="https://github.com/hipstersmoothie/storybook-dark-mode/commits?author=nikkipantony" title="Documentation">📖</a> <a href="https://github.com/hipstersmoothie/storybook-dark-mode/commits?author=nikkipantony" title="Code">💻</a></td>
     <td align="center"><a href="https://github.com/IanVS"><img src="https://avatars.githubusercontent.com/u/4616705?v=4" width="100px;" alt=""/><br /><sub><b>Ian VanSchooten</b></sub></a><br /><a href="https://github.com/hipstersmoothie/storybook-dark-mode/commits?author=IanVS" title="Code">💻</a></td>
+    <td align="center"><a href="http://design.talend.com/"><img src="https://avatars.githubusercontent.com/u/18534166?v=4" width="100px;" alt=""/><br /><sub><b>Fabien</b></sub></a><br /><a href="https://github.com/hipstersmoothie/storybook-dark-mode/commits?author=frassinier" title="Documentation">📖</a> <a href="https://github.com/hipstersmoothie/storybook-dark-mode/commits?author=frassinier" title="Code">💻</a></td>
   </tr>
 </table>
 
 <!-- markdownlint-enable -->
 <!-- prettier-ignore-end -->
-
 <!-- ALL-CONTRIBUTORS-LIST:END -->
 
 This project follows the [all-contributors](https://github.com/all-contributors/all-contributors) specification. Contributions of any kind welcome!

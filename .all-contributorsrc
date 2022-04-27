@@ -173,6 +173,16 @@
       "contributions": [
         "code"
       ]
+    },
+    {
+      "login": "frassinier",
+      "name": "Fabien",
+      "avatar_url": "https://avatars.githubusercontent.com/u/18534166?v=4",
+      "profile": "http://design.talend.com/",
+      "contributions": [
+        "doc",
+        "code"
+      ]
     }
   ],
   "contributorsPerLine": 7
