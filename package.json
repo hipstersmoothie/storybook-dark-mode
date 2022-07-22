@@ -56,6 +56,18 @@
     "react-dom": "16.11.0",
     "typescript": "3.7.5"
   },
+  "peerDependencies": {
+    "react": "^16.8.0 || ^17.0.0 || ^18.0.0",
+    "react-dom": "^16.8.0 || ^17.0.0 || ^18.0.0"
+  },
+  "peerDependenciesMeta": {
+    "react": {
+      "optional": true
+    },
+    "react-dom": {
+      "optional": true
+    }
+  },
   "auto": {
     "extends": "hipstersmoothie"
   },
