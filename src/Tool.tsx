@@ -1,4 +1,5 @@
 import * as React from 'react';
+import global from 'global';
 import { themes, ThemeVars } from '@storybook/theming';
 import { IconButton } from '@storybook/components';
 import {
@@ -16,6 +17,7 @@ import {
 import Sun from './icons/Sun';
 import Moon from './icons/Moon';
 
+const { document, window } = global;
 const modes = ['light', 'dark'] as const;
 type Mode = typeof modes[number];
 

@@ -35,6 +35,7 @@
   },
   "dependencies": {
     "fast-deep-equal": "^3.0.0",
+    "global": "^4.4.0",
     "memoizerific": "^1.11.3"
   },
   "devDependencies": {
