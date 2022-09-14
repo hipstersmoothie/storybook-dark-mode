@@ -201,6 +201,16 @@
       "contributions": [
         "code"
       ]
+    },
+    {
+      "login": "Develonaut",
+      "name": "Ryan McHenry",
+      "avatar_url": "https://avatars.githubusercontent.com/u/6206455?v=4",
+      "profile": "https://dribbble.com/Develonaut",
+      "contributions": [
+        "doc",
+        "code"
+      ]
     }
   ],
   "contributorsPerLine": 7

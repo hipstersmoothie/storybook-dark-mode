@@ -283,6 +283,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
     <td align="center"><a href="http://design.talend.com/"><img src="https://avatars.githubusercontent.com/u/18534166?v=4" width="100px;" alt=""/><br /><sub><b>Fabien</b></sub></a><br /><a href="https://github.com/hipstersmoothie/storybook-dark-mode/commits?author=frassinier" title="Documentation">📖</a> <a href="https://github.com/hipstersmoothie/storybook-dark-mode/commits?author=frassinier" title="Code">💻</a></td>
     <td align="center"><a href="https://nils.cx"><img src="https://avatars.githubusercontent.com/u/5544363?v=4" width="100px;" alt=""/><br /><sub><b>nilscox</b></sub></a><br /><a href="https://github.com/hipstersmoothie/storybook-dark-mode/commits?author=nilscox" title="Code">💻</a></td>
     <td align="center"><a href="https://www.heywesty.com"><img src="https://avatars.githubusercontent.com/u/73201?v=4" width="100px;" alt=""/><br /><sub><b>Jack Westbrook</b></sub></a><br /><a href="https://github.com/hipstersmoothie/storybook-dark-mode/commits?author=jackw" title="Code">💻</a></td>
+    <td align="center"><a href="https://dribbble.com/Develonaut"><img src="https://avatars.githubusercontent.com/u/6206455?v=4" width="100px;" alt=""/><br /><sub><b>Ryan McHenry</b></sub></a><br /><a href="https://github.com/hipstersmoothie/storybook-dark-mode/commits?author=Develonaut" title="Documentation">📖</a> <a href="https://github.com/hipstersmoothie/storybook-dark-mode/commits?author=Develonaut" title="Code">💻</a></td>
   </tr>
 </table>
 
