@@ -179,8 +179,13 @@ export const DarkMode = ({ api }: DarkModeProps) => {
   /** When storybook params change update the stored themes */
   React.useEffect(() => {
     const currentStore = store();
-
-    updateStore({ ...currentStore, ...darkModeParams });
+    // Ensure we use the stores `current` value first to persist
+    // themeing between page loads and story changes.
+    updateStore({
+      ...currentStore,
+      ...darkModeParams,
+      current: currentStore.current || darkModeParams.current,
+    });
     renderTheme()
   }, [darkModeParams, renderTheme])
 
