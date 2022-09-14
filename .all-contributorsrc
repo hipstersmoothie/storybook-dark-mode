@@ -192,6 +192,15 @@
       "contributions": [
         "code"
       ]
+    },
+    {
+      "login": "jackw",
+      "name": "Jack Westbrook",
+      "avatar_url": "https://avatars.githubusercontent.com/u/73201?v=4",
+      "profile": "https://www.heywesty.com",
+      "contributions": [
+        "code"
+      ]
     }
   ],
   "contributorsPerLine": 7
