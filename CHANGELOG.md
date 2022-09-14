@@ -1,3 +1,25 @@
+# v1.1.1 (Wed Sep 14 2022)
+
+:tada: This release contains work from new contributors! :tada:
+
+Thanks for all your work!
+
+:heart: nilscox ([@nilscox](https://github.com/nilscox))
+
+:heart: Jack Westbrook ([@jackw](https://github.com/jackw))
+
+#### 🐛 Bug Fix
+
+- Remove @storybook/* dependencies from peer dependencies [#186](https://github.com/hipstersmoothie/storybook-dark-mode/pull/186) ([@nilscox](https://github.com/nilscox))
+- Fix: Storybook preset loading error [#187](https://github.com/hipstersmoothie/storybook-dark-mode/pull/187) ([@jackw](https://github.com/jackw))
+
+#### Authors: 2
+
+- Jack Westbrook ([@jackw](https://github.com/jackw))
+- nilscox ([@nilscox](https://github.com/nilscox))
+
+---
+
 # v1.1.0 (Wed Apr 27 2022)
 
 :tada: This release contains work from a new contributor! :tada:
