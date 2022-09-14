@@ -1,3 +1,19 @@
+# v1.1.2 (Wed Sep 14 2022)
+
+:tada: This release contains work from a new contributor! :tada:
+
+Thank you, Ryan McHenry ([@Develonaut](https://github.com/Develonaut)), for all your work!
+
+#### 🐛 Bug Fix
+
+- Persist current store value [#185](https://github.com/hipstersmoothie/storybook-dark-mode/pull/185) ([@Develonaut](https://github.com/Develonaut))
+
+#### Authors: 1
+
+- Ryan McHenry ([@Develonaut](https://github.com/Develonaut))
+
+---
+
 # v1.1.1 (Wed Sep 14 2022)
 
 :tada: This release contains work from new contributors! :tada:
