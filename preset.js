@@ -1,5 +1,7 @@
+function managerEntries(entry = []) {
+  return [...entry, require.resolve('./dist/esm/preset/manager')];
+}
+
 module.exports = {
-  managerEntries: (entry = []) => {
-    return [...entry, require.resolve('storybook-dark-mode/register')];
-  }
+  managerEntries
 };
