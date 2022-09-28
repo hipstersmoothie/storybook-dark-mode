@@ -1,21 +1,19 @@
 {
   "compilerOptions": {
-    "declaration": true,
-    "lib": ["es2017", "dom"],
-    "jsx": "react",
-    "moduleResolution": "node",
-    // "allowSyntheticDefaultImports": true,
+    "allowSyntheticDefaultImports": true,
+    "baseUrl": ".",
+    "emitDecoratorMetadata": true,
     "esModuleInterop": true,
-    "downlevelIteration": true,
-    "noUnusedLocals": true,
-    "noUnusedParameters": true,
-    "outDir": "dist",
-    "preserveConstEnums": true,
-    "removeComments": false,
+    "experimentalDecorators": true,
+    "incremental": false,
+    "isolatedModules": true,
+    "jsx": "react",
+    "lib": ["es2017", "dom"],
+    "module": "commonjs",
+    "noImplicitAny": true,
+    "rootDir": "./src",
     "skipLibCheck": true,
-    "sourceMap": true,
-    "strict": true,
-    "typeRoots": ["packages/types/", "node_modules/@types/"]
+    "target": "es5"
   },
-  "include": ["src/**/*.ts", "src/**/*.tsx", "typings/**/*"]
+  "include": ["src/**/*", "typings/**/*"]
 }
