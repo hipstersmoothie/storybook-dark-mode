@@ -2,12 +2,13 @@
   "name": "storybook-dark-mode",
   "version": "1.1.2",
   "description": "Toggle between light and dark mode in Storybook",
-  "main": "dist/index.js",
-  "source": "index.ts",
+  "main": "dist/cjs/index.js",
+  "module": "dist/esm/index.js",
+  "types": "dist/ts/index.d.ts",
   "files": [
     "src",
     "dist",
-    "register.js"
+    "preset.js"
   ],
   "author": {
     "name": "Andrew Lisowski",
@@ -22,8 +23,15 @@
     "url": "https://github.com/hipstersmoothie/storybook-dark-mode"
   },
   "scripts": {
+    "clean": "rimraf ./dist",
+    "buildBabel": "concurrently \"yarn buildBabel:cjs\" \"yarn buildBabel:esm\"",
+    "buildBabel:cjs": "babel ./src -d ./dist/cjs --extensions \".js,.jsx,.ts,.tsx\"",
+    "buildBabel:esm": "babel ./src -d ./dist/esm --env-name esm --extensions \".js,.jsx,.ts,.tsx\"",
+    "buildTsc": "tsc --declaration --emitDeclarationOnly --outDir ./dist/ts",
+    "prebuild": "yarn clean",
+    "build": "concurrently \"yarn buildBabel\" \"yarn buildTsc\"",
+    "build:watch": "concurrently \"yarn buildBabel:esm -- --watch\" \"yarn buildTsc -- --watch\"",
     "lint": "eslint --ext .ts --ext .tsx src/**",
-    "build": "tsc",
     "release": "auto shipit"
   },
   "dependencies": {
@@ -37,12 +45,19 @@
     "memoizerific": "^1.11.3"
   },
   "devDependencies": {
+    "@babel/cli": "^7.12.1",
+    "@babel/core": "^7.12.3",
+    "@babel/preset-env": "^7.12.1",
+    "@babel/preset-react": "^7.12.5",
+    "@babel/preset-typescript": "^7.13.0",
     "@types/react": "16.9.11",
     "@typescript-eslint/eslint-plugin": "2.17.0",
     "@typescript-eslint/parser": "2.17.0",
     "all-contributors-cli": "^6.14.2",
     "auto": "^9.34.1",
     "auto-config-hipstersmoothie": "3.0.24",
+    "babel-loader": "^8.1.0",
+    "concurrently": "^6.2.0",
     "eslint": "6.5.0",
     "eslint-config-prettier": "6.9.0",
     "eslint-config-xo": "0.27.1",
@@ -55,7 +70,8 @@
     "prettier": "1.18.2",
     "react": "16.11.0",
     "react-dom": "16.11.0",
-    "typescript": "3.7.5"
+    "rimraf": "^3.0.2",
+    "typescript": "^4.2.4"
   },
   "peerDependencies": {
     "react": "^16.8.0 || ^17.0.0 || ^18.0.0",
