@@ -1,3 +1,15 @@
+# v2.0.3 (Mon Dec 05 2022)
+
+#### 🐛 Bug Fix
+
+- don't show light/dark as a toggle since that doesn't really make any sense [#199](https://github.com/hipstersmoothie/storybook-dark-mode/pull/199) ([@hipstersmoothie](https://github.com/hipstersmoothie))
+
+#### Authors: 1
+
+- Andrew Lisowski ([@hipstersmoothie](https://github.com/hipstersmoothie))
+
+---
+
 # v2.0.2 (Mon Dec 05 2022)
 
 #### 🐛 Bug Fix
