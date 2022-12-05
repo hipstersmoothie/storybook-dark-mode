@@ -1,3 +1,15 @@
+# v2.0.2 (Mon Dec 05 2022)
+
+#### 🐛 Bug Fix
+
+- fix flash of unthemed storybook when using CSS overrides [#198](https://github.com/hipstersmoothie/storybook-dark-mode/pull/198) ([@hipstersmoothie](https://github.com/hipstersmoothie))
+
+#### Authors: 1
+
+- Andrew Lisowski ([@hipstersmoothie](https://github.com/hipstersmoothie))
+
+---
+
 # v2.0.1 (Mon Dec 05 2022)
 
 :tada: This release contains work from a new contributor! :tada:
