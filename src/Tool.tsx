@@ -234,7 +234,6 @@ export const DarkMode = ({ api }: DarkModeProps) => {
   return (
     <IconButton
       key="dark-mode"
-      active={isDark}
       title={
         isDark ? 'Change theme to light mode' : 'Change theme to dark mode'
       }
