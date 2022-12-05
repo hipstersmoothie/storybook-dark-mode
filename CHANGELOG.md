@@ -1,3 +1,15 @@
+# v2.0.0 (Mon Dec 05 2022)
+
+#### 💥 Breaking Change
+
+- Fix: Storybook 6.5.x Yarn PnP preset loading issue [#191](https://github.com/hipstersmoothie/storybook-dark-mode/pull/191) ([@jackw](https://github.com/jackw))
+
+#### Authors: 1
+
+- Jack Westbrook ([@jackw](https://github.com/jackw))
+
+---
+
 # v1.1.2 (Wed Sep 14 2022)
 
 :tada: This release contains work from a new contributor! :tada:
