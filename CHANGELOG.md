@@ -1,3 +1,20 @@
+# v2.0.1 (Mon Dec 05 2022)
+
+:tada: This release contains work from a new contributor! :tada:
+
+Thank you, Clay Risser ([@clayrisser](https://github.com/clayrisser)), for all your work!
+
+#### 🐛 Bug Fix
+
+- Update README.md [#197](https://github.com/hipstersmoothie/storybook-dark-mode/pull/197) ([@clayrisser](https://github.com/clayrisser) [@hipstersmoothie](https://github.com/hipstersmoothie))
+
+#### Authors: 2
+
+- Andrew Lisowski ([@hipstersmoothie](https://github.com/hipstersmoothie))
+- Clay Risser ([@clayrisser](https://github.com/clayrisser))
+
+---
+
 # v2.0.0 (Mon Dec 05 2022)
 
 #### 💥 Breaking Change
