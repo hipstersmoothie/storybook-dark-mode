@@ -120,6 +120,11 @@ export const store = (userTheme: Partial<DarkModeStore> = {}): DarkModeStore => 
   return { ...defaultParams, ...userTheme } as DarkModeStore;
 };
 
+// On initial load, set the dark mode class on the manager
+// This is needed if you're using mostly CSS overrides to styles the storybook
+// Otherwise the default theme is set in src/preset/manager.tsx
+updateManager(store());
+
 interface DarkModeProps {
   /** The storybook API */
   api: API;
