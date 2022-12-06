@@ -1,0 +1,11 @@
+{
+  "name": "basic",
+  "private": true,
+  "scripts": {
+    "start": "../../node_modules/.bin/start-storybook",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
+  },
+  "devDependencies": {},
+  "dependencies": {}
+}

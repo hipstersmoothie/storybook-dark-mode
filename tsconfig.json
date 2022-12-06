@@ -15,5 +15,5 @@
     "skipLibCheck": true,
     "target": "es5"
   },
-  "include": ["src/**/*", "typings/**/*"]
+  "include": ["src/**/*", "examples/**/*", "typings/**/*"]
 }
