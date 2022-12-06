@@ -27,7 +27,7 @@
     "buildBabel": "concurrently \"yarn buildBabel:cjs\" \"yarn buildBabel:esm\"",
     "buildBabel:cjs": "babel ./src -d ./dist/cjs --extensions \".js,.jsx,.ts,.tsx\"",
     "buildBabel:esm": "babel ./src -d ./dist/esm --env-name esm --extensions \".js,.jsx,.ts,.tsx\"",
-    "buildTsc": "tsc --declaration --emitDeclarationOnly --outDir ./dist/ts",
+    "buildTsc": "tsc --declaration --emitDeclarationOnly --outDir ./dist/ts -p tsconfig.build.json",
     "prebuild": "yarn clean",
     "build": "concurrently \"yarn buildBabel\" \"yarn buildTsc\"",
     "build:watch": "concurrently \"yarn buildBabel:esm -- --watch\" \"yarn buildTsc -- --watch\"",
@@ -35,43 +35,45 @@
     "release": "auto shipit"
   },
   "dependencies": {
-    "@storybook/addons": "^6.0.0",
-    "@storybook/api": "^6.0.0",
-    "@storybook/components": "^6.0.0",
-    "@storybook/core-events": "^6.0.0",
-    "@storybook/theming": "^6.0.0",
-    "fast-deep-equal": "^3.0.0",
+    "@storybook/addons": "^6.5.14",
+    "@storybook/api": "^6.5.14",
+    "@storybook/components": "^6.5.14",
+    "@storybook/core-events": "^6.5.14",
+    "@storybook/theming": "^6.5.14",
+    "fast-deep-equal": "^3.1.3",
     "global": "^4.4.0",
     "memoizerific": "^1.11.3"
   },
   "devDependencies": {
-    "@babel/cli": "^7.12.1",
-    "@babel/core": "^7.12.3",
-    "@babel/preset-env": "^7.12.1",
-    "@babel/preset-react": "^7.12.5",
-    "@babel/preset-typescript": "^7.13.0",
-    "@types/react": "16.9.11",
-    "@typescript-eslint/eslint-plugin": "2.17.0",
-    "@typescript-eslint/parser": "2.17.0",
-    "all-contributors-cli": "^6.14.2",
-    "auto": "^9.34.1",
-    "auto-config-hipstersmoothie": "3.0.24",
-    "babel-loader": "^8.1.0",
-    "concurrently": "^6.2.0",
-    "eslint": "6.5.0",
-    "eslint-config-prettier": "6.9.0",
-    "eslint-config-xo": "0.27.1",
-    "eslint-config-xo-react": "0.20.0",
-    "eslint-plugin-react": "7.14.3",
-    "eslint-plugin-react-hooks": "2.2.0",
-    "husky": "3.1.0",
-    "jest": "24.9.0",
-    "lint-staged": "9.5.0",
-    "prettier": "1.18.2",
-    "react": "16.11.0",
-    "react-dom": "16.11.0",
+    "@babel/cli": "^7.19.3",
+    "@babel/core": "^7.20.5",
+    "@babel/preset-env": "^7.20.2",
+    "@babel/preset-react": "^7.18.6",
+    "@babel/preset-typescript": "^7.18.6",
+    "@storybook/builder-webpack5": "^6.5.14",
+    "@storybook/manager-webpack5": "^6.5.14",
+    "@storybook/react": "^6.5.14",
+    "@types/node": "^18.11.11",
+    "@types/react": "^18.0.26",
+    "@typescript-eslint/eslint-plugin": "5.45.1",
+    "@typescript-eslint/parser": "5.45.1",
+    "all-contributors-cli": "^6.24.0",
+    "auto": "^10.37.6",
+    "auto-config-hipstersmoothie": "^4.0.0",
+    "babel-loader": "^8.3.0",
+    "concurrently": "^7.6.0",
+    "eslint": "8.29.0",
+    "eslint-config-prettier": "8.5.0",
+    "eslint-config-xo": "0.43.1",
+    "eslint-config-xo-react": "0.27.0",
+    "eslint-plugin-react": "7.31.11",
+    "eslint-plugin-react-hooks": "4.6.0",
+    "prettier": "^2.8.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
     "rimraf": "^3.0.2",
-    "typescript": "^4.2.4"
+    "ts-node": "^10.9.1",
+    "typescript": "^4.9.3"
   },
   "peerDependencies": {
     "react": "^16.8.0 || ^17.0.0 || ^18.0.0",
@@ -90,17 +92,6 @@
   },
   "prettier": {
     "singleQuote": true
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
-    }
-  },
-  "lint-staged": {
-    "*.{js,json,css,md}": [
-      "prettier --write",
-      "git add"
-    ]
   },
   "license": "MIT"
 }

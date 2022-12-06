@@ -11,15 +11,15 @@ const currentTheme =
 addons.setConfig({
   theme: {
     ...themes[currentTheme],
-    ...currentStore[currentTheme]
-  }
+    ...currentStore[currentTheme],
+  },
 });
 
-addons.register('storybook/dark-mode', api => {
+addons.register('storybook/dark-mode', (api) => {
   addons.add('storybook/dark-mode', {
     title: 'dark mode',
     type: types.TOOL,
     match: ({ viewMode }) => viewMode === 'story' || viewMode === 'docs',
-    render: () => <Tool api={api} />
+    render: () => <Tool api={api} />,
   });
 });

@@ -1,6 +1,7 @@
 node_modules/
 coverage
 dist/
+yarn-error.log
 
 # IDE files
 .idea/
