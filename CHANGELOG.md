@@ -1,3 +1,15 @@
+# v2.0.4 (Tue Dec 06 2022)
+
+#### 🐛 Bug Fix
+
+- Dev setup [#201](https://github.com/hipstersmoothie/storybook-dark-mode/pull/201) ([@hipstersmoothie](https://github.com/hipstersmoothie))
+
+#### Authors: 1
+
+- Andrew Lisowski ([@hipstersmoothie](https://github.com/hipstersmoothie))
+
+---
+
 # v2.0.3 (Mon Dec 05 2022)
 
 #### 🐛 Bug Fix
