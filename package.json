@@ -35,11 +35,11 @@
     "release": "auto shipit"
   },
   "dependencies": {
-    "@storybook/addons": "^6.0.0",
-    "@storybook/api": "^6.0.0",
-    "@storybook/components": "^6.0.0",
-    "@storybook/core-events": "^6.0.0",
-    "@storybook/theming": "^6.0.0",
+    "@storybook/addons": "^6.5.14",
+    "@storybook/api": "^6.5.14",
+    "@storybook/components": "^6.5.14",
+    "@storybook/core-events": "^6.5.14",
+    "@storybook/theming": "^6.5.14",
     "fast-deep-equal": "^3.0.0",
     "global": "^4.4.0",
     "memoizerific": "^1.11.3"
