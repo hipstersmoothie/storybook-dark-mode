@@ -63,8 +63,6 @@
     "eslint-config-xo-react": "0.27.0",
     "eslint-plugin-react": "7.31.11",
     "eslint-plugin-react-hooks": "4.6.0",
-    "husky": "^8.0.2",
-    "lint-staged": "^13.1.0",
     "prettier": "^2.8.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
@@ -88,17 +86,6 @@
   },
   "prettier": {
     "singleQuote": true
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
-    }
-  },
-  "lint-staged": {
-    "*.{js,json,css,md}": [
-      "prettier --write",
-      "git add"
-    ]
   },
   "license": "MIT"
 }
