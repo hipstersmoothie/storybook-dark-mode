@@ -27,7 +27,7 @@
     "buildBabel": "concurrently \"yarn buildBabel:cjs\" \"yarn buildBabel:esm\"",
     "buildBabel:cjs": "babel ./src -d ./dist/cjs --extensions \".js,.jsx,.ts,.tsx\"",
     "buildBabel:esm": "babel ./src -d ./dist/esm --env-name esm --extensions \".js,.jsx,.ts,.tsx\"",
-    "buildTsc": "tsc --declaration --emitDeclarationOnly --outDir ./dist/ts",
+    "buildTsc": "tsc --declaration --emitDeclarationOnly --outDir ./dist/ts -p tsconfig.build.json",
     "prebuild": "yarn clean",
     "build": "concurrently \"yarn buildBabel\" \"yarn buildTsc\"",
     "build:watch": "concurrently \"yarn buildBabel:esm -- --watch\" \"yarn buildTsc -- --watch\"",
