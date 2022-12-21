@@ -33,6 +33,8 @@ interface DarkModeStore {
   lightClass: string;
   /** Apply mode to iframe */
   stylePreview: boolean;
+  /** Persist if the user has set the theme */
+  userHasExplicitlySetTheTheme: boolean;
 }
 
 const STORAGE_KEY = 'sb-addon-themes-3';
@@ -45,6 +47,7 @@ const defaultParams: Required<Omit<DarkModeStore, 'current'>> = {
   light: themes.light,
   lightClass: 'light',
   stylePreview: false,
+  userHasExplicitlySetTheTheme: false,
 };
 
 /** Persist the dark mode settings in localStorage */
@@ -146,7 +149,10 @@ export function DarkMode({ api }: DarkModeProps) {
   const { current: defaultMode, stylePreview, ...params } = darkModeParams;
   const channel = api.getChannel();
   // Save custom themes on init
-  const initialMode = React.useMemo(() => store(params).current, [params]);
+  const userHasExplicitlySetTheTheme = React.useMemo(
+    () => store(params).userHasExplicitlySetTheTheme,
+    [params]
+  );
   /** Set the theme in storybook, update the local state, and emit an event */
   const setMode = React.useCallback(
     (mode: Mode) => {
@@ -176,6 +182,10 @@ export function DarkMode({ api }: DarkModeProps) {
 
   /** Update the theme based on the color preference */
   function prefersDarkUpdate(event: MediaQueryListEvent) {
+    if (userHasExplicitlySetTheTheme || defaultMode) {
+      return;
+    }
+
     updateMode(event.matches ? 'dark' : 'light');
   }
 
@@ -184,6 +194,13 @@ export function DarkMode({ api }: DarkModeProps) {
     const { current = 'light' } = store();
     setMode(current);
   }, [setMode]);
+
+  /** Handle the user event and side effects */
+  const handleIconClick = () => {
+    updateMode();
+    const currentStore = store();
+    updateStore({ ...currentStore, userHasExplicitlySetTheTheme: true });
+  };
 
   /** When storybook params change update the stored themes */
   React.useEffect(() => {
@@ -219,7 +236,7 @@ export function DarkMode({ api }: DarkModeProps) {
   // need the effect to run whenever defaultMode is updated
   React.useEffect(() => {
     // If a users has set the mode this is respected
-    if (initialMode) {
+    if (userHasExplicitlySetTheTheme) {
       return;
     }
 
@@ -228,14 +245,14 @@ export function DarkMode({ api }: DarkModeProps) {
     } else if (prefersDark.matches) {
       updateMode('dark');
     }
-  }, [defaultMode, updateMode, initialMode]);
+  }, [defaultMode, updateMode, userHasExplicitlySetTheTheme]);
   return (
     <IconButton
       key="dark-mode"
       title={
         isDark ? 'Change theme to light mode' : 'Change theme to dark mode'
       }
-      onClick={() => updateMode()}
+      onClick={handleIconClick}
     >
       {isDark ? <Sun /> : <Moon />}
     </IconButton>
