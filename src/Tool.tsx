@@ -36,7 +36,7 @@ interface DarkModeStore {
 }
 
 const STORAGE_KEY = 'sb-addon-themes-3';
-export const prefersDark = window.matchMedia('(prefers-color-scheme: dark)');
+export const prefersDark = window.matchMedia ? window.matchMedia('(prefers-color-scheme: dark)') : false;
 
 const defaultParams: Required<Omit<DarkModeStore, 'current'>> = {
   classTarget: 'body',
