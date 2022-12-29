@@ -287,6 +287,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
   </tr>
   <tr>
     <td align="center"><a href="https://gitlab.com/risserlabs/community"><img src="https://avatars.githubusercontent.com/u/6234038?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Clay Risser</b></sub></a><br /><a href="https://github.com/hipstersmoothie/storybook-dark-mode/commits?author=clayrisser" title="Documentation">📖</a> <a href="https://github.com/hipstersmoothie/storybook-dark-mode/commits?author=clayrisser" title="Code">💻</a></td>
+    <td align="center"><a href="https://www.linkedin.com/in/beltranrengifo/"><img src="https://avatars.githubusercontent.com/u/19485114?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Beltrán Rengifo</b></sub></a><br /><a href="https://github.com/hipstersmoothie/storybook-dark-mode/commits?author=beltranrengifo" title="Code">💻</a></td>
   </tr>
 </table>
 
