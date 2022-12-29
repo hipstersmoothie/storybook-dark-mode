@@ -1,3 +1,29 @@
+# v2.0.5 (Thu Dec 29 2022)
+
+:tada: This release contains work from a new contributor! :tada:
+
+Thank you, Beltrán Rengifo ([@beltranrengifo](https://github.com/beltranrengifo)), for all your work!
+
+#### 🐛 Bug Fix
+
+- Fix: `current` param not being respected by the dark OS color mode [#207](https://github.com/hipstersmoothie/storybook-dark-mode/pull/207) ([@beltranrengifo](https://github.com/beltranrengifo))
+
+#### 🔩 Dependency Updates
+
+- Bump ini from 1.3.5 to 1.3.8 [#189](https://github.com/hipstersmoothie/storybook-dark-mode/pull/189) ([@dependabot[bot]](https://github.com/dependabot[bot]))
+- Bump minimatch from 3.0.4 to 3.1.2 [#196](https://github.com/hipstersmoothie/storybook-dark-mode/pull/196) ([@dependabot[bot]](https://github.com/dependabot[bot]))
+- Bump y18n from 4.0.0 to 4.0.3 [#190](https://github.com/hipstersmoothie/storybook-dark-mode/pull/190) ([@dependabot[bot]](https://github.com/dependabot[bot]))
+- Bump async from 3.2.0 to 3.2.4 [#188](https://github.com/hipstersmoothie/storybook-dark-mode/pull/188) ([@dependabot[bot]](https://github.com/dependabot[bot]))
+- Bump ajv from 6.10.0 to 6.12.6 [#175](https://github.com/hipstersmoothie/storybook-dark-mode/pull/175) ([@dependabot[bot]](https://github.com/dependabot[bot]))
+- Bump lodash from 4.17.11 to 4.17.21 [#152](https://github.com/hipstersmoothie/storybook-dark-mode/pull/152) ([@dependabot[bot]](https://github.com/dependabot[bot]))
+
+#### Authors: 2
+
+- [@dependabot[bot]](https://github.com/dependabot[bot])
+- Beltrán Rengifo ([@beltranrengifo](https://github.com/beltranrengifo))
+
+---
+
 # v2.0.4 (Tue Dec 06 2022)
 
 #### 🐛 Bug Fix
