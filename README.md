@@ -26,6 +26,17 @@ module.exports = {
 };
 ```
 
+## Upgrade from earlier version
+
+Change in `.storybook/main.js`
+
+```diff
+module.exports = {
+-  addons: ['storybook-dark-mode/register']
++  addons: ['storybook-dark-mode']
+};
+```
+
 ## Configuration
 
 Configure the dark and light mode by adding the following to your `.storybook/preview.js` file:
