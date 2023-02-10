@@ -1,3 +1,25 @@
+# v2.0.6 (Fri Feb 10 2023)
+
+:tada: This release contains work from new contributors! :tada:
+
+Thanks for all your work!
+
+:heart: Slava Kostenko ([@Namielusi](https://github.com/Namielusi))
+
+:heart: null[@erik-d](https://github.com/erik-d)
+
+#### 🐛 Bug Fix
+
+- Fix importing global variables [#217](https://github.com/hipstersmoothie/storybook-dark-mode/pull/217) ([@Namielusi](https://github.com/Namielusi))
+- Document what is needed when upgrading from 1.x [#210](https://github.com/hipstersmoothie/storybook-dark-mode/pull/210) ([@erik-d](https://github.com/erik-d))
+
+#### Authors: 2
+
+- [@erik-d](https://github.com/erik-d)
+- Slava Kostenko ([@Namielusi](https://github.com/Namielusi))
+
+---
+
 # v2.0.5 (Thu Dec 29 2022)
 
 :tada: This release contains work from a new contributor! :tada:
