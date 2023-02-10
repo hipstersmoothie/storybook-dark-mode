@@ -2207,6 +2207,11 @@
     lodash "^4.17.21"
     regenerator-runtime "^0.13.7"
 
+"@storybook/global@^5.0.0":
+  version "5.0.0"
+  resolved "https://registry.yarnpkg.com/@storybook/global/-/global-5.0.0.tgz#b793d34b94f572c1d7d9e0f44fac4e0dbc9572ed"
+  integrity sha512-FcOqPAXACP0I3oJ/ws6/rrPT9WGhu915Cg8D02a9YxLo0DE9zI+a9A5gRGvmQ09fiWPukqI8ZAEoQEdWUKMQdQ==
+
 "@storybook/manager-webpack4@6.5.14":
   version "6.5.14"
   resolved "https://registry.npmjs.org/@storybook/manager-webpack4/-/manager-webpack4-6.5.14.tgz#92cd3d34b9e28d7edd215b1e79b1f0757fb66eba"

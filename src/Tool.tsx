@@ -1,5 +1,5 @@
 import * as React from 'react';
-import global from 'global';
+import { global } from '@storybook/global';
 import { themes, ThemeVars } from '@storybook/theming';
 import { IconButton } from '@storybook/components';
 import {
