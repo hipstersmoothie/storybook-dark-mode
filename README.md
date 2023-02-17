@@ -90,6 +90,17 @@ export const parameters = {
 };
 ```
 
+You can also pass an array to apply multiple classes.
+
+```js
+export const parameters = {
+  darkMode: {
+    darkClass: ['lights-out', 'foo'],
+    lightClass: ['lights-on', 'bar']
+  }
+};
+```
+
 ### Preview class target
 
 This plugin will apply the dark/light class to the `<body>` element of the preview iframe. This can be configured with the `classTarget` parameter.
