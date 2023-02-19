@@ -1,3 +1,15 @@
+# v2.1.0 (Sun Feb 19 2023)
+
+#### 🚀 Enhancement
+
+- feat: Add ability to toggle multiple light/dark classes [#220](https://github.com/hipstersmoothie/storybook-dark-mode/pull/220) ([@chris-dura](https://github.com/chris-dura))
+
+#### Authors: 1
+
+- Christopher Dura ([@chris-dura](https://github.com/chris-dura))
+
+---
+
 # v2.0.6 (Fri Feb 10 2023)
 
 :tada: This release contains work from new contributors! :tada:
