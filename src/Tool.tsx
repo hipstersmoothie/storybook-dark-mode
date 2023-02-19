@@ -26,11 +26,11 @@ interface DarkModeStore {
   /** The dark theme for storybook */
   dark: ThemeVars;
   /** The dark class name for the preview iframe */
-  darkClass: string;
+  darkClass: string | string[];
   /** The light theme for storybook */
   light: ThemeVars;
   /** The light class name for the preview iframe */
-  lightClass: string;
+  lightClass: string | string[];
   /** Apply mode to iframe */
   stylePreview: boolean;
   /** Persist if the user has set the theme */
@@ -43,9 +43,9 @@ export const prefersDark = window.matchMedia('(prefers-color-scheme: dark)');
 const defaultParams: Required<Omit<DarkModeStore, 'current'>> = {
   classTarget: 'body',
   dark: themes.dark,
-  darkClass: 'dark',
+  darkClass: ['dark'],
   light: themes.light,
-  lightClass: 'light',
+  lightClass: ['light'],
   stylePreview: false,
   userHasExplicitlySetTheTheme: false,
 };
@@ -65,12 +65,18 @@ const toggleDarkClass = (
   }: DarkModeStore
 ) => {
   if (current === 'dark') {
-    el.classList.add(darkClass);
-    el.classList.remove(lightClass);
+    el.classList.remove(...arrayify(lightClass));
+    el.classList.add(...arrayify(darkClass));
   } else {
-    el.classList.add(lightClass);
-    el.classList.remove(darkClass);
+    el.classList.remove(...arrayify(darkClass));
+    el.classList.add(...arrayify(lightClass));
   }
+};
+
+/** Coerce a string to a single item array, or return an array as-is */
+const arrayify = (classes: string | string[]) : string[] => {
+  const arr: string[] = [];
+  return arr.concat(classes).map(item => item);
 };
 
 /** Update the preview iframe class */
