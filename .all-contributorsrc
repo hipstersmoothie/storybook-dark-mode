@@ -240,6 +240,16 @@
       "contributions": [
         "doc"
       ]
+    },
+    {
+      "login": "chris-dura",
+      "name": "Christopher Dura",
+      "avatar_url": "https://avatars.githubusercontent.com/u/3680914?v=4",
+      "profile": "https://github.com/chris-dura",
+      "contributions": [
+        "doc",
+        "code"
+      ]
     }
   ],
   "contributorsPerLine": 7
