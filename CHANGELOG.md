@@ -1,3 +1,19 @@
+# v2.1.1 (Tue Feb 21 2023)
+
+:tada: This release contains work from a new contributor! :tada:
+
+Thank you, An Dang ([@zyzo](https://github.com/zyzo)), for all your work!
+
+#### 🐛 Bug Fix
+
+- Null check window.matchMedia [#222](https://github.com/hipstersmoothie/storybook-dark-mode/pull/222) ([@zyzo](https://github.com/zyzo))
+
+#### Authors: 1
+
+- An Dang ([@zyzo](https://github.com/zyzo))
+
+---
+
 # v2.1.0 (Sun Feb 19 2023)
 
 #### 🚀 Enhancement
