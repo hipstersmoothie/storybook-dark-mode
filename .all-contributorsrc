@@ -250,6 +250,15 @@
         "doc",
         "code"
       ]
+    },
+    {
+      "login": "zyzo",
+      "name": "An Dang",
+      "avatar_url": "https://avatars.githubusercontent.com/u/6483446?v=4",
+      "profile": "https://www.linkedin.com/in/an-dang-5a704581/",
+      "contributions": [
+        "code"
+      ]
     }
   ],
   "contributorsPerLine": 7

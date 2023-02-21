@@ -312,6 +312,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
     <td align="center"><a href="https://www.linkedin.com/in/beltranrengifo/"><img src="https://avatars.githubusercontent.com/u/19485114?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Beltrán Rengifo</b></sub></a><br /><a href="https://github.com/hipstersmoothie/storybook-dark-mode/commits?author=beltranrengifo" title="Code">💻</a></td>
     <td align="center"><a href="https://github.com/erik-d"><img src="https://avatars.githubusercontent.com/u/2276379?v=4?s=100" width="100px;" alt=""/><br /><sub><b>erik-d</b></sub></a><br /><a href="https://github.com/hipstersmoothie/storybook-dark-mode/commits?author=erik-d" title="Documentation">📖</a></td>
     <td align="center"><a href="https://github.com/chris-dura"><img src="https://avatars.githubusercontent.com/u/3680914?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Christopher Dura</b></sub></a><br /><a href="https://github.com/hipstersmoothie/storybook-dark-mode/commits?author=chris-dura" title="Documentation">📖</a> <a href="https://github.com/hipstersmoothie/storybook-dark-mode/commits?author=chris-dura" title="Code">💻</a></td>
+    <td align="center"><a href="https://www.linkedin.com/in/an-dang-5a704581/"><img src="https://avatars.githubusercontent.com/u/6483446?v=4?s=100" width="100px;" alt=""/><br /><sub><b>An Dang</b></sub></a><br /><a href="https://github.com/hipstersmoothie/storybook-dark-mode/commits?author=zyzo" title="Code">💻</a></td>
   </tr>
 </table>
 
