@@ -102,7 +102,7 @@ const updatePreview = (store: DarkModeStore) => {
 
 /** Update the manager iframe class */
 const updateManager = (store: DarkModeStore) => {
-  const manager = document.querySelector('body');
+  const manager = document.querySelector(store.classTarget);
 
   if (!manager) {
     return;
