@@ -1,5 +1,7 @@
-module.exports = {
+export default {
   stories: ['../src/**/*.stories.tsx'],
   addons: ['../../../preset.js'],
-  framework: '@storybook/react',
-};
+  framework: {
+    name: '@storybook/react-vite'
+  }
+}

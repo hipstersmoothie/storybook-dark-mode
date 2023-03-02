@@ -2,9 +2,9 @@
   "name": "basic",
   "private": true,
   "scripts": {
-    "start": "../../node_modules/.bin/start-storybook",
-    "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook"
+    "start": "../../node_modules/.bin/storybook dev",
+    "storybook": "storybook dev",
+    "build-storybook": "storybook build"
   },
   "devDependencies": {},
   "dependencies": {}
