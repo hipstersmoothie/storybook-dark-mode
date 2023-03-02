@@ -108,7 +108,7 @@ const updateManager = (store: DarkModeStore) => {
     return;
   }
 
-  toggleDarkClass(manager, store);
+  toggleDarkClass(manager as HTMLElement, store);
 };
 
 /** Update changed dark mode settings and persist to localStorage  */
