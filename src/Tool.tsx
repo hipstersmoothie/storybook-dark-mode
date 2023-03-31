@@ -57,7 +57,7 @@ export const updateStore = (newStore: DarkModeStore) => {
 
 /** Add the light/dark class to an element */
 const toggleDarkClass = (
-  el: HTMLElement,
+  el: Element,
   {
     current,
     darkClass = defaultParams.darkClass,
@@ -108,7 +108,7 @@ const updateManager = (store: DarkModeStore) => {
     return;
   }
 
-  toggleDarkClass(manager as HTMLElement, store);
+  toggleDarkClass(manager, store);
 };
 
 /** Update changed dark mode settings and persist to localStorage  */
