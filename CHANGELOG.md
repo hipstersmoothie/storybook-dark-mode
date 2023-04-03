@@ -1,3 +1,28 @@
+# v3.0.0 (Mon Apr 03 2023)
+
+:tada: This release contains work from new contributors! :tada:
+
+Thanks for all your work!
+
+:heart: Himself65 ([@Himself65](https://github.com/Himself65))
+
+:heart: Zeno Jiricek ([@airtonix](https://github.com/airtonix))
+
+#### 💥 Breaking Change
+
+- chore: bump to storybook v7 [#224](https://github.com/hipstersmoothie/storybook-dark-mode/pull/224) ([@Himself65](https://github.com/Himself65))
+
+#### 🐛 Bug Fix
+
+- fix: use classTarget when updating manager too [#223](https://github.com/hipstersmoothie/storybook-dark-mode/pull/223) ([@airtonix](https://github.com/airtonix))
+
+#### Authors: 2
+
+- Himself65 ([@Himself65](https://github.com/Himself65))
+- Zeno Jiricek ([@airtonix](https://github.com/airtonix))
+
+---
+
 # v2.1.1 (Tue Feb 21 2023)
 
 :tada: This release contains work from a new contributor! :tada:
