@@ -259,6 +259,15 @@
       "contributions": [
         "code"
       ]
+    },
+    {
+      "login": "airtonix",
+      "name": "Zeno Jiricek",
+      "avatar_url": "https://avatars.githubusercontent.com/u/61225?v=4",
+      "profile": "https://github.com/airtonix",
+      "contributions": [
+        "code"
+      ]
     }
   ],
   "contributorsPerLine": 7
