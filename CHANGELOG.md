@@ -1,3 +1,16 @@
+# v3.0.1 (Fri Jul 28 2023)
+
+#### ⚠️ Pushed to `master`
+
+- bump node ([@hipstersmoothie](https://github.com/hipstersmoothie))
+- move to actions ([@hipstersmoothie](https://github.com/hipstersmoothie))
+
+#### Authors: 1
+
+- Andrew Lisowski ([@hipstersmoothie](https://github.com/hipstersmoothie))
+
+---
+
 # v3.0.0 (Mon Apr 03 2023)
 
 :tada: This release contains work from new contributors! :tada:
