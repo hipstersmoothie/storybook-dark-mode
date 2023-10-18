@@ -7,7 +7,7 @@ import {
   SET_STORIES,
   DOCS_RENDERED,
 } from '@storybook/core-events';
-import { API, useParameter } from '@storybook/api';
+import { API, useParameter } from '@storybook/manager-api';
 import equal from 'fast-deep-equal';
 import { DARK_MODE_EVENT_NAME, UPDATE_DARK_MODE_EVENT_NAME } from './constants';
 
