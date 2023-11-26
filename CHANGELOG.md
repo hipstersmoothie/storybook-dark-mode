@@ -1,3 +1,20 @@
+# v3.0.3 (Sun Nov 26 2023)
+
+:tada: This release contains work from a new contributor! :tada:
+
+Thank you, Steven Sacks ([@stevensacks](https://github.com/stevensacks)), for all your work!
+
+#### 🐛 Bug Fix
+
+- fix: switch to @storybook/manager-api [#246](https://github.com/hipstersmoothie/storybook-dark-mode/pull/246) ([@stevensacks](https://github.com/stevensacks) [@hipstersmoothie](https://github.com/hipstersmoothie))
+
+#### Authors: 2
+
+- Andrew Lisowski ([@hipstersmoothie](https://github.com/hipstersmoothie))
+- Steven Sacks ([@stevensacks](https://github.com/stevensacks))
+
+---
+
 # v3.0.2 (Sun Nov 26 2023)
 
 #### 🐛 Bug Fix
