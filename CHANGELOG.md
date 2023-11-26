@@ -1,3 +1,15 @@
+# v3.0.2 (Sun Nov 26 2023)
+
+#### 🐛 Bug Fix
+
+- split release step out [#247](https://github.com/hipstersmoothie/storybook-dark-mode/pull/247) ([@hipstersmoothie](https://github.com/hipstersmoothie))
+
+#### Authors: 1
+
+- Andrew Lisowski ([@hipstersmoothie](https://github.com/hipstersmoothie))
+
+---
+
 # v3.0.1 (Fri Jul 28 2023)
 
 #### ⚠️ Pushed to `master`
