@@ -7,7 +7,7 @@ import {
   SET_STORIES,
   DOCS_RENDERED,
 } from '@storybook/core-events';
-import { API, useParameter } from '@storybook/api';
+import { API, useParameter } from '@storybook/manager-api';
 import equal from 'fast-deep-equal';
 import { DARK_MODE_EVENT_NAME, UPDATE_DARK_MODE_EVENT_NAME } from './constants';
 
@@ -74,9 +74,9 @@ const toggleDarkClass = (
 };
 
 /** Coerce a string to a single item array, or return an array as-is */
-const arrayify = (classes: string | string[]) : string[] => {
+const arrayify = (classes: string | string[]): string[] => {
   const arr: string[] = [];
-  return arr.concat(classes).map(item => item);
+  return arr.concat(classes).map((item) => item);
 };
 
 /** Update the preview iframe class */
