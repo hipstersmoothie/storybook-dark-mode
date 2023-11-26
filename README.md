@@ -193,7 +193,7 @@ export const decorators = [knobDecorator];
 You can also listen for the `DARK_MODE` event via the addons channel.
 
 ```js
-import addons from '@storybook/addons';
+import { addons } from '@storybook/preview-api';
 import { addDecorator } from '@storybook/react';
 import { DARK_MODE_EVENT_NAME } from 'storybook-dark-mode';
 
@@ -231,7 +231,7 @@ By editing your `.storybook/preview.js`.
 
 ```js
 import React from 'react';
-import addons from '@storybook/addons';
+import { addons } from '@storybook/preview-api';
 import { DocsContainer } from '@storybook/addon-docs';
 import { themes } from '@storybook/theming';
 
