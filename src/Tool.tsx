@@ -74,9 +74,9 @@ const toggleDarkClass = (
 };
 
 /** Coerce a string to a single item array, or return an array as-is */
-const arrayify = (classes: string | string[]) : string[] => {
+const arrayify = (classes: string | string[]): string[] => {
   const arr: string[] = [];
-  return arr.concat(classes).map(item => item);
+  return arr.concat(classes).map((item) => item);
 };
 
 /** Update the preview iframe class */
