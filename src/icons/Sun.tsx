@@ -9,6 +9,7 @@ export function Sun() {
       enableBackground="new 0 0 129 129"
       style={{
         fill: 'currentColor',
+        height: 13,
       }}
     >
       <g>
