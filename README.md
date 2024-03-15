@@ -316,6 +316,9 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
     <td align="center"><a href="https://github.com/airtonix"><img src="https://avatars.githubusercontent.com/u/61225?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Zeno Jiricek</b></sub></a><br /><a href="https://github.com/hipstersmoothie/storybook-dark-mode/commits?author=airtonix" title="Code">💻</a></td>
     <td align="center"><a href="https://github.com/stevensacks"><img src="https://avatars.githubusercontent.com/u/162252?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Steven Sacks</b></sub></a><br /><a href="https://github.com/hipstersmoothie/storybook-dark-mode/commits?author=stevensacks" title="Documentation">📖</a> <a href="#infra-stevensacks" title="Infrastructure (Hosting, Build-Tools, etc)">🚇</a> <a href="https://github.com/hipstersmoothie/storybook-dark-mode/commits?author=stevensacks" title="Code">💻</a></td>
   </tr>
+  <tr>
+    <td align="center"><a href="https://github.com/RohanPoojary1107"><img src="https://avatars.githubusercontent.com/u/47334631?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Rohan Poojary</b></sub></a><br /><a href="https://github.com/hipstersmoothie/storybook-dark-mode/commits?author=RohanPoojary1107" title="Documentation">📖</a> <a href="#infra-RohanPoojary1107" title="Infrastructure (Hosting, Build-Tools, etc)">🚇</a> <a href="https://github.com/hipstersmoothie/storybook-dark-mode/commits?author=RohanPoojary1107" title="Code">💻</a></td>
+  </tr>
 </table>
 
 <!-- markdownlint-restore -->
