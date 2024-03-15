@@ -33,12 +33,63 @@
   resolved "https://registry.npmjs.org/@auto-it/bot-list/-/bot-list-10.37.6.tgz#3ca9380a44b9c8d33b2088b8fed2c2ffc79c91ed"
   integrity sha512-ltcLZEzXOOWh24qgNE4mPYJR25Dh9mQy2QwyD8uOE01Vy0yu89RGLi0TahUlUNZUSPBjLYUCxNOcp9WHKBJ7Sg==
 
+"@auto-it/bot-list@11.1.1":
+  version "11.1.1"
+  resolved "https://registry.npmjs.org/@auto-it/bot-list/-/bot-list-11.1.1.tgz#944d5073a0107ab6172aa6742fa131c69d804b9a"
+  integrity sha512-uKZ08KC9FUjMBYqiizZ3VlXyEAeRHEAJaeNMqQFPi0jFKRtX/Dm4tAhDXqfQeuOuAsUHNh5Pp+4zOX2RmTPZaA==
+
 "@auto-it/core@10.37.6":
   version "10.37.6"
   resolved "https://registry.npmjs.org/@auto-it/core/-/core-10.37.6.tgz#04e5f47dbd89a4ab253f9562cd214ff8b7408b7c"
   integrity sha512-XfQq+DmUAg7hXSwq0KxOCGyPLlri8hJoEAp3QDaAa42CSnM5A5oZ67VaL7D/mFcSPDYK8o3w69mQfwcmOENjBA==
   dependencies:
     "@auto-it/bot-list" "10.37.6"
+    "@endemolshinegroup/cosmiconfig-typescript-loader" "^3.0.2"
+    "@octokit/core" "^3.5.1"
+    "@octokit/plugin-enterprise-compatibility" "1.3.0"
+    "@octokit/plugin-retry" "^3.0.9"
+    "@octokit/plugin-throttling" "^3.6.2"
+    "@octokit/rest" "^18.12.0"
+    await-to-js "^3.0.0"
+    chalk "^4.0.0"
+    cosmiconfig "7.0.0"
+    deepmerge "^4.0.0"
+    dotenv "^8.0.0"
+    endent "^2.1.0"
+    enquirer "^2.3.4"
+    env-ci "^5.0.1"
+    fast-glob "^3.1.1"
+    fp-ts "^2.5.3"
+    fromentries "^1.2.0"
+    gitlog "^4.0.3"
+    https-proxy-agent "^5.0.0"
+    import-cwd "^3.0.0"
+    import-from "^3.0.0"
+    io-ts "^2.1.2"
+    lodash.chunk "^4.2.0"
+    log-symbols "^4.0.0"
+    node-fetch "2.6.7"
+    parse-author "^2.0.0"
+    parse-github-url "1.0.2"
+    pretty-ms "^7.0.0"
+    requireg "^0.2.2"
+    semver "^7.0.0"
+    signale "^1.4.0"
+    tapable "^2.2.0"
+    terminal-link "^2.1.1"
+    tinycolor2 "^1.4.1"
+    ts-node "^10.9.1"
+    tslib "2.1.0"
+    type-fest "^0.21.1"
+    typescript-memoize "^1.0.0-alpha.3"
+    url-join "^4.0.0"
+
+"@auto-it/core@11.1.1":
+  version "11.1.1"
+  resolved "https://registry.npmjs.org/@auto-it/core/-/core-11.1.1.tgz#849565aa023a0161b2134d818c9e3aaefbe27fbc"
+  integrity sha512-CIQYqJG/pXmWsQjgbjMF6qnwAu7Klrpm5fWHrXpzIEq/3qQfgGmTkauuJRSz9bM5z6pHHCjT1eypVV/EDj9ijg==
+  dependencies:
+    "@auto-it/bot-list" "11.1.1"
     "@endemolshinegroup/cosmiconfig-typescript-loader" "^3.0.2"
     "@octokit/core" "^3.5.1"
     "@octokit/plugin-enterprise-compatibility" "1.3.0"
@@ -91,7 +142,27 @@
     tslib "2.1.0"
     url-join "^4.0.0"
 
-"@auto-it/npm@10.37.6", "@auto-it/npm@^10.2.3":
+"@auto-it/npm@11.1.1":
+  version "11.1.1"
+  resolved "https://registry.npmjs.org/@auto-it/npm/-/npm-11.1.1.tgz#54f136ebb947cfc116bc0a3f4e144643f20291f9"
+  integrity sha512-I7qWPdU2goCmqdvAEpa6yGwQmzx5YXEsZywqs6uTQXIDuGbFzNt/7jwJNt8p/MNE8M0ra8FJ05eHavBLFZuEfg==
+  dependencies:
+    "@auto-it/core" "11.1.1"
+    "@auto-it/package-json-utils" "11.1.1"
+    await-to-js "^3.0.0"
+    endent "^2.1.0"
+    env-ci "^5.0.1"
+    fp-ts "^2.5.3"
+    get-monorepo-packages "^1.1.0"
+    io-ts "^2.1.2"
+    registry-url "^5.1.0"
+    semver "^7.0.0"
+    tslib "2.1.0"
+    typescript-memoize "^1.0.0-alpha.3"
+    url-join "^4.0.0"
+    user-home "^2.0.0"
+
+"@auto-it/npm@^10.2.3":
   version "10.37.6"
   resolved "https://registry.npmjs.org/@auto-it/npm/-/npm-10.37.6.tgz#a838c7880747d1871a4afacd38ccfa750cbc6500"
   integrity sha512-18CpaX3YfpJ6vwONYEBy9ORiPGplrtQ30pzRtDpKZzHin5wakdOyPd1P5lWeZBmCQCyiszdRteeQsXzFbaSuoQ==
@@ -119,6 +190,14 @@
     parse-author "^2.0.0"
     parse-github-url "1.0.2"
 
+"@auto-it/package-json-utils@11.1.1":
+  version "11.1.1"
+  resolved "https://registry.npmjs.org/@auto-it/package-json-utils/-/package-json-utils-11.1.1.tgz#b7e086ce394b14d674d1c89b8e384f23598695a9"
+  integrity sha512-hk6wKuP7fPonXnP/blPHYS4iQaKZ6s+dVBRPSW7pjWZv6H/A131mWVSQC59nhe8lqZhbQ2MrDH4xxfhYnq21sA==
+  dependencies:
+    parse-author "^2.0.0"
+    parse-github-url "1.0.2"
+
 "@auto-it/pr-body-labels@^10.2.3":
   version "10.37.6"
   resolved "https://registry.npmjs.org/@auto-it/pr-body-labels/-/pr-body-labels-10.37.6.tgz#06d4364e7e2168e206ef85139681d9484b1e4dbd"
@@ -129,7 +208,19 @@
     io-ts "^2.1.2"
     tslib "2.1.0"
 
-"@auto-it/released@10.37.6", "@auto-it/released@^10.2.3":
+"@auto-it/released@11.1.1":
+  version "11.1.1"
+  resolved "https://registry.npmjs.org/@auto-it/released/-/released-11.1.1.tgz#483a2d6e3b7e0fe8bc9d29c57bb7fbd40ca36b40"
+  integrity sha512-iRUebl2q5V7hFEgScGVUMUVoOXrFFi5O280hUCpZxmd6kkG2v7Kl+Weii5zKpd7YSqG0HibJCD+LVwPClAfrCA==
+  dependencies:
+    "@auto-it/bot-list" "11.1.1"
+    "@auto-it/core" "11.1.1"
+    deepmerge "^4.0.0"
+    fp-ts "^2.5.3"
+    io-ts "^2.1.2"
+    tslib "2.1.0"
+
+"@auto-it/released@^10.2.3":
   version "10.37.6"
   resolved "https://registry.npmjs.org/@auto-it/released/-/released-10.37.6.tgz#84604a7495f658848585955d986da34b8625a263"
   integrity sha512-988nCdYApyzKwZx6W6lHNHS9aEw9xLFbfDcTWrSKUOChjT8yDcGadDDXVhj3M0uhHojr8jXKbrRATEPyEeTDlg==
@@ -141,12 +232,12 @@
     io-ts "^2.1.2"
     tslib "2.1.0"
 
-"@auto-it/version-file@10.37.6":
-  version "10.37.6"
-  resolved "https://registry.npmjs.org/@auto-it/version-file/-/version-file-10.37.6.tgz#7f66b9d332fcdfa8581d3fd8216a8ba55af11291"
-  integrity sha512-BO7f1bWrUFkhp7RwwmkegBUc/VwJrIlQQaFm7l/cc5IGZ7DL0rPap8UbytSL3aWV9YzoZpqgWNj2KPRGvwguag==
+"@auto-it/version-file@11.1.1":
+  version "11.1.1"
+  resolved "https://registry.npmjs.org/@auto-it/version-file/-/version-file-11.1.1.tgz#3642728e9119672193408f45b5ae96e58b72ef66"
+  integrity sha512-KHKunip2nXWKd7zJ0hdALojY+E6sTdmxuq9SXYgTMXUcZw2BtxunVSK1hb2wmS6iUH4CCILk12dHksAO5BFzeQ==
   dependencies:
-    "@auto-it/core" "10.37.6"
+    "@auto-it/core" "11.1.1"
     fp-ts "^2.5.3"
     io-ts "^2.1.2"
     semver "^7.0.0"
@@ -3952,15 +4043,15 @@ auto-config-hipstersmoothie@^4.0.0:
     "@auto-it/pr-body-labels" "^10.2.3"
     "@auto-it/released" "^10.2.3"
 
-auto@^10.37.6:
-  version "10.37.6"
-  resolved "https://registry.npmjs.org/auto/-/auto-10.37.6.tgz#3bc64d60afac2cb713a0192a4f89d64816db26c7"
-  integrity sha512-zMLsXz/WPqSlNVlY6g1GlFyhow+x//htR2QwWYSxB4DvAFNggXnK6aRqJ1DrcjhtUAPL2ngw5hHHrCgHvyvAaw==
+auto@^11.1.1:
+  version "11.1.1"
+  resolved "https://registry.npmjs.org/auto/-/auto-11.1.1.tgz#874681d990c567208457a1f30d207b3df1484bd5"
+  integrity sha512-mOucdDWMjtuBDH8phH9Z0s1dD4uFrFIhYQ/Zh4wCH2uB3eEf8qZbu20DLOWCfj1zEUU2gxqVAuqJD4OyLWvaSQ==
   dependencies:
-    "@auto-it/core" "10.37.6"
-    "@auto-it/npm" "10.37.6"
-    "@auto-it/released" "10.37.6"
-    "@auto-it/version-file" "10.37.6"
+    "@auto-it/core" "11.1.1"
+    "@auto-it/npm" "11.1.1"
+    "@auto-it/released" "11.1.1"
+    "@auto-it/version-file" "11.1.1"
     await-to-js "^3.0.0"
     chalk "^4.0.0"
     command-line-application "^0.10.1"
