@@ -2,6 +2,7 @@ import * as React from 'react';
 import { global } from '@storybook/global';
 import { themes, ThemeVars } from '@storybook/theming';
 import { IconButton } from '@storybook/components';
+import { MoonIcon, SunIcon } from '@storybook/icons';
 import {
   STORY_CHANGED,
   SET_STORIES,
@@ -10,9 +11,6 @@ import {
 import { API, useParameter } from '@storybook/manager-api';
 import equal from 'fast-deep-equal';
 import { DARK_MODE_EVENT_NAME, UPDATE_DARK_MODE_EVENT_NAME } from './constants';
-
-import { Sun } from './icons/Sun';
-import { Moon } from './icons/Moon';
 
 const { document, window } = global as { document: Document; window: Window };
 const modes = ['light', 'dark'] as const;
@@ -260,7 +258,7 @@ export function DarkMode({ api }: DarkModeProps) {
       }
       onClick={handleIconClick}
     >
-      {isDark ? <Sun /> : <Moon />}
+      {isDark ? <SunIcon aria-hidden="true" /> : <MoonIcon aria-hidden="true" />}
     </IconButton>
   );
 }
