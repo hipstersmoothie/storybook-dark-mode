@@ -1,3 +1,33 @@
+# v4.0.0 (Fri Mar 15 2024)
+
+:tada: This release contains work from new contributors! :tada:
+
+Thanks for all your work!
+
+:heart: Sergey Kozlov ([@dartess](https://github.com/dartess))
+
+:heart: Rohan Poojary ([@RohanPoojary1107](https://github.com/RohanPoojary1107))
+
+#### 💥 Breaking Change
+
+- Storybook 8 [#251](https://github.com/hipstersmoothie/storybook-dark-mode/pull/251) ([@dartess](https://github.com/dartess))
+
+#### ⚠️ Pushed to `master`
+
+- update auto ([@hipstersmoothie](https://github.com/hipstersmoothie))
+
+#### 📝 Documentation
+
+- Update addons import in readme code examples [#243](https://github.com/hipstersmoothie/storybook-dark-mode/pull/243) ([@RohanPoojary1107](https://github.com/RohanPoojary1107))
+
+#### Authors: 3
+
+- Andrew Lisowski ([@hipstersmoothie](https://github.com/hipstersmoothie))
+- Rohan Poojary ([@RohanPoojary1107](https://github.com/RohanPoojary1107))
+- Sergey Kozlov ([@dartess](https://github.com/dartess))
+
+---
+
 # v3.0.3 (Sun Nov 26 2023)
 
 :tada: This release contains work from a new contributor! :tada:
