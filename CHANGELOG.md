@@ -1,3 +1,24 @@
+# v4.0.1 (Mon Mar 18 2024)
+
+:tada: This release contains work from a new contributor! :tada:
+
+Thank you, Lauri Luotola ([@leiit](https://github.com/leiit)), for all your work!
+
+#### 🐛 Bug Fix
+
+- Fix `useDarkMode` to use correct channel [#266](https://github.com/hipstersmoothie/storybook-dark-mode/pull/266) ([@leiit](https://github.com/leiit))
+
+#### 🔩 Dependency Updates
+
+- Update dependency @storybook/icons to v1.2.9 [#253](https://github.com/hipstersmoothie/storybook-dark-mode/pull/253) ([@renovate[bot]](https://github.com/renovate[bot]))
+
+#### Authors: 2
+
+- [@renovate[bot]](https://github.com/renovate[bot])
+- Lauri Luotola ([@leiit](https://github.com/leiit))
+
+---
+
 # v4.0.0 (Fri Mar 15 2024)
 
 :tada: This release contains work from new contributors! :tada:
