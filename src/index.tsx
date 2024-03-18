@@ -1,5 +1,5 @@
 import React from 'react';
-import { addons } from '@storybook/manager-api';
+import { addons } from '@storybook/preview-api';
 import { DARK_MODE_EVENT_NAME } from './constants';
 import { store } from './Tool';
 
