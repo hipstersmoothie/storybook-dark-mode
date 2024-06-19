@@ -1,3 +1,15 @@
+# v4.0.2 (Wed Jun 19 2024)
+
+#### 🐛 Bug Fix
+
+- Fix for the "Storybook preview hooks can only be called inside decorators and story functions." error [#279](https://github.com/hipstersmoothie/storybook-dark-mode/pull/279) ([@adam-golab](https://github.com/adam-golab))
+
+#### Authors: 1
+
+- Adam Gołąb ([@adam-golab](https://github.com/adam-golab))
+
+---
+
 # v4.0.1 (Mon Mar 18 2024)
 
 :tada: This release contains work from a new contributor! :tada:
