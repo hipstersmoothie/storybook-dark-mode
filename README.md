@@ -319,6 +319,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
   <tr>
     <td align="center"><a href="https://github.com/RohanPoojary1107"><img src="https://avatars.githubusercontent.com/u/47334631?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Rohan Poojary</b></sub></a><br /><a href="https://github.com/hipstersmoothie/storybook-dark-mode/commits?author=RohanPoojary1107" title="Documentation">📖</a> <a href="#infra-RohanPoojary1107" title="Infrastructure (Hosting, Build-Tools, etc)">🚇</a> <a href="https://github.com/hipstersmoothie/storybook-dark-mode/commits?author=RohanPoojary1107" title="Code">💻</a></td>
     <td align="center"><a href="https://github.com/leiit"><img src="https://avatars.githubusercontent.com/u/3333374?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Lauri Luotola</b></sub></a><br /><a href="#example-leiit" title="Examples">💡</a> <a href="https://github.com/hipstersmoothie/storybook-dark-mode/commits?author=leiit" title="Code">💻</a></td>
+    <td align="center"><a href="https://twitter.com/adam_devops"><img src="https://avatars.githubusercontent.com/u/20810956?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Adam Gołąb</b></sub></a><br /><a href="https://github.com/hipstersmoothie/storybook-dark-mode/commits?author=adam-golab" title="Code">💻</a></td>
   </tr>
 </table>
 
