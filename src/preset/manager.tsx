@@ -1,6 +1,6 @@
-import { addons } from '@storybook/manager-api';
-import { Addon_TypesEnum } from '@storybook/types';
-import { themes } from '@storybook/theming';
+import { addons } from 'storybook/manager-api';
+import { Addon_TypesEnum } from 'storybook/internal/types';
+import { themes } from 'storybook/theming';
 import * as React from 'react';
 
 import Tool, { prefersDark, store } from '../Tool';
