@@ -1,4 +1,4 @@
-import { addons, useState, useEffect } from '@storybook/preview-api';
+import { addons, useState, useEffect } from 'storybook/preview-api';
 import { DARK_MODE_EVENT_NAME } from './constants';
 import { store } from './Tool';
 
