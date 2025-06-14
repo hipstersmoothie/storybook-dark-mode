@@ -1,36 +1,35 @@
-# `storybook-dark-mode2`
+# `@storybook-community/storybook-dark-mode`
 
 A storybook addons that lets your users toggle between dark and light mode.
 
 > [!NOTE]
-> This is a fork of `storybook-dark-mode` to support Storybook 9.
+> This is a fork of [storybook-dark-mode](https://github.com/hipstersmoothie/storybook-dark-mode) by @hipstersmoothie to support Storybook 9.
 >
-> We are still determining what is the next step for this addon.
-> One possibility is to build an improved addon that supports the features in `@storybook/addon-themes` while keeping the ability to control the preview iframe.
+> This fork focus on maintaining compatibility with Storybook and security updates.
 >
-> That work may carry out in `repobuddy/storybook` as a new addon.
+> There are also a few improvements made to the addon.
 
 ![Example](./example.gif)
 
 ## Installation
 
-Install the following npm module:
+Install the following `npm` module:
 
 ```sh
-npm i --save-dev storybook-dark-mode2
+npm i --save-dev @storybook-community/storybook-dark-mode
 ```
 
 or with yarn:
 
 ```sh
-yarn add -D storybook-dark-mode2
+yarn add -D @storybook-community/storybook-dark-mode
 ```
 
 Then, add following content to `.storybook/main.js`
 
 ```js
 module.exports = {
-  addons: ['storybook-dark-mode2']
+  addons: ['@storybook-community/storybook-dark-mode']
 };
 ```
 
@@ -39,7 +38,7 @@ module.exports = {
 Configure the dark and light mode by adding the following to your `.storybook/preview.js` file:
 
 ```js
-import { themes } from '@storybook/theming';
+import { themes } from 'storybook/theming';
 
 export const parameters = {
   darkMode: {
@@ -115,7 +114,7 @@ export const parameters = {
 
 ## Story integration
 
-### Preview ClassName
+### Preview `ClassName`
 
 This plugin will apply the `darkClass` and `lightClass` classes to the preview iframe if you turn on the `stylePreview` option.
 
@@ -132,8 +131,8 @@ export const parameters = {
 If your components use a custom Theme provider, you can integrate it by using the provided hook.
 
 ```js
-import { useDarkMode } from 'storybook-dark-mode';
-import { addDecorator } from '@storybook/react';
+import { useDarkMode } from '@storybook-community/storybook-dark-mode';
+import { addDecorator } from 'storybook/react-vite';
 
 // your theme provider
 import ThemeContext from './theme';
@@ -156,7 +155,7 @@ export const decorators = [renderStory => <ThemeWrapper>{renderStory()}</ThemeWr
 If you want to have you UI's dark mode separate from you components' dark mode, implement this global decorator:
 
 ```js
-import { themes } from '@storybook/theming';
+import { themes } from 'storybook/theming';
 
 // Add a global decorator that will render a dark background when the
 // "Color Scheme" knob is set to dark
@@ -190,9 +189,9 @@ export const decorators = [knobDecorator];
 You can also listen for the `DARK_MODE` event via the addons channel.
 
 ```js
-import { addons } from '@storybook/preview-api';
-import { addDecorator } from '@storybook/react';
-import { DARK_MODE_EVENT_NAME } from 'storybook-dark-mode';
+import { addDecorator } from '@storybook/react-vite';
+import { DARK_MODE_EVENT_NAME } from '@storybook-community/storybook-dark-mode';
+import { addons } from 'storybook/preview-api';
 
 // your theme provider
 import ThemeContext from './theme';
@@ -228,14 +227,13 @@ By editing your `.storybook/preview.js`.
 
 ```js
 import React from 'react';
-import { addons } from '@storybook/preview-api';
 import { DocsContainer } from '@storybook/addon-docs';
 import { themes } from '@storybook/theming';
-
 import {
   DARK_MODE_EVENT_NAME,
   UPDATE_DARK_MODE_EVENT_NAME
-} from 'storybook-dark-mode';
+} from '@storybook-community/storybook-dark-mode';
+  import { addons } from 'storybook/preview-api';
 
 const channel = addons.getChannel();
 
