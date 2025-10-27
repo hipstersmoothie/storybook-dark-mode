@@ -123,5 +123,12 @@
 			"optional": true
 		}
 	},
-	"packageManager": "yarn@1.22.22"
+	"packageManager": "yarn@1.22.22",
+	"storybook": {
+		"displayName": "Dark mode (community version)",
+		"supportedFrameworks": [
+			"supported-frameworks"
+		],
+		"icon": "https://avatars.githubusercontent.com/u/216219414?s=200&v=4"
+	}
 }
