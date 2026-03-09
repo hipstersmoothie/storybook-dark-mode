@@ -1,3 +1,20 @@
+# v5.0.0 (Mon Mar 09 2026)
+
+#### 💥 Breaking Change
+
+- Storybook V10 Compatibility [#307](https://github.com/hipstersmoothie/storybook-dark-mode/pull/307) ([@hipstersmoothie](https://github.com/hipstersmoothie))
+
+#### 🏠 Internal
+
+- update actions/* [#278](https://github.com/hipstersmoothie/storybook-dark-mode/pull/278) ([@dartess](https://github.com/dartess))
+
+#### Authors: 2
+
+- Andrew Lisowski ([@hipstersmoothie](https://github.com/hipstersmoothie))
+- Sergey Kozlov ([@dartess](https://github.com/dartess))
+
+---
+
 # v4.0.2 (Wed Jun 19 2024)
 
 #### 🐛 Bug Fix
