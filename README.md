@@ -12,10 +12,10 @@ Install the following npm module:
 npm i --save-dev storybook-dark-mode
 ```
 
-or with yarn:
+or with pnpm:
 
 ```sh
-yarn add -D storybook-dark-mode
+pnpm add -D storybook-dark-mode
 ```
 
 Then, add following content to `.storybook/main.js`

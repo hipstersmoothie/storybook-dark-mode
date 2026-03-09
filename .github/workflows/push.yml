@@ -15,8 +15,12 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: 18.x
-      - name: npm install, build, and lint
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v4
+        with:
+          version: latest
+      - name: Install, build, and lint
         run: |
-          yarn
-          yarn build
-          yarn lint
+          pnpm install --frozen-lockfile
+          pnpm run build
+          pnpm run lint

@@ -19,12 +19,16 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: 18.x
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v4
+        with:
+          version: latest
 
       - name: Create Release
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
         run: |
-          yarn install --frozen-lockfile
-          yarn build
-          yarn release
+          pnpm install --frozen-lockfile
+          pnpm run build
+          pnpm run release
