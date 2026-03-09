@@ -1,18 +1,12 @@
 import * as React from 'react';
-import { global } from '@storybook/global';
-import { themes, ThemeVars } from '@storybook/theming';
-import { IconButton } from '@storybook/components';
+import { themes, ThemeVars } from 'storybook/theming';
+import { IconButton } from 'storybook/internal/components';
 import { MoonIcon, SunIcon } from '@storybook/icons';
-import {
-  STORY_CHANGED,
-  SET_STORIES,
-  DOCS_RENDERED,
-} from '@storybook/core-events';
-import { API, useParameter } from '@storybook/manager-api';
+import { STORY_CHANGED, DOCS_RENDERED } from 'storybook/internal/core-events';
+import { API, useParameter } from 'storybook/manager-api';
 import equal from 'fast-deep-equal';
 import { DARK_MODE_EVENT_NAME, UPDATE_DARK_MODE_EVENT_NAME } from './constants';
 
-const { document, window } = global as { document: Document; window: Window };
 const modes = ['light', 'dark'] as const;
 type Mode = typeof modes[number];
 
@@ -36,7 +30,9 @@ interface DarkModeStore {
 }
 
 const STORAGE_KEY = 'sb-addon-themes-3';
-export const prefersDark = window.matchMedia?.('(prefers-color-scheme: dark)');
+const win = globalThis.window;
+const doc = globalThis.document;
+export const prefersDark = win?.matchMedia?.('(prefers-color-scheme: dark)');
 
 const defaultParams: Required<Omit<DarkModeStore, 'current'>> = {
   classTarget: 'body',
@@ -50,7 +46,7 @@ const defaultParams: Required<Omit<DarkModeStore, 'current'>> = {
 
 /** Persist the dark mode settings in localStorage */
 export const updateStore = (newStore: DarkModeStore) => {
-  window.localStorage.setItem(STORAGE_KEY, JSON.stringify(newStore));
+  win?.localStorage?.setItem(STORAGE_KEY, JSON.stringify(newStore));
 };
 
 /** Add the light/dark class to an element */
@@ -79,7 +75,7 @@ const arrayify = (classes: string | string[]): string[] => {
 
 /** Update the preview iframe class */
 const updatePreview = (store: DarkModeStore) => {
-  const iframe = document.getElementById(
+  const iframe = doc?.getElementById(
     'storybook-preview-iframe'
   ) as HTMLIFrameElement;
 
@@ -100,7 +96,7 @@ const updatePreview = (store: DarkModeStore) => {
 
 /** Update the manager iframe class */
 const updateManager = (store: DarkModeStore) => {
-  const manager = document.querySelector(store.classTarget);
+  const manager = doc?.querySelector(store.classTarget);
 
   if (!manager) {
     return;
@@ -113,24 +109,28 @@ const updateManager = (store: DarkModeStore) => {
 export const store = (
   userTheme: Partial<DarkModeStore> = {}
 ): DarkModeStore => {
-  const storedItem = window.localStorage.getItem(STORAGE_KEY);
+  const storedItem = win?.localStorage?.getItem(STORAGE_KEY);
 
   if (typeof storedItem === 'string') {
-    const stored = JSON.parse(storedItem) as DarkModeStore;
+    try {
+      const stored = JSON.parse(storedItem) as DarkModeStore;
 
-    if (userTheme) {
-      if (userTheme.dark && !equal(stored.dark, userTheme.dark)) {
-        stored.dark = userTheme.dark;
-        updateStore(stored);
+      if (Object.keys(userTheme).length > 0) {
+        if (userTheme.dark && !equal(stored.dark, userTheme.dark)) {
+          stored.dark = userTheme.dark;
+          updateStore(stored);
+        }
+
+        if (userTheme.light && !equal(stored.light, userTheme.light)) {
+          stored.light = userTheme.light;
+          updateStore(stored);
+        }
       }
 
-      if (userTheme.light && !equal(stored.light, userTheme.light)) {
-        stored.light = userTheme.light;
-        updateStore(stored);
-      }
+      return stored;
+    } catch {
+      // Ignore invalid localStorage payloads and fall through to defaults.
     }
-
-    return stored;
   }
 
   return { ...defaultParams, ...userTheme } as DarkModeStore;
@@ -148,7 +148,7 @@ interface DarkModeProps {
 
 /** A toolbar icon to toggle between dark and light themes in storybook */
 export function DarkMode({ api }: DarkModeProps) {
-  const [isDark, setDark] = React.useState(prefersDark.matches);
+  const [isDark, setDark] = React.useState(store().current === 'dark');
   const darkModeParams = useParameter<Partial<DarkModeStore>>('darkMode', {});
   const { current: defaultMode, stylePreview, ...params } = darkModeParams;
   const channel = api.getChannel();
@@ -163,13 +163,13 @@ export function DarkMode({ api }: DarkModeProps) {
       const currentStore = store();
       api.setOptions({ theme: currentStore[mode] });
       setDark(mode === 'dark');
-      api.getChannel().emit(DARK_MODE_EVENT_NAME, mode === 'dark');
+      channel.emit(DARK_MODE_EVENT_NAME, mode === 'dark');
       updateManager(currentStore);
       if (stylePreview) {
         updatePreview(currentStore);
       }
     },
-    [api, stylePreview]
+    [api, channel, stylePreview]
   );
 
   /** Update the theme settings in localStorage, react, and storybook */
@@ -185,13 +185,16 @@ export function DarkMode({ api }: DarkModeProps) {
   );
 
   /** Update the theme based on the color preference */
-  function prefersDarkUpdate(event: MediaQueryListEvent) {
-    if (userHasExplicitlySetTheTheme || defaultMode) {
-      return;
-    }
+  const prefersDarkUpdate = React.useCallback(
+    (event: MediaQueryListEvent) => {
+      if (userHasExplicitlySetTheTheme || defaultMode) {
+        return;
+      }
 
-    updateMode(event.matches ? 'dark' : 'light');
-  }
+      updateMode(event.matches ? 'dark' : 'light');
+    },
+    [defaultMode, updateMode, userHasExplicitlySetTheTheme]
+  );
 
   /** Render the current theme */
   const renderTheme = React.useCallback(() => {
@@ -220,22 +223,25 @@ export function DarkMode({ api }: DarkModeProps) {
   }, [darkModeParams, renderTheme]);
   React.useEffect(() => {
     channel.on(STORY_CHANGED, renderTheme);
-    channel.on(SET_STORIES, renderTheme);
     channel.on(DOCS_RENDERED, renderTheme);
-    prefersDark.addListener(prefersDarkUpdate);
+    if (prefersDark?.addEventListener) {
+      prefersDark.addEventListener('change', prefersDarkUpdate);
+    }
+
     return () => {
-      channel.removeListener(STORY_CHANGED, renderTheme);
-      channel.removeListener(SET_STORIES, renderTheme);
-      channel.removeListener(DOCS_RENDERED, renderTheme);
-      prefersDark.removeListener(prefersDarkUpdate);
+      channel.off(STORY_CHANGED, renderTheme);
+      channel.off(DOCS_RENDERED, renderTheme);
+      if (prefersDark?.removeEventListener) {
+        prefersDark.removeEventListener('change', prefersDarkUpdate);
+      }
     };
-  });
+  }, [channel, renderTheme, prefersDarkUpdate]);
   React.useEffect(() => {
     channel.on(UPDATE_DARK_MODE_EVENT_NAME, updateMode);
     return () => {
-      channel.removeListener(UPDATE_DARK_MODE_EVENT_NAME, updateMode);
+      channel.off(UPDATE_DARK_MODE_EVENT_NAME, updateMode);
     };
-  });
+  }, [channel, updateMode]);
   // Storybook's first render doesn't have the global user params loaded so we
   // need the effect to run whenever defaultMode is updated
   React.useEffect(() => {
@@ -246,16 +252,17 @@ export function DarkMode({ api }: DarkModeProps) {
 
     if (defaultMode) {
       updateMode(defaultMode);
-    } else if (prefersDark.matches) {
+    } else if (prefersDark?.matches) {
       updateMode('dark');
     }
   }, [defaultMode, updateMode, userHasExplicitlySetTheTheme]);
   return (
     <IconButton
       key="dark-mode"
-      title={
-        isDark ? 'Change theme to light mode' : 'Change theme to dark mode'
-      }
+      variant="ghost"
+      padding="small"
+      ariaLabel={isDark ? 'Change theme to light mode' : 'Change theme to dark mode'}
+      tooltip={isDark ? 'Change theme to light mode' : 'Change theme to dark mode'}
       onClick={handleIconClick}
     >
       {isDark ? <SunIcon aria-hidden="true" /> : <MoonIcon aria-hidden="true" />}

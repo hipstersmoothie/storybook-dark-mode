@@ -12,10 +12,10 @@ Install the following npm module:
 npm i --save-dev storybook-dark-mode
 ```
 
-or with yarn:
+or with pnpm:
 
 ```sh
-yarn add -D storybook-dark-mode
+pnpm add -D storybook-dark-mode
 ```
 
 Then, add following content to `.storybook/main.js`
@@ -42,7 +42,7 @@ module.exports = {
 Configure the dark and light mode by adding the following to your `.storybook/preview.js` file:
 
 ```js
-import { themes } from '@storybook/theming';
+import { themes } from 'storybook/theming';
 
 export const parameters = {
   darkMode: {
@@ -136,7 +136,6 @@ If your components use a custom Theme provider, you can integrate it by using th
 
 ```js
 import { useDarkMode } from 'storybook-dark-mode';
-import { addDecorator } from '@storybook/react';
 
 // your theme provider
 import ThemeContext from './theme';
@@ -159,7 +158,7 @@ export const decorators = [renderStory => <ThemeWrapper>{renderStory()}</ThemeWr
 If you want to have you UI's dark mode separate from you components' dark mode, implement this global decorator:
 
 ```js
-import { themes } from '@storybook/theming';
+import { themes } from 'storybook/theming';
 
 // Add a global decorator that will render a dark background when the
 // "Color Scheme" knob is set to dark
@@ -193,8 +192,7 @@ export const decorators = [knobDecorator];
 You can also listen for the `DARK_MODE` event via the addons channel.
 
 ```js
-import { addons } from '@storybook/preview-api';
-import { addDecorator } from '@storybook/react';
+import { addons } from 'storybook/preview-api';
 import { DARK_MODE_EVENT_NAME } from 'storybook-dark-mode';
 
 // your theme provider
@@ -231,9 +229,9 @@ By editing your `.storybook/preview.js`.
 
 ```js
 import React from 'react';
-import { addons } from '@storybook/preview-api';
+import { addons } from 'storybook/preview-api';
 import { DocsContainer } from '@storybook/addon-docs';
-import { themes } from '@storybook/theming';
+import { themes } from 'storybook/theming';
 
 import {
   DARK_MODE_EVENT_NAME,

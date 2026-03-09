@@ -7,12 +7,15 @@
     "experimentalDecorators": true,
     "incremental": false,
     "isolatedModules": true,
-    "jsx": "react",
-    "lib": ["es2017", "dom"],
-    "module": "commonjs",
+    "jsx": "react-jsx",
+    "lib": ["esnext", "dom"],
+    "module": "preserve",
+    "moduleResolution": "bundler",
     "noImplicitAny": true,
     "rootDir": "./src",
     "skipLibCheck": true,
-    "target": "es5"
-  }
+    "target": "esnext"
+  },
+  "include": ["src/**/*"],
+  "exclude": ["dist", "examples", "node_modules"]
 }
