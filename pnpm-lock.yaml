@@ -35,16 +35,16 @@ importers:
         version: 7.23.3(@babel/core@7.23.9)
       '@storybook/builder-vite':
         specifier: ^10.2.17
-        version: 10.2.17(esbuild@0.20.1)(rollup@4.12.0)(storybook@10.2.17(@testing-library/dom@10.4.1)(prettier@2.8.0)(react-dom@18.2.0(react@18.2.0))(react@18.2.0))(vite@5.1.3(@types/node@18.19.17)(terser@5.46.0))(webpack@5.105.4(esbuild@0.20.1))
+        version: 10.2.17(esbuild@0.20.1)(rollup@4.12.0)(storybook@10.2.17(@testing-library/dom@10.4.1)(prettier@2.8.0)(react-dom@18.2.0(react@18.2.0))(react@18.2.0))(vite@5.1.3(@types/node@18.19.130)(terser@5.46.0))(webpack@5.105.4(esbuild@0.20.1))
       '@storybook/react':
         specifier: ^10.2.17
         version: 10.2.17(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(storybook@10.2.17(@testing-library/dom@10.4.1)(prettier@2.8.0)(react-dom@18.2.0(react@18.2.0))(react@18.2.0))(typescript@5.9.3)
       '@storybook/react-vite':
         specifier: ^10.2.17
-        version: 10.2.17(esbuild@0.20.1)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(rollup@4.12.0)(storybook@10.2.17(@testing-library/dom@10.4.1)(prettier@2.8.0)(react-dom@18.2.0(react@18.2.0))(react@18.2.0))(typescript@5.9.3)(vite@5.1.3(@types/node@18.19.17)(terser@5.46.0))(webpack@5.105.4(esbuild@0.20.1))
+        version: 10.2.17(esbuild@0.20.1)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(rollup@4.12.0)(storybook@10.2.17(@testing-library/dom@10.4.1)(prettier@2.8.0)(react-dom@18.2.0(react@18.2.0))(react@18.2.0))(typescript@5.9.3)(vite@5.1.3(@types/node@18.19.130)(terser@5.46.0))(webpack@5.105.4(esbuild@0.20.1))
       '@types/node':
         specifier: ^18.11.11
-        version: 18.19.17
+        version: 18.19.130
       '@types/react':
         specifier: ^18.0.26
         version: 18.0.26
@@ -59,10 +59,10 @@ importers:
         version: 6.24.0
       auto:
         specifier: ^11.1.1
-        version: 11.1.1(@types/node@18.19.17)(typescript@5.9.3)
+        version: 11.1.1(@types/node@18.19.130)(typescript@5.9.3)
       auto-config-hipstersmoothie:
         specifier: ^4.0.0
-        version: 4.0.0(@types/node@18.19.17)(auto@11.1.1(@types/node@18.19.17)(typescript@5.9.3))(typescript@5.9.3)
+        version: 4.0.0(@types/node@18.19.130)(auto@11.1.1(@types/node@18.19.130)(typescript@5.9.3))(typescript@5.9.3)
       babel-loader:
         specifier: ^8.3.0
         version: 8.3.0(@babel/core@7.23.9)(webpack@5.105.4(esbuild@0.20.1))
@@ -104,13 +104,13 @@ importers:
         version: 10.2.17(@testing-library/dom@10.4.1)(prettier@2.8.0)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
       ts-node:
         specifier: ^10.9.1
-        version: 10.9.1(@types/node@18.19.17)(typescript@5.9.3)
+        version: 10.9.1(@types/node@18.19.130)(typescript@5.9.3)
       typescript:
         specifier: ^5.8.2
         version: 5.9.3
       vite:
         specifier: ^5.1.3
-        version: 5.1.3(@types/node@18.19.17)(terser@5.46.0)
+        version: 5.1.3(@types/node@18.19.130)(terser@5.46.0)
 
   examples/basic: {}
 
@@ -854,6 +854,10 @@ packages:
     resolution: {integrity: sha512-2Yv65nlWnWlSpe3fXEyX5i7fx5kIKo4Qbcj+hMO0odwaneFjfXw5fdum+4yL20O0QiaHpia0cYQ9xpNMqrBwHg==}
     engines: {node: '>=6.9.0'}
 
+  '@babel/runtime@7.28.6':
+    resolution: {integrity: sha512-05WQkdpL9COIMz4LjTxGpPNCdlpyimKppYNoJ5Di5EUObifl8t4tuLuUBBZEpoLYOmfvIWrsp9fCl0HoPRVTdA==}
+    engines: {node: '>=6.9.0'}
+
   '@babel/template@7.23.9':
     resolution: {integrity: sha512-+xrD2BWLpvHKNmX2QbpdpsBaWnRxahMwJjO+KZk2JOElj5nSmKezyS1B4u+QbHMTX69t4ukm6hh9lsYQ7GHCKA==}
     engines: {node: '>=6.9.0'}
@@ -1342,26 +1346,31 @@ packages:
     resolution: {integrity: sha512-0fZBq27b+D7Ar5CQMofVN8sggOVhEtzFUwOwPppQt0k+VR+7UHMZZY4y+64WJ06XOhBTKXtQB/Sv0NwQMXyNAA==}
     cpu: [arm64]
     os: [linux]
+    libc: [glibc]
 
   '@rollup/rollup-linux-arm64-musl@4.12.0':
     resolution: {integrity: sha512-eTvzUS3hhhlgeAv6bfigekzWZjaEX9xP9HhxB0Dvrdbkk5w/b+1Sxct2ZuDxNJKzsRStSq1EaEkVSEe7A7ipgQ==}
     cpu: [arm64]
     os: [linux]
+    libc: [musl]
 
   '@rollup/rollup-linux-riscv64-gnu@4.12.0':
     resolution: {integrity: sha512-ix+qAB9qmrCRiaO71VFfY8rkiAZJL8zQRXveS27HS+pKdjwUfEhqo2+YF2oI+H/22Xsiski+qqwIBxVewLK7sw==}
     cpu: [riscv64]
     os: [linux]
+    libc: [glibc]
 
   '@rollup/rollup-linux-x64-gnu@4.12.0':
     resolution: {integrity: sha512-TenQhZVOtw/3qKOPa7d+QgkeM6xY0LtwzR8OplmyL5LrgTWIXpTQg2Q2ycBf8jm+SFW2Wt/DTn1gf7nFp3ssVA==}
     cpu: [x64]
     os: [linux]
+    libc: [glibc]
 
   '@rollup/rollup-linux-x64-musl@4.12.0':
     resolution: {integrity: sha512-LfFdRhNnW0zdMvdCb5FNuWlls2WbbSridJvxOvYWgSBOYZtgBfW9UGNJG//rwMqTX1xQE9BAodvMH9tAusKDUw==}
     cpu: [x64]
     os: [linux]
+    libc: [musl]
 
   '@rollup/rollup-win32-arm64-msvc@4.12.0':
     resolution: {integrity: sha512-JPDxovheWNp6d7AHCgsUlkuCKvtu3RB55iNEkaQcf0ttsDU/JZF+iQnYcQJSk/7PtT4mjjVG8N1kpwnI9SLYaw==}
@@ -1514,8 +1523,8 @@ packages:
   '@types/json-schema@7.0.15':
     resolution: {integrity: sha512-5+fP8P8MFNC+AyZCDxrB2pkZFPGzqQWUzpSeuuVLvm8VMcorNYavBqoFcxK8bQz4Qsbn4oUEEem4wDLfcysGHA==}
 
-  '@types/node@18.19.17':
-    resolution: {integrity: sha512-SzyGKgwPzuWp2SHhlpXKzCX0pIOfcI4V2eF37nNBJOhwlegQ83omtVQ1XxZpDE06V/d6AQvfQdPfnw0tRC//Ng==}
+  '@types/node@18.19.130':
+    resolution: {integrity: sha512-GRaXQx6jGfL8sKfaIDD6OupbIHBr9jv7Jnaml9tB7l4v068PAOXqfcujMMo5PhbIs6ggR1XODELqahT2R8v0fg==}
 
   '@types/parse-json@4.0.0':
     resolution: {integrity: sha512-//oorEZjL6sbPcKUaCdIGlIUeH26mgzimjBB77G6XRgnDl/L5wOnpyBGRe/Mmf5CVW3PwEBE1NjiMZ/ssFh4wA==}
@@ -3509,8 +3518,8 @@ packages:
     resolution: {integrity: sha512-un0FmiRUQNr5PJqy9kP7c40F5BOfpGlYTrxonDChEZB7pzZxRNp/bt+ymiy9/npwXya9KH99nJ/GXFIiUkYGFQ==}
     engines: {node: '>=8'}
 
-  terser-webpack-plugin@5.3.17:
-    resolution: {integrity: sha512-YR7PtUp6GMU91BgSJmlaX/rS2lGDbAF7D+Wtq7hRO+MiljNmodYvqslzCFiYVAgW+Qoaaia/QUIP4lGXufjdZw==}
+  terser-webpack-plugin@5.4.0:
+    resolution: {integrity: sha512-Bn5vxm48flOIfkdl5CaD2+1CiUVbonWQ3KQPyP7/EuIl9Gbzq/gQFOzaMFUEgVjB1396tcK0SG8XcNJ/2kDH8g==}
     engines: {node: '>= 10.13.0'}
     peerDependencies:
       '@swc/core': '*'
@@ -3869,10 +3878,10 @@ snapshots:
       '@jridgewell/gen-mapping': 0.1.1
       '@jridgewell/trace-mapping': 0.3.17
 
-  '@auto-it/all-contributors@10.37.6(@types/node@18.19.17)(typescript@5.9.3)':
+  '@auto-it/all-contributors@10.37.6(@types/node@18.19.130)(typescript@5.9.3)':
     dependencies:
       '@auto-it/bot-list': 10.37.6
-      '@auto-it/core': 10.37.6(@types/node@18.19.17)(typescript@5.9.3)
+      '@auto-it/core': 10.37.6(@types/node@18.19.130)(typescript@5.9.3)
       '@octokit/rest': 18.12.0
       all-contributors-cli: 6.19.0
       anymatch: 3.1.2
@@ -3895,7 +3904,7 @@ snapshots:
 
   '@auto-it/bot-list@11.1.1': {}
 
-  '@auto-it/core@10.37.6(@types/node@18.19.17)(typescript@5.9.3)':
+  '@auto-it/core@10.37.6(@types/node@18.19.130)(typescript@5.9.3)':
     dependencies:
       '@auto-it/bot-list': 10.37.6
       '@endemolshinegroup/cosmiconfig-typescript-loader': 3.0.2(cosmiconfig@7.0.0)(typescript@5.9.3)
@@ -3932,7 +3941,7 @@ snapshots:
       tapable: 2.2.1
       terminal-link: 2.1.1
       tinycolor2: 1.4.1
-      ts-node: 10.9.1(@types/node@18.19.17)(typescript@5.9.3)
+      ts-node: 10.9.1(@types/node@18.19.130)(typescript@5.9.3)
       tslib: 2.1.0
       type-fest: 0.21.3
       typescript-memoize: 1.0.0-alpha.3
@@ -3946,7 +3955,7 @@ snapshots:
       - encoding
       - supports-color
 
-  '@auto-it/core@11.1.1(@types/node@18.19.17)(typescript@5.9.3)':
+  '@auto-it/core@11.1.1(@types/node@18.19.130)(typescript@5.9.3)':
     dependencies:
       '@auto-it/bot-list': 11.1.1
       '@endemolshinegroup/cosmiconfig-typescript-loader': 3.0.2(cosmiconfig@7.0.0)(typescript@5.9.3)
@@ -3983,24 +3992,24 @@ snapshots:
       tapable: 2.2.1
       terminal-link: 2.1.1
       tinycolor2: 1.4.1
-      ts-node: 10.9.1(@types/node@18.19.17)(typescript@5.9.3)
+      ts-node: 10.9.1(@types/node@18.19.130)(typescript@5.9.3)
       tslib: 2.1.0
       type-fest: 0.21.3
       typescript: 5.9.3
       typescript-memoize: 1.0.0-alpha.3
       url-join: 4.0.0
     optionalDependencies:
-      '@types/node': 18.19.17
+      '@types/node': 18.19.130
     transitivePeerDependencies:
       - '@swc/core'
       - '@swc/wasm'
       - encoding
       - supports-color
 
-  '@auto-it/first-time-contributor@10.37.6(@types/node@18.19.17)(typescript@5.9.3)':
+  '@auto-it/first-time-contributor@10.37.6(@types/node@18.19.130)(typescript@5.9.3)':
     dependencies:
       '@auto-it/bot-list': 10.37.6
-      '@auto-it/core': 10.37.6(@types/node@18.19.17)(typescript@5.9.3)
+      '@auto-it/core': 10.37.6(@types/node@18.19.130)(typescript@5.9.3)
       array.prototype.flatmap: 1.3.1
       endent: 2.1.0
       tslib: 2.1.0
@@ -4013,9 +4022,9 @@ snapshots:
       - supports-color
       - typescript
 
-  '@auto-it/npm@10.37.6(@types/node@18.19.17)(typescript@5.9.3)':
+  '@auto-it/npm@10.37.6(@types/node@18.19.130)(typescript@5.9.3)':
     dependencies:
-      '@auto-it/core': 10.37.6(@types/node@18.19.17)(typescript@5.9.3)
+      '@auto-it/core': 10.37.6(@types/node@18.19.130)(typescript@5.9.3)
       '@auto-it/package-json-utils': 10.37.6
       await-to-js: 3.0.0
       endent: 2.1.0
@@ -4037,9 +4046,9 @@ snapshots:
       - supports-color
       - typescript
 
-  '@auto-it/npm@11.1.1(@types/node@18.19.17)(typescript@5.9.3)':
+  '@auto-it/npm@11.1.1(@types/node@18.19.130)(typescript@5.9.3)':
     dependencies:
-      '@auto-it/core': 11.1.1(@types/node@18.19.17)(typescript@5.9.3)
+      '@auto-it/core': 11.1.1(@types/node@18.19.130)(typescript@5.9.3)
       '@auto-it/package-json-utils': 11.1.1
       await-to-js: 3.0.0
       endent: 2.1.0
@@ -4071,9 +4080,9 @@ snapshots:
       parse-author: 2.0.0
       parse-github-url: 1.0.2
 
-  '@auto-it/pr-body-labels@10.37.6(@types/node@18.19.17)(typescript@5.9.3)':
+  '@auto-it/pr-body-labels@10.37.6(@types/node@18.19.130)(typescript@5.9.3)':
     dependencies:
-      '@auto-it/core': 10.37.6(@types/node@18.19.17)(typescript@5.9.3)
+      '@auto-it/core': 10.37.6(@types/node@18.19.130)(typescript@5.9.3)
       fp-ts: 2.6.1
       io-ts: 2.2.2(fp-ts@2.6.1)
       tslib: 2.1.0
@@ -4085,10 +4094,10 @@ snapshots:
       - supports-color
       - typescript
 
-  '@auto-it/released@10.37.6(@types/node@18.19.17)(typescript@5.9.3)':
+  '@auto-it/released@10.37.6(@types/node@18.19.130)(typescript@5.9.3)':
     dependencies:
       '@auto-it/bot-list': 10.37.6
-      '@auto-it/core': 10.37.6(@types/node@18.19.17)(typescript@5.9.3)
+      '@auto-it/core': 10.37.6(@types/node@18.19.130)(typescript@5.9.3)
       deepmerge: 4.0.0
       fp-ts: 2.6.1
       io-ts: 2.2.2(fp-ts@2.6.1)
@@ -4101,10 +4110,10 @@ snapshots:
       - supports-color
       - typescript
 
-  '@auto-it/released@11.1.1(@types/node@18.19.17)(typescript@5.9.3)':
+  '@auto-it/released@11.1.1(@types/node@18.19.130)(typescript@5.9.3)':
     dependencies:
       '@auto-it/bot-list': 11.1.1
-      '@auto-it/core': 11.1.1(@types/node@18.19.17)(typescript@5.9.3)
+      '@auto-it/core': 11.1.1(@types/node@18.19.130)(typescript@5.9.3)
       deepmerge: 4.0.0
       fp-ts: 2.6.1
       io-ts: 2.2.2(fp-ts@2.6.1)
@@ -4117,9 +4126,9 @@ snapshots:
       - supports-color
       - typescript
 
-  '@auto-it/version-file@11.1.1(@types/node@18.19.17)(typescript@5.9.3)':
+  '@auto-it/version-file@11.1.1(@types/node@18.19.130)(typescript@5.9.3)':
     dependencies:
-      '@auto-it/core': 11.1.1(@types/node@18.19.17)(typescript@5.9.3)
+      '@auto-it/core': 11.1.1(@types/node@18.19.130)(typescript@5.9.3)
       fp-ts: 2.6.1
       io-ts: 2.2.2(fp-ts@2.6.1)
       semver: 7.3.8
@@ -4960,6 +4969,8 @@ snapshots:
     dependencies:
       regenerator-runtime: 0.14.0
 
+  '@babel/runtime@7.28.6': {}
+
   '@babel/template@7.23.9':
     dependencies:
       '@babel/code-frame': 7.23.5
@@ -5188,11 +5199,11 @@ snapshots:
 
   '@humanwhocodes/object-schema@1.2.1': {}
 
-  '@joshwooding/vite-plugin-react-docgen-typescript@0.6.4(typescript@5.9.3)(vite@5.1.3(@types/node@18.19.17)(terser@5.46.0))':
+  '@joshwooding/vite-plugin-react-docgen-typescript@0.6.4(typescript@5.9.3)(vite@5.1.3(@types/node@18.19.130)(terser@5.46.0))':
     dependencies:
       glob: 13.0.6
       react-docgen-typescript: 2.2.2(typescript@5.9.3)
-      vite: 5.1.3(@types/node@18.19.17)(terser@5.46.0)
+      vite: 5.1.3(@types/node@18.19.130)(terser@5.46.0)
     optionalDependencies:
       typescript: 5.9.3
 
@@ -5353,7 +5364,7 @@ snapshots:
 
   '@octokit/types@2.16.2':
     dependencies:
-      '@types/node': 18.19.17
+      '@types/node': 18.19.130
 
   '@octokit/types@6.41.0':
     dependencies:
@@ -5406,25 +5417,25 @@ snapshots:
   '@rollup/rollup-win32-x64-msvc@4.12.0':
     optional: true
 
-  '@storybook/builder-vite@10.2.17(esbuild@0.20.1)(rollup@4.12.0)(storybook@10.2.17(@testing-library/dom@10.4.1)(prettier@2.8.0)(react-dom@18.2.0(react@18.2.0))(react@18.2.0))(vite@5.1.3(@types/node@18.19.17)(terser@5.46.0))(webpack@5.105.4(esbuild@0.20.1))':
+  '@storybook/builder-vite@10.2.17(esbuild@0.20.1)(rollup@4.12.0)(storybook@10.2.17(@testing-library/dom@10.4.1)(prettier@2.8.0)(react-dom@18.2.0(react@18.2.0))(react@18.2.0))(vite@5.1.3(@types/node@18.19.130)(terser@5.46.0))(webpack@5.105.4(esbuild@0.20.1))':
     dependencies:
-      '@storybook/csf-plugin': 10.2.17(esbuild@0.20.1)(rollup@4.12.0)(storybook@10.2.17(@testing-library/dom@10.4.1)(prettier@2.8.0)(react-dom@18.2.0(react@18.2.0))(react@18.2.0))(vite@5.1.3(@types/node@18.19.17)(terser@5.46.0))(webpack@5.105.4(esbuild@0.20.1))
+      '@storybook/csf-plugin': 10.2.17(esbuild@0.20.1)(rollup@4.12.0)(storybook@10.2.17(@testing-library/dom@10.4.1)(prettier@2.8.0)(react-dom@18.2.0(react@18.2.0))(react@18.2.0))(vite@5.1.3(@types/node@18.19.130)(terser@5.46.0))(webpack@5.105.4(esbuild@0.20.1))
       storybook: 10.2.17(@testing-library/dom@10.4.1)(prettier@2.8.0)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
       ts-dedent: 2.2.0
-      vite: 5.1.3(@types/node@18.19.17)(terser@5.46.0)
+      vite: 5.1.3(@types/node@18.19.130)(terser@5.46.0)
     transitivePeerDependencies:
       - esbuild
       - rollup
       - webpack
 
-  '@storybook/csf-plugin@10.2.17(esbuild@0.20.1)(rollup@4.12.0)(storybook@10.2.17(@testing-library/dom@10.4.1)(prettier@2.8.0)(react-dom@18.2.0(react@18.2.0))(react@18.2.0))(vite@5.1.3(@types/node@18.19.17)(terser@5.46.0))(webpack@5.105.4(esbuild@0.20.1))':
+  '@storybook/csf-plugin@10.2.17(esbuild@0.20.1)(rollup@4.12.0)(storybook@10.2.17(@testing-library/dom@10.4.1)(prettier@2.8.0)(react-dom@18.2.0(react@18.2.0))(react@18.2.0))(vite@5.1.3(@types/node@18.19.130)(terser@5.46.0))(webpack@5.105.4(esbuild@0.20.1))':
     dependencies:
       storybook: 10.2.17(@testing-library/dom@10.4.1)(prettier@2.8.0)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
       unplugin: 2.3.11
     optionalDependencies:
       esbuild: 0.20.1
       rollup: 4.12.0
-      vite: 5.1.3(@types/node@18.19.17)(terser@5.46.0)
+      vite: 5.1.3(@types/node@18.19.130)(terser@5.46.0)
       webpack: 5.105.4(esbuild@0.20.1)
 
   '@storybook/global@5.0.0': {}
@@ -5440,11 +5451,11 @@ snapshots:
       react-dom: 18.2.0(react@18.2.0)
       storybook: 10.2.17(@testing-library/dom@10.4.1)(prettier@2.8.0)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
 
-  '@storybook/react-vite@10.2.17(esbuild@0.20.1)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(rollup@4.12.0)(storybook@10.2.17(@testing-library/dom@10.4.1)(prettier@2.8.0)(react-dom@18.2.0(react@18.2.0))(react@18.2.0))(typescript@5.9.3)(vite@5.1.3(@types/node@18.19.17)(terser@5.46.0))(webpack@5.105.4(esbuild@0.20.1))':
+  '@storybook/react-vite@10.2.17(esbuild@0.20.1)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(rollup@4.12.0)(storybook@10.2.17(@testing-library/dom@10.4.1)(prettier@2.8.0)(react-dom@18.2.0(react@18.2.0))(react@18.2.0))(typescript@5.9.3)(vite@5.1.3(@types/node@18.19.130)(terser@5.46.0))(webpack@5.105.4(esbuild@0.20.1))':
     dependencies:
-      '@joshwooding/vite-plugin-react-docgen-typescript': 0.6.4(typescript@5.9.3)(vite@5.1.3(@types/node@18.19.17)(terser@5.46.0))
+      '@joshwooding/vite-plugin-react-docgen-typescript': 0.6.4(typescript@5.9.3)(vite@5.1.3(@types/node@18.19.130)(terser@5.46.0))
       '@rollup/pluginutils': 5.1.0(rollup@4.12.0)
-      '@storybook/builder-vite': 10.2.17(esbuild@0.20.1)(rollup@4.12.0)(storybook@10.2.17(@testing-library/dom@10.4.1)(prettier@2.8.0)(react-dom@18.2.0(react@18.2.0))(react@18.2.0))(vite@5.1.3(@types/node@18.19.17)(terser@5.46.0))(webpack@5.105.4(esbuild@0.20.1))
+      '@storybook/builder-vite': 10.2.17(esbuild@0.20.1)(rollup@4.12.0)(storybook@10.2.17(@testing-library/dom@10.4.1)(prettier@2.8.0)(react-dom@18.2.0(react@18.2.0))(react@18.2.0))(vite@5.1.3(@types/node@18.19.130)(terser@5.46.0))(webpack@5.105.4(esbuild@0.20.1))
       '@storybook/react': 10.2.17(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(storybook@10.2.17(@testing-library/dom@10.4.1)(prettier@2.8.0)(react-dom@18.2.0(react@18.2.0))(react@18.2.0))(typescript@5.9.3)
       empathic: 2.0.0
       magic-string: 0.30.7
@@ -5454,7 +5465,7 @@ snapshots:
       resolve: 1.22.8
       storybook: 10.2.17(@testing-library/dom@10.4.1)(prettier@2.8.0)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
       tsconfig-paths: 4.2.0
-      vite: 5.1.3(@types/node@18.19.17)(terser@5.46.0)
+      vite: 5.1.3(@types/node@18.19.130)(terser@5.46.0)
     transitivePeerDependencies:
       - esbuild
       - rollup
@@ -5478,7 +5489,7 @@ snapshots:
   '@testing-library/dom@10.4.1':
     dependencies:
       '@babel/code-frame': 7.29.0
-      '@babel/runtime': 7.23.4
+      '@babel/runtime': 7.28.6
       '@types/aria-query': 5.0.4
       aria-query: 5.3.0
       dom-accessibility-api: 0.5.16
@@ -5563,7 +5574,7 @@ snapshots:
 
   '@types/json-schema@7.0.15': {}
 
-  '@types/node@18.19.17':
+  '@types/node@18.19.130':
     dependencies:
       undici-types: 5.26.5
 
@@ -5922,14 +5933,14 @@ snapshots:
 
   author-regex@1.0.0: {}
 
-  auto-config-hipstersmoothie@4.0.0(@types/node@18.19.17)(auto@11.1.1(@types/node@18.19.17)(typescript@5.9.3))(typescript@5.9.3):
+  auto-config-hipstersmoothie@4.0.0(@types/node@18.19.130)(auto@11.1.1(@types/node@18.19.130)(typescript@5.9.3))(typescript@5.9.3):
     dependencies:
-      '@auto-it/all-contributors': 10.37.6(@types/node@18.19.17)(typescript@5.9.3)
-      '@auto-it/first-time-contributor': 10.37.6(@types/node@18.19.17)(typescript@5.9.3)
-      '@auto-it/npm': 10.37.6(@types/node@18.19.17)(typescript@5.9.3)
-      '@auto-it/pr-body-labels': 10.37.6(@types/node@18.19.17)(typescript@5.9.3)
-      '@auto-it/released': 10.37.6(@types/node@18.19.17)(typescript@5.9.3)
-      auto: 11.1.1(@types/node@18.19.17)(typescript@5.9.3)
+      '@auto-it/all-contributors': 10.37.6(@types/node@18.19.130)(typescript@5.9.3)
+      '@auto-it/first-time-contributor': 10.37.6(@types/node@18.19.130)(typescript@5.9.3)
+      '@auto-it/npm': 10.37.6(@types/node@18.19.130)(typescript@5.9.3)
+      '@auto-it/pr-body-labels': 10.37.6(@types/node@18.19.130)(typescript@5.9.3)
+      '@auto-it/released': 10.37.6(@types/node@18.19.130)(typescript@5.9.3)
+      auto: 11.1.1(@types/node@18.19.130)(typescript@5.9.3)
     transitivePeerDependencies:
       - '@swc/core'
       - '@swc/wasm'
@@ -5938,12 +5949,12 @@ snapshots:
       - supports-color
       - typescript
 
-  auto@11.1.1(@types/node@18.19.17)(typescript@5.9.3):
+  auto@11.1.1(@types/node@18.19.130)(typescript@5.9.3):
     dependencies:
-      '@auto-it/core': 11.1.1(@types/node@18.19.17)(typescript@5.9.3)
-      '@auto-it/npm': 11.1.1(@types/node@18.19.17)(typescript@5.9.3)
-      '@auto-it/released': 11.1.1(@types/node@18.19.17)(typescript@5.9.3)
-      '@auto-it/version-file': 11.1.1(@types/node@18.19.17)(typescript@5.9.3)
+      '@auto-it/core': 11.1.1(@types/node@18.19.130)(typescript@5.9.3)
+      '@auto-it/npm': 11.1.1(@types/node@18.19.130)(typescript@5.9.3)
+      '@auto-it/released': 11.1.1(@types/node@18.19.130)(typescript@5.9.3)
+      '@auto-it/version-file': 11.1.1(@types/node@18.19.130)(typescript@5.9.3)
       await-to-js: 3.0.0
       chalk: 4.1.2
       command-line-application: 0.10.1
@@ -6929,7 +6940,7 @@ snapshots:
 
   jest-worker@27.5.1:
     dependencies:
-      '@types/node': 18.19.17
+      '@types/node': 18.19.130
       merge-stream: 2.0.0
       supports-color: 8.1.1
 
@@ -7712,7 +7723,7 @@ snapshots:
       ansi-escapes: 4.3.1
       supports-hyperlinks: 2.1.0
 
-  terser-webpack-plugin@5.3.17(esbuild@0.20.1)(webpack@5.105.4(esbuild@0.20.1)):
+  terser-webpack-plugin@5.4.0(esbuild@0.20.1)(webpack@5.105.4(esbuild@0.20.1)):
     dependencies:
       '@jridgewell/trace-mapping': 0.3.31
       jest-worker: 27.5.1
@@ -7757,14 +7768,14 @@ snapshots:
 
   ts-dedent@2.2.0: {}
 
-  ts-node@10.9.1(@types/node@18.19.17)(typescript@5.9.3):
+  ts-node@10.9.1(@types/node@18.19.130)(typescript@5.9.3):
     dependencies:
       '@cspotcode/source-map-support': 0.8.1
       '@tsconfig/node10': 1.0.9
       '@tsconfig/node12': 1.0.11
       '@tsconfig/node14': 1.0.3
       '@tsconfig/node16': 1.0.3
-      '@types/node': 18.19.17
+      '@types/node': 18.19.130
       acorn: 8.11.3
       acorn-walk: 8.2.0
       arg: 4.1.3
@@ -7885,13 +7896,13 @@ snapshots:
 
   v8-compile-cache-lib@3.0.1: {}
 
-  vite@5.1.3(@types/node@18.19.17)(terser@5.46.0):
+  vite@5.1.3(@types/node@18.19.130)(terser@5.46.0):
     dependencies:
       esbuild: 0.19.12
       postcss: 8.4.35
       rollup: 4.12.0
     optionalDependencies:
-      '@types/node': 18.19.17
+      '@types/node': 18.19.130
       fsevents: 2.3.3
       terser: 5.46.0
 
@@ -7930,7 +7941,7 @@ snapshots:
       neo-async: 2.6.2
       schema-utils: 4.3.3
       tapable: 2.3.0
-      terser-webpack-plugin: 5.3.17(esbuild@0.20.1)(webpack@5.105.4(esbuild@0.20.1))
+      terser-webpack-plugin: 5.4.0(esbuild@0.20.1)(webpack@5.105.4(esbuild@0.20.1))
       watchpack: 2.5.1
       webpack-sources: 3.3.4
     transitivePeerDependencies:
