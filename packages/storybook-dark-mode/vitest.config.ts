@@ -24,7 +24,6 @@ export default defineConfig({
 			instances: [{ browser: 'chromium' }],
 			screenshotFailures: false
 		},
-		setupFiles: ['.storybook/vitest.setup.ts'],
 		coverage: {
 			// A floor against regression, not a target.
 			// Raise these as coverage grows.

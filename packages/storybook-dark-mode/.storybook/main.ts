@@ -12,7 +12,7 @@ export default {
 	staticDirs: [{ from: '../assets', to: '/assets' }],
 	tags: {
 		unit: {
-			excludeFromSidebar: process.env.NODE_ENV === 'production'
+			hideFromSidebar: process.env.NODE_ENV === 'production'
 		}
 	}
 } satisfies StorybookConfig

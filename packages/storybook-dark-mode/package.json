@@ -69,9 +69,9 @@
 	"devDependencies": {
 		"@repobuddy/storybook": "^2.34.1",
 		"@repobuddy/vitest": "^2.4.1",
-		"@storybook/addon-docs": "^10.6.5",
-		"@storybook/addon-vitest": "^10.6.5",
-		"@storybook/react-vite": "^10.6.5",
+		"@storybook/addon-docs": "^11.0.0-rc.1",
+		"@storybook/addon-vitest": "^11.0.0-rc.1",
+		"@storybook/react-vite": "^11.0.0-rc.1",
 		"@tailwindcss/vite": "^4.3.4",
 		"@vitest/browser": "^4.1.12",
 		"@vitest/browser-playwright": "^4.1.12",
@@ -82,8 +82,8 @@
 		"react": "^19.3.1",
 		"react-dom": "^19.3.1",
 		"rimraf": "^6.1.4",
-		"storybook": "^10.6.5",
-		"storybook-addon-tag-badges": "^3.1.0",
+		"storybook": "^11.0.0-rc.1",
+		"storybook-addon-tag-badges": "^4.0.1",
 		"tailwindcss": "^4.3.4",
 		"tsdown": "^0.16.8",
 		"typescript": "^5.9.3",
@@ -94,8 +94,8 @@
 		"node": ">=20.19.0"
 	},
 	"peerDependencies": {
-		"@storybook/addon-docs": "^10.0.0",
-		"storybook": "^10.0.0"
+		"@storybook/addon-docs": "^11.0.0",
+		"storybook": "^11.0.0"
 	},
 	"peerDependenciesMeta": {
 		"@storybook/addon-docs": {

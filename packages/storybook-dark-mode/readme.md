@@ -6,7 +6,9 @@
 A Storybook addon that lets your users toggle between dark and light mode.
 
 > [!NOTE]
-> This is a fork of [storybook-dark-mode](https://github.com/hipstersmoothie/storybook-dark-mode) by [@hipstersmoothie](https://github.com/hipstersmoothie) supporting Storybook 9 and newer.
+> This is a fork of [storybook-dark-mode](https://github.com/hipstersmoothie/storybook-dark-mode) by [@hipstersmoothie](https://github.com/hipstersmoothie) supporting Storybook 11.
+>
+> For Storybook 10, use version 7.x.
 
 ![Example](./assets/example.gif)
 

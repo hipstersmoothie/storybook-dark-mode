@@ -132,9 +132,9 @@ export function DarkModeToggle({ api }: DarkModeProps) {
 			: undefined
 	return (
 		<Button
-			aria-label="Toggle dark mode"
+			ariaLabel="Toggle dark mode"
 			disabled={!!disabledMessage}
-			title={disabledMessage ?? (isDark ? 'Change theme to light mode' : 'Change theme to dark mode')}
+			tooltip={disabledMessage ?? (isDark ? 'Change theme to light mode' : 'Change theme to dark mode')}
 			onClick={handleIconClick}
 		>
 			{isDark ? <SunIcon aria-hidden="true" /> : <MoonIcon aria-hidden="true" />}
